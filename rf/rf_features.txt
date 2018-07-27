@@ -131,12 +131,12 @@ nan	I	S	S	23	G	C	mismatch	S	I	I	27	62	C	G	mismatch	S	B	None	-12
 0.02	H	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
 0.03	H	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
 0.04	I	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
-0.49	S	H	I	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
+0.49	I	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
 0.07	I	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
-0.12	S	I	B	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
+0.12	I	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
 0.09	S	H	I	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
-0.3	S	H	I	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
-0.01	S	H	I	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
+0.3	I	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
+0.01	I	S	S	None	None	None	indel	None	None	None	None	None	None	None	None	None	None	None	None
 0.07	H	S	S	44	G	C	mismatch	S	I	H	6	45	G	C	mismatch	S	I	None	5
 0.11	H	S	S	44	G	C	mismatch	S	I	H	6	46	G	C	mismatch	H	S	None	4
 0.21	I	S	S	44	G	C	mismatch	H	S	S	6	47	G	U	mismatch	I	S	None	3

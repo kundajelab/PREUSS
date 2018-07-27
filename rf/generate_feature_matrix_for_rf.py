@@ -5,7 +5,6 @@ bprna_output_dir="/srv/scratch/annashch/adar_editing/data_from_xin/Neil1_raw_dat
 feature_dict=dict()
 start_struct=1
 end_struct=293
-editing_site=50
 outf=open("rf_features.txt",'w')
 outf.write('\t'.join(["ave_editing_level",
                       "edit_feat",
@@ -30,6 +29,7 @@ outf.write('\t'.join(["ave_editing_level",
 
 for index,row in editing_levels.iterrows():
     seq_index=row['RNA_ID']
+    editing_site=row['EditingSite']
     if seq_index<10:
         seq_index="00"+str(seq_index)
     elif seq_index<100:
