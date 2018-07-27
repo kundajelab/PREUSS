@@ -9,6 +9,8 @@ rm(list=ls())
 library(ggplot2)
 library(randomForest)
 library(gbm)
+options(warn=-1)
+
 ```
 
 ## load the feature matrix and split into training and test sets 
@@ -22,19 +24,29 @@ data=data[is.nan(data$ave_editing_level)==FALSE,]
 head(data)
 ```
 The feature values are: 
+
 * edit_feat -- Single character value of structure type for the edited A at position 50. One of S,H,M,I,B,X,E
+
 * prev_feat -- The 5' structural feature upstream of edited A 
+
 * next_feat -- The 3' structural feature downstream of edited  A 
 
 * mp1 -- Firt mutated position along the RNA sequence 
+
 * mref1 -- Reference allele at first mutated position 
+
 * mtype1 -- One of "mismatch","indel","wt"
+
 * mfeat1 -- Single character value of structure type for mutated base. One of S,H,M,I,B,X,E
+
 * mfeat1_prev -- The 5' structural feature upstream of mutated base. 
+
 * mfeat1_next -- The 3' structural feature downstream of mutated base. 
+
 * adist1 -- The distance (in sequence space ) of the mutated base from the edited A. 
 
 Repeat for possible second mutation ('None' if only 1 mutation present in sequence):
+
 * mp2 
 
 * mref2 
@@ -95,7 +107,7 @@ The features of highest importance are distance from editing site, position of t
 boost.data=gbm(ave_editing_level~.,data=train_split,distribution="gaussian",n.trees=5000,interaction.depth = 4)
 summary(boost.data)
 ```
-The "mp1" and "mp2" features are the most important variables (these are the positions along the sequence of mutation 1 and 2)
+The "mp1" and "mp2" features are the most important variables (these are the positions along the sequence of mutation 1 and 2). We produce partial dependence plots for these two variables. These plots illustrate the marginal effect of the mp1 and mp2 variables after integrating out the other variables. 
 
 ```{r boosting_plot}
 par(mfrow=c(1,2))
@@ -114,8 +126,37 @@ Experiment with the boosting shrinkage parameter (increase to 0.2 from default o
 for(shrinkage_val in c(0.005, 0.01, 0.05, 0.1, 0.2))
 {
 print(shrinkage_val)
-boost.data=gbm(ave_editing_level~.,data=train_split,distribution="gaussian",n.trees=5000,interaction.depth=4,shrinkage=shrinkage_val,verbose=F)
+boost.data=gbm(ave_editing_level~.,
+               data=train_split,
+               distribution="gaussian",
+               n.trees=5000,
+               interaction.depth=4,
+               shrinkage=shrinkage_val,verbose=F)
 yhat.boost=predict(boost.data,newdata=test_split,n.trees=5000)
 print(mean((yhat.boost-test_split$ave_editing_level)^2))
 }
+```
+##Feature values vs editing levels 
+```{r features_vs_editing}
+p1=ggplot(data=data,aes(x=data$mp1,y=data$ave_editing_level))+
+  geom_point()+
+  ggtitle("Position of first mutation along sequence")
+p1
+p2=ggplot(data=data,aes(x=data$mp2,y=data$ave_editing_level))+
+  geom_point()+
+  ggtitle("Position of second mutation along sequence")
+p2
+p3=ggplot(data=data,aes(x=data$edit_feat,y=data$ave_editing_level))+
+  geom_boxplot()+
+  ggtitle("Structural feature of the editing site")
+p3 
+p4=ggplot(data=data,aes(x=data$malt1,y=data$ave_editing_level))+
+  geom_boxplot() +
+  ggtitle("First mutation -- new base ")
+p4 
+p5=ggplot(data=data,aes(x=data$malt2,y=data$ave_editing_level))+
+  geom_boxplot() +
+  ggtitle("Second mutation -- new base")
+p5 
+
 ```
