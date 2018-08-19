@@ -57,7 +57,7 @@ def main():
     #write to text file
     outf=open(args.text_out,'w')
     for cur_id in data_dict:
-        ">"+cur_id+',inferred\n'
+        outf.write(">"+cur_id+',inferred\n')
         outf.write(data_dict[cur_id]['inferred']+'\n')
         for i in range(len(data_dict[cur_id]['bootstraps'])):
             outf.write('>'+cur_id+'.'+str(i)+',bootstrap\n')
