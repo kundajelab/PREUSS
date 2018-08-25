@@ -1,0 +1,299 @@
+---
+title: "Prediction of Adar Editing Levelss"
+output: pdf_document
+---
+
+```{r 1, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm(list=ls())
+library(ggplot2)
+library(randomForest)
+library(gbm)
+options(warn=-1)
+
+```
+#  From Frequency of each RNA base in S, H, I, B feature
+Note: base positions are 0-indexed 
+```{r 2,include=FALSE}
+set.seed(1)
+
+#load the feature matrix 
+data=read.table("features_for_rf.txt.all.freq.txt",header=TRUE,sep='\t',row.names = 1)
+
+#remove values with no NaN in editing level
+data=data[is.nan(data$EditingLevel)==FALSE,]
+#impute missing values
+x=data[,2:ncol(data)]
+y=data[,1]
+data=rfImpute(x,y,iter=5,ntree=300)
+```
+
+```{r 3,echo=FALSE}
+#get training and test splits; use 80% train, 20% test split  
+train_indices=sample(nrow(data),0.8*nrow(data),replace=FALSE)
+train_split=data[train_indices,]
+test_split=data[-train_indices,]
+
+```
+
+
+```{r 4,echo=FALSE}
+#train rf 
+
+bag.data=randomForest(y~.,data=data,subset=train_indices,importance=TRUE,ntree=5000)
+print(bag.data)
+```
+
+## Predictions on training and test splits 
+```{r 5,echo=FALSE}
+#get predictions on training & test data 
+yhat.bag.train=predict(bag.data,newdata=train_split)
+yhat.bag.test=predict(bag.data,newdata=test_split)
+print("MSE on training data:")
+print(mean((yhat.bag.train-train_split$y)^2))
+print("MSE on test data:")
+print(mean((yhat.bag.test-test_split$y)^2))
+
+toplot_train=data.frame(yhat.bag.train,train_split$y)
+names(toplot_train)=c("TrainingSplitPredicted","TrainingSplitTruth")
+toplot_test=data.frame(yhat.bag.test,test_split$y)
+names(toplot_test)=c("TestSplitPredicted","TestSplitTruth")
+source("~/helpers.R")
+p1=ggplot(data=toplot_train,
+       aes(x=TrainingSplitTruth,y=TrainingSplitPredicted))+
+  geom_point(alpha=0.3)+
+  xlab("Training Split Truth")+
+  ylab("Training Split Truth")+
+  xlim(c(0,1))+
+  ylim(c(0,1))
+
+p2=ggplot(data=toplot_test,
+       aes(x=TestSplitTruth,y=TestSplitPredicted))+
+  geom_point(alpha=0.3)+
+  xlab("Test Split Truth")+
+  ylab("Test Split Truth")+
+  xlim(c(0,1))+
+  ylim(c(0,1))
+multiplot(p1,p2,cols=2)
+```
+
+##Feature Importance 
+```{r 6,echo=FALSE}
+
+#get the feature importance 
+feat_importance=as.data.frame(importance (bag.data ))
+feat_importance=feat_importance[order(-feat_importance[,1]),]
+print(feat_importance)
+varImpPlot(bag.data,n.var=10,main="Importance of position along the RNA")
+```
+
+##Feature value vs Editing Level
+```{r 7, echo=FALSE}
+p3=ggplot(data=data,
+          aes(x=data$S.base50,
+              y=data$y))+
+  geom_point(alpha=0.3)+
+  xlab("Base 50 %S")+
+  ylab("Editing Level")
+
+p4=ggplot(data=data,
+          aes(x=data$S.base46,
+              y=data$y))+
+  geom_point(alpha=0.3)+
+  xlab("Base 46 %S")+
+  ylab("Editing Level")
+p5=ggplot(data=data,
+          aes(x=data$S.base42,
+              y=data$y))+
+  geom_point(alpha=0.3)+
+  xlab("Base 42 %S")+
+  ylab("Editing Level")
+p6=ggplot(data=data,
+          aes(x=data$I.base50,
+              y=data$y))+
+  geom_point(alpha=0.3)+
+  xlab("Base 50 %I")+
+  ylab("Editing Level")
+p7=ggplot(data=data,
+          aes(x=data$I.base54,
+              y=data$y))+
+  geom_point(alpha=0.3)+
+  xlab("Base 54 %I")+
+  ylab("Editing Level")
+p8=ggplot(data=data,
+          aes(x=data$B.base29,
+              y=data$y))+
+  geom_point(alpha=0.3)+
+  xlab("Base 29 %B")+
+  ylab("Editing Level")
+multiplot(p3,p4,p5,p6,p7,p8,cols=3)
+```
+
+#Editing Level Prediction on Inferred Structure from Both Position-Specific and Structure-Specific Features 
+```{r 9,echo=FALSE}
+data=read.table("features_for_rf.txt",header=TRUE,sep='\t',row.names = 1)
+#remove values with no NaN in editing level
+data=data[is.nan(data$editing_level)==FALSE,]
+head(data)
+#impute missing data 
+x=data[,2:ncol(data)]
+y=data[,1]
+data=rfImpute(x,y,iter=5,ntree=300)
+
+#get training and test splits; use 80% train, 20% test split  
+train_indices=sample(nrow(data),0.8*nrow(data),replace=FALSE)
+train_split=data[train_indices,]
+test_split=data[-train_indices,]
+bag.data=randomForest(y~.,data=data,subset=train_indices,importance=TRUE,ntree=10000)
+print(bag.data)
+```
+
+
+## Predictions on training and test splits 
+```{r 10,echo=FALSE}
+#get predictions on training & test data 
+yhat.bag.train=predict(bag.data,newdata=train_split)
+yhat.bag.test=predict(bag.data,newdata=test_split)
+print("MSE on training data:")
+print(mean((yhat.bag.train-train_split$y)^2))
+print("MSE on test data:")
+print(mean((yhat.bag.test-test_split$y)^2))
+
+toplot_train=data.frame(yhat.bag.train,train_split$y)
+names(toplot_train)=c("TrainingSplitPredicted","TrainingSplitTruth")
+toplot_test=data.frame(yhat.bag.test,test_split$y)
+names(toplot_test)=c("TestSplitPredicted","TestSplitTruth")
+source("~/helpers.R")
+p9=ggplot(data=toplot_train,
+       aes(x=TrainingSplitTruth,y=TrainingSplitPredicted))+
+  geom_point(alpha=0.3)+
+  xlab("Training Split Truth")+
+  ylab("Training Split Truth")+
+  xlim(c(0,1))+
+  ylim(c(0,1))
+
+p10=ggplot(data=toplot_test,
+       aes(x=TestSplitTruth,y=TestSplitPredicted))+
+  geom_point(alpha=0.3)+
+  xlab("Test Split Truth")+
+  ylab("Test Split Truth")+
+  xlim(c(0,1))+
+  ylim(c(0,1))
+multiplot(p9,p10,cols=2)
+```
+##Feature Importance 
+```{r 11,echo=FALSE}
+
+#get the feature importance 
+feat_importance=as.data.frame(importance (bag.data ))
+feat_importance=feat_importance[order(-feat_importance[,1]),]
+print(feat_importance)
+varImpPlot(bag.data,n.var=10,main="Top 10 Most Important Features")
+```
+
+## Feature values vs Editing Level
+```{r 12, echo=FALSE}
+p12=ggplot(data=data,aes(x=data$malt1,y=data$y))+
+  geom_boxplot()+
+  ggtitle("malt1 -- Alternate Allele for First Mutation Position")
+p12
+p13=ggplot(data=data,aes(x=factor(round(data$mfeat1_same_as_edit)),y=data$y))+
+  geom_boxplot()+
+  ggtitle("Mutation in Same Structural Feature as Editing Site")
+p13
+p14=ggplot(data=data,aes(x=data$adist1,y=data$y))+
+  geom_point()+
+  ggtitle("Distance between mutation position and editing position")
+p14 
+```
+
+#Predicting Editing Level from Structure-Specific Features Only (i.e. No Mutation Information Used in Model)
+```{r 15,echo=FALSE }
+data=read.table("features_for_rf_structure_only.txt",header=TRUE,sep='\t',row.names = 1)
+#remove values with no NaN in editing level
+data=data[is.nan(data$editing_level)==FALSE,]
+head(data)
+#impute missing data 
+x=data[,2:ncol(data)]
+y=data[,1]
+data=rfImpute(x,y,iter=5,ntree=300)
+
+#get training and test splits; use 80% train, 20% test split  
+train_indices=sample(nrow(data),0.8*nrow(data),replace=FALSE)
+train_split=data[train_indices,]
+test_split=data[-train_indices,]
+bag.data=randomForest(y~.,data=data,subset=train_indices,importance=TRUE,ntree=10000)
+print(bag.data)
+
+
+```
+
+## Predictions on training and test splits 
+```{r 16,echo=FALSE}
+#get predictions on training & test data 
+yhat.bag.train=predict(bag.data,newdata=train_split)
+yhat.bag.test=predict(bag.data,newdata=test_split)
+print("MSE on training data:")
+print(mean((yhat.bag.train-train_split$y)^2))
+print("MSE on test data:")
+print(mean((yhat.bag.test-test_split$y)^2))
+
+toplot_train=data.frame(yhat.bag.train,train_split$y)
+names(toplot_train)=c("TrainingSplitPredicted","TrainingSplitTruth")
+toplot_test=data.frame(yhat.bag.test,test_split$y)
+names(toplot_test)=c("TestSplitPredicted","TestSplitTruth")
+source("~/helpers.R")
+p16=ggplot(data=toplot_train,
+       aes(x=TrainingSplitTruth,y=TrainingSplitPredicted))+
+  geom_point(alpha=0.3)+
+  xlab("Training Split Truth")+
+  ylab("Training Split Truth")+
+  xlim(c(0,1))+
+  ylim(c(0,1))
+
+p17=ggplot(data=toplot_test,
+       aes(x=TestSplitTruth,y=TestSplitPredicted))+
+  geom_point(alpha=0.3)+
+  xlab("Test Split Truth")+
+  ylab("Test Split Truth")+
+  xlim(c(0,1))+
+  ylim(c(0,1))
+multiplot(p16,p17,cols=2)
+```
+##Feature Importance 
+```{r 18,echo=FALSE}
+
+#get the feature importance 
+feat_importance=as.data.frame(importance (bag.data ))
+feat_importance=feat_importance[order(-feat_importance[,1]),]
+print(feat_importance)
+varImpPlot(bag.data,n.var=10,main="Top 10 Most Important Features")
+```
+
+## Feature values vs Editing Level
+
+```{r 19, echo=FALSE}
+p19=ggplot(data=data,aes(x=data$stem_length,y=data$y))+
+  geom_point()+
+  ggtitle("Stem Length")
+p19
+```
+
+```{r 20,echo=FALSE}
+p20=ggplot(data=data,aes(x=factor(round(data$hairpin_length)),y=data$y))+
+  geom_point()+
+  ggtitle("Hairpin Length")
+p20
+
+p21=ggplot(data=data,aes(x=data$feat_3prime_e_length,y=data$y))+
+  geom_point()+
+  ggtitle("Length of Loop 3' of Edit Site")
+p21 
+
+p22=ggplot(data=data,aes(x=data$feat_3prime_e_cp2,y=data$y))+
+  geom_boxplot()+
+  ggtitle("Closing Pair of Loop 3' of Edit Site")
+p22 
+
+
+```
