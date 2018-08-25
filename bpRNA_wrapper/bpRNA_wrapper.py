@@ -34,7 +34,7 @@ def main():
         sequence_string=item['sequence_string']
         inferred_structure=item['inferred_structure']
         data_dict[cur_id]=dict()
-        data_dict[cur_id]['bootstraps']=[] 
+        data_dict[cur_id]['bootstraps']=dict() 
         #get a tally of how frequent each bootstrapped structure is
         struct_tally=dict()
         for struct in bootstrap_structures:
@@ -47,7 +47,7 @@ def main():
             header=','.join(['>bootstrap',cur_id+'.'+str(bootstrap_count),'frequency:'+str(struct_tally[struct])])
             bpRNA_annotation=get_bpRNA_annotation('\n'.join([header,sequence_string,struct]))
             bootstrap_count+=1
-            data_dict[cur_id]['bootstraps'].append(bpRNA_annotation)
+            data_dict[cur_id]['bootstraps'][bpRNA_annotation]=struct_tally[struct]
         header=','.join(['>inferred',cur_id])
         bpRNA_annotation=get_bpRNA_annotation('\n'.join([header,sequence_string,inferred_structure]))
         data_dict[cur_id]['inferred']=bpRNA_annotation
@@ -59,9 +59,11 @@ def main():
     for cur_id in data_dict:
         outf.write(">"+cur_id+',inferred\n')
         outf.write(data_dict[cur_id]['inferred']+'\n')
-        for i in range(len(data_dict[cur_id]['bootstraps'])):
-            outf.write('>'+cur_id+'.'+str(i)+',bootstrap\n')
-            outf.write(data_dict[cur_id]['bootstraps'][i])
+        i=0
+        for entry in data_dict[cur_id]['bootstraps']:
+            outf.write('>'+cur_id+'.'+str(i)+',bootstrap,count='+str(data_dict[cur_id]['bootstraps'][entry])+'\n')
+            outf.write(entry)
+            i+=1
 
         
 if __name__=="__main__":
