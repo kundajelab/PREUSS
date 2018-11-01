@@ -12,12 +12,12 @@ adar_editing_levels="../data_from_xin/Neil1_Editing_Level_For_Anna_2018-01-23.cs
 #output_image="web_beagle_dendrogram_str_id.png"
 
 #FOR SEQUENCE IDENTITY
-#distance_matrix="web_beagle_alignment_clustering/seq_id/beagle.seq_id.txt"
-#output_image="web_beagle_dendrogram_seq_id.png"
+distance_matrix="web_beagle_alignment_clustering/seq_id/beagle.seq_id.txt"
+output_image="web_beagle_dendrogram_seq_id.png"
 
 #FOR STRUCTURE SIMILARITY
-distance_matrix="web_beagle_alignment_clustering/str_sim/beagle.str_sim.txt"
-output_image="web_beagle_dendrogram_str_sim.png"
+#distance_matrix="web_beagle_alignment_clustering/str_sim/beagle.str_sim.txt"
+#output_image="web_beagle_dendrogram_str_sim.png"
 ###################
 
 
