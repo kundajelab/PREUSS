@@ -8,6 +8,7 @@ def parse_args():
     parser.add_argument("--data_json")
     parser.add_argument("--pickle_out")
     parser.add_argument("--text_out",default=None)
+    parser.add_argument("--approach",default="computational",choices=['computational','experimental'])
     return parser.parse_args()
 
 def get_bpRNA_annotation(input_string):
@@ -32,7 +33,7 @@ def main():
         print("processing structure data for item:"+str(cur_id))
         data_dict[cur_id]=dict()
         sequence_string=item['sequence_string']
-        inferred_structure=item['inferred_structure']
+        structure=item['_'.join([args.approach,'structure'])]
         try:
             bootstrap_structures=item['bootstrap_structures']
             data_dict[cur_id]['bootstraps']=dict()
@@ -51,17 +52,17 @@ def main():
                 data_dict[cur_id]['bootstraps'][bpRNA_annotation]=struct_tally[struct]
         except:
             print("no bootstrap structures for "+str(cur_id)+", continuing")
-        header=','.join(['>inferred',cur_id])
-        bpRNA_annotation=get_bpRNA_annotation('\n'.join([header,sequence_string,inferred_structure]))
-        data_dict[cur_id]['inferred']=bpRNA_annotation
+        header=','.join(['>'+args.approach,cur_id])
+        bpRNA_annotation=get_bpRNA_annotation('\n'.join([header,sequence_string,structure]))
+        data_dict[cur_id][args.approach]=bpRNA_annotation
     #save to pickle
     with open(args.pickle_out,'wb') as handle:
         pickle.dump(data_dict,handle,protocol=pickle.HIGHEST_PROTOCOL)
     #write to text file
     outf=open(args.text_out,'w')
     for cur_id in data_dict:
-        outf.write(">"+cur_id+',inferred\n')
-        outf.write(data_dict[cur_id]['inferred']+'\n')
+        outf.write(">"+cur_id+','+args.approach+'\n')
+        outf.write(data_dict[cur_id][args.approach]+'\n')
         i=0
         if 'bootstraps' in data_dict[cur_id]: 
             for entry in data_dict[cur_id]['bootstraps']:
