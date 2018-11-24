@@ -180,8 +180,7 @@ def annotate_structure(editing_levels,bprna_data,approach):
         stem_length=get_structure_length(features,editing_site,'S') 
         #get the hairpin length
         hairpin_length=get_structure_length(features,editing_site,'H')
-
-        for i in range(len(editing_levels[cur_id]['mut'])): 
+        for i in range(len(editing_levels[cur_id]['mut'].keys())):
             mfeat=None
             mfeat_prev=None
             mfeat_next=None
@@ -192,7 +191,7 @@ def annotate_structure(editing_levels,bprna_data,approach):
             mp=editing_levels[cur_id]['mut'][i]['mp']
             if mp!=None:
                 mp=int(mp)-1
-            mfeat,mfeat_prev,mfeat_next,mfeat_same_as_edit=get_bprna_feature_labels(mp,features,editing_site)
+                mfeat,mfeat_prev,mfeat_next,mfeat_same_as_edit=get_bprna_feature_labels(mp,features,editing_site)
             editing_levels[cur_id]['mut'][i]['mfeat']=mfeat
             editing_levels[cur_id]['mut'][i]['mfeat_prev']=mfeat_prev
             editing_levels[cur_id]['mut'][i]['mfeat_next']=mfeat_next
@@ -200,19 +199,19 @@ def annotate_structure(editing_levels,bprna_data,approach):
                         
             
         #length of internal loop downstream of editing site, type of loop, closing pair 
-        x1feat_downstream_of_edit_site,
-        x1feat_downstream_of_edit_site_length_editing_strand,
-        x1feat_downstream_of_edit_site_length_complementary_strand,
-        x1feat_downstream_fo_edit_site_5prime_cp,
-        x1feat_downstream_of_edit_site_3prime_cp,
-        x1feat_downstream_of_edit_site_endpos=get_downstream_nonstem_info(features,editing_site,annotation)
+        x1feat_downstream_of_edit_site \
+            ,x1feat_downstream_of_edit_site_length_editing_strand \
+            ,x1feat_downstream_of_edit_site_length_complementary_strand \
+            ,x1feat_downstream_fo_edit_site_5prime_cp \
+            ,x1feat_downstream_of_edit_site_3prime_cp \
+            ,x1feat_downstream_of_edit_site_endpos=get_downstream_nonstem_info(features,editing_site,annotation)
         
-        x2feat_downstream_of_edit_site,
-        x2feat_downstream_of_edit_site_length_editing_strand,
-        x2feat_downstream_of_edit_site_length_complementary_strand,
-        x2feat_downstream_of_edit_site_5prime_cp,
-        x2feat_downstream_of_edit_site_3prime_cp,
-        x2feat_downstream_of_edit_site_endpos=get_downstream_nonstem_info(features,x1feat_downstream_of_edit_site_endpos,annotation)
+        x2feat_downstream_of_edit_site \
+            ,x2feat_downstream_of_edit_site_length_editing_strand \
+            ,x2feat_downstream_of_edit_site_length_complementary_strand \
+            ,x2feat_downstream_of_edit_site_5prime_cp \
+            ,x2feat_downstream_of_edit_site_3prime_cp \
+            ,x2feat_downstream_of_edit_site_endpos=get_downstream_nonstem_info(features,x1feat_downstream_of_edit_site_endpos,annotation)
 
         #store all to dict
         structure_features[cur_id]['editing_feature']=editing_feature
@@ -228,7 +227,7 @@ def annotate_structure(editing_levels,bprna_data,approach):
         structure_features[cur_id]['x2feat_downstream_of_edit_site_length_complementary_strand']=x2feat_downstream_of_edit_site_length_complementary_strand
         structure_features[cur_id]['x2feat_downstream_of_edit_site_5prime_cp']=x2feat_downstream_of_edit_site_5prime_cp
         structure_features[cur_id]['x2feat_downstream_of_edit_site_3prime_cp']=x2feat_downstream_of_edit_site_3prime_cp
-    return structure_features 
+    return structure_features,editing_levels 
     
 def write_feature_matrix(editing_levels,structure_dict,outf):
     outf=open(outf,'w')
@@ -279,7 +278,7 @@ def annotate_mutation(mut,editing_site):
     mtype=None
     adist=None
 
-    if mut.lower() startswith('indel'):
+    if mut.lower().startswith('indel'):
         mtype='indel'
         mp=mut[5::].split('-')[0]
     elif mut.lower().startswith('wt'): 
@@ -308,9 +307,16 @@ def get_mut_info(editing_levels_dict):
         #keep track of mutation position information
         mut_dict=dict()
         for i in range(len(mut_syntax)):
-            mut_dict[i]=[annotation_info for annotation_info in annotate_mutation(mut_syntax[i],editing_site)]
+            mut_annotations=annotate_mutation(mut_syntax[i],editing_site)
+            mut_dict[i]=dict()
+            mut_dict[i]['mp']=mut_annotations[0]
+            mut_dict[i]['adist']=mut_annotations[1]
+            mut_dict[i]['mref']=mut_annotations[2]
+            mut_dict[i]['malt']=mut_annotations[3]
+            mut_dict[i]['mtype']=mut_annotations[4]
+            
         editing_levels_dict[cur_id]['mut']=mut_dict 
-        return editing_levels_dict
+    return editing_levels_dict
 
 def annotation_base_in_stem_freq(editing_levels_dict,bprna_data,outf,feat_type):
     entries=editing_levels_dict.keys()
@@ -353,8 +359,8 @@ def main():
         annotation_base_in_stem_freq(editing_levels_dict,bprna_data,outf,'H')
     
 
-    #annotate computational/experimental structure
-    structure_dict=annotate_structure(editing_levels_dict,bprna_data,args.approach)
+    #annotate computational/experime
+    structure_dict,editing_levels_dict=annotate_structure(editing_levels_dict,bprna_data,args.approach)
     
     write_feature_matrix(editing_levels_dict,structure_dict,outf)
     
