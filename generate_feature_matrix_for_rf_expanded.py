@@ -69,11 +69,14 @@ def get_downstream_nonstem_info(features,editing_site,annotation):
     #find the first non-stem feature 3' of editing site (might include the editing site)
     x1feat_downstream_of_edit_site=None
     hook_pos=None
-    for pos in range(editing_site,len(features)):
-        if features[pos]!="S":
-            x1feat_downstream_of_edit_site=features[pos]
-            hook_pos=pos
-            break
+    try:
+        for pos in range(editing_site,len(features)):
+            if features[pos]!="S":
+                x1feat_downstream_of_edit_site=features[pos]
+                hook_pos=pos
+                break
+    except:
+        return None,None,None,None,None,None
     #get the start & end position of this feature
     feat_start=None
     feat_end=None
@@ -172,7 +175,7 @@ def annotate_structure(editing_levels,bprna_data,approach):
         try:
             editing_site=int(editing_levels[cur_id]['site'])-1
         except:
-            pdb.set_trace() 
+            editing_site=None
         editing_feature=features[editing_site]
         structure_features[cur_id]=dict()
         
@@ -349,6 +352,7 @@ def main():
     outf=args.outf
     
     editing_levels_dict=get_editing_info(editing_levels_file,args.approach)
+    
     editing_levels_dict=get_mut_info(editing_levels_dict)
     
     #what fraction of bases in bootstrapped samples are in specified_feature?
