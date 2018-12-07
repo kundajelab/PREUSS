@@ -47,34 +47,36 @@ write.table(pearson_cor$r,file=paste(opt$output_prefix,"PearsonCorrelation.tsv",
 
 #Plot Correlation Heatmap 
 # Insignificant correlation are crossed
-svg(paste(opt$output_prefix,"SpearmanCorrNEIL1.svg",sep=""),height=10,width=10)
+svg(paste(opt$output_prefix,"SpearmanCorrNEIL1.svg",sep=""),height=15,width=15)
 print(corrplot(spearman_cor$r, type="upper", order="hclust", 
          p.mat = spearman_cor$P, sig.level = 0.01, insig = "blank", tl.col = "black", tl.srt = 45,tl.cex = 0.5,title = "Spearman Correlation of Features for NEIL1"))
 dev.off() 
 
-svg(paste(opt$output_prefix,"PearsonCorrNEIL1.svg",paste=""),height=10,width=10)
+svg(paste(opt$output_prefix,"PearsonCorrNEIL1.svg",sep=""),height=15,width=15)
 print(corrplot(pearson_cor$r, type="upper", order="hclust", 
          p.mat = pearson_cor$P, sig.level = 0.01, insig = "blank", tl.col = "black", tl.srt = 45,tl.cex = 0.5,title = "Pearson Correlation of Features for NEIL1"))
 dev.off() 
 
 #Generate heatmap 
 col<- colorRampPalette(c('#67001f','#b2182b','#d6604d','#f4a582','#fddbc7','#d1e5f0','#92c5de','#4393c3','#2166ac','#053061'))(100)
-svg(paste(opt$output_prefix,"SpearmanHeatmap.svg",sep=""),height=10,width=10)
+svg(paste(opt$output_prefix,"SpearmanHeatmap.svg",sep=""),height=15,width=15)
 print(heatmap.2(as.matrix(spearman_cor$r),
           col=col,
           Rowv=TRUE,
           Colv=TRUE,
           scale="none",
-          trace="none"
+          trace="none",
+          margins = c(15,15)
           ))
 dev.off() 
 
-svg(paste(opt$output_prefix,"PearsonHeatmap.svg",sep=""),height=10,width=10)
+svg(paste(opt$output_prefix,"PearsonHeatmap.svg",sep=""),height=15,width=15)
 print(heatmap.2(as.matrix(pearson_cor$r),
                 col=col,
                 Rowv=TRUE,
                 Colv=TRUE,
                 scale="none",
-                trace="none"
+                trace="none",
+                margins=c(15,15)
 ))
 dev.off() 
