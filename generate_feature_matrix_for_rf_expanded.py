@@ -241,7 +241,7 @@ def write_feature_matrix(editing_levels,structure_dict,outf,source):
         struct_info_keys=list(structure_dict[cur_id].keys())
         editing_level=editing_levels[cur_id]['level']
         if header==None:
-            header=['source_cur_id','editing_level','num_mutations']+mut_info_keys+struct_info_keys
+            header=['cur_id','source','editing_level','num_mutations']+mut_info_keys+struct_info_keys
             header='\t'.join([str(i) for i in header])
             outf.write(header+'\n')
         num_mutations=len(editing_levels[cur_id]['mut'].keys())
@@ -250,7 +250,7 @@ def write_feature_matrix(editing_levels,structure_dict,outf,source):
             struct_info=structure_dict[cur_id]
             if mut_info['mtype']=="wt":
                 num_mutations=0
-            outf.write(source+'_'+str(cur_id)+'\t'+str(editing_level)+'\t'+str(num_mutations))
+            outf.write(str(cur_id)+'\t'+source+'\t'+str(editing_level)+'\t'+str(num_mutations))
             for keyname in mut_info_keys:
                 outf.write('\t'+str(mut_info[keyname]))
             for keyname in struct_info_keys:
