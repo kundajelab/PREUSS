@@ -1,31 +1,52 @@
-knitr::opts_chunk$set(echo = TRUE)
+#!/usr/bin/env Rscript
+
 library(randomForest)
 library(gbm)
 library(reshape2)
 library(ggplot2)
+library(optparse)
 options(warn=-1)
 
 ## Read in user arguments ## 
+option_list=list(
+  make_option(c("--features_mat"),type="character",default=NULL,help="Path to feature matrix",metavar="character"),
+  make_option(c("--output_dir"),type="character",default=".",help="Directory to store output files",metavar="character"),
+  make_option(c("--n_iter",type="numeric",default=10,help="Number of train/test splits to generate for training",metavar="numeric")),
+  make_option(c("--seed",type="numeric",default=1234,help="Random seed integer",metavar="numeric")),
+  make_option(c("--train_split_size",type="numeric",default=.8,help="Fraction of feature matrix entries to use for training",metavar="numeric")),
+  make_option(c("--number_trees",type="numeric",default=500,help="Number of trees to grow in random forest",metavar="numeric")),
+  make_option(c("--n_features_to_plot",type="numeric",default=10,help="N most important features to plot",metavar="numeric"))
+  
+)
+opt_parser=OptionParser(option_list=option_list)
+opt=parse_args(opt_parser)
+output_dir=opt$output_dir
+features_mat=opt$features_mat
+n_iter=opt$n_iter
+seed_int=opt$seed
+train_split_size=opt$train_split_size
+test_split_size=1-train_split_size
+number_trees=opt$number_trees
+n_features_to_plot=opt$n_features_to_plot
 
-
-output_dir="NEIL1_RandomForest"
+##create the output directory if it doesn't exist 
 dir.create(paste(getwd(),output_dir,sep='/'),showWarnings = FALSE)
+
 ##Load Feature Matrix 
-data=read.table("../feature_matrices/NEIL1.features.txt",header=TRUE,sep='\t',row.names = 1)
+data=read.table(features_mat,header=TRUE,sep='\t',row.names = 1)
 data=data[is.na(data$editing_level)==FALSE,]
 
 #set random seed 
-seed_int=1234
 set.seed(seed_int)
 print(paste("seed:",seed_int))
+
 #fill in missing values via imputation 
 data <- na.roughfix(data)
+
 ## Train and Test Splits
+
 #number of iterations of data splitting + random forest 
-n_iter=2
 #define train/test split sizes and number of iterations. 
-train_split_size=0.80
-test_split_size=0.20 
 print(paste("n_iter:",n_iter))
 print(paste("train_split_size:",train_split_size))
 print(paste("test_split_size:",test_split_size))
@@ -64,7 +85,7 @@ for(iter in seq(1,n_iter)){
                       ytest=ytest,
                       keep.forest=TRUE,
                       importance=TRUE,
-                      ntree=500)
+                      ntree=number_trees)
 
   #extract predictions and performance metrics from the random forest 
   predictions_training_data=forest$predicted
@@ -177,7 +198,6 @@ print(importance)
 write.table(importance,file=paste(output_dir,"FeatureImportance.tsv",sep='/'),sep='\t',row.names=TRUE,col.names=TRUE,quote=FALSE)
 
 ## Generate Feature vs Editing Level plots for Top 10 Features 
-n_features_to_plot=10
 for(feature in row.names(importance)[1:n_features_to_plot])
 {
   feat_vals=data[feature]
