@@ -11,6 +11,7 @@ def parse_args():
     parser.add_argument("--outf")
     parser.add_argument("--annotate_bootstraps",action='store_true',default=False)
     parser.add_argument("--approach",default="computational",choices=["computational","experimental"])
+    parser.add_argument("--source",default="NA") 
     return parser.parse_args()
 
 def format_id(rna_id):
@@ -232,7 +233,7 @@ def annotate_structure(editing_levels,bprna_data,approach):
         structure_features[cur_id]['x2feat_downstream_of_edit_site_3prime_cp']=x2feat_downstream_of_edit_site_3prime_cp
     return structure_features,editing_levels 
     
-def write_feature_matrix(editing_levels,structure_dict,outf):
+def write_feature_matrix(editing_levels,structure_dict,outf,source):
     outf=open(outf,'w')
     header=None
     for cur_id in editing_levels.keys():
@@ -240,7 +241,7 @@ def write_feature_matrix(editing_levels,structure_dict,outf):
         struct_info_keys=list(structure_dict[cur_id].keys())
         editing_level=editing_levels[cur_id]['level']
         if header==None:
-            header=['cur_id','editing_level','num_mutations']+mut_info_keys+struct_info_keys
+            header=['source_cur_id','editing_level','num_mutations']+mut_info_keys+struct_info_keys
             header='\t'.join([str(i) for i in header])
             outf.write(header+'\n')
         num_mutations=len(editing_levels[cur_id]['mut'].keys())
@@ -249,7 +250,7 @@ def write_feature_matrix(editing_levels,structure_dict,outf):
             struct_info=structure_dict[cur_id]
             if mut_info['mtype']=="wt":
                 num_mutations=0
-            outf.write(str(cur_id)+'\t'+str(editing_level)+'\t'+str(num_mutations))
+            outf.write(source+'_'+str(cur_id)+'\t'+str(editing_level)+'\t'+str(num_mutations))
             for keyname in mut_info_keys:
                 outf.write('\t'+str(mut_info[keyname]))
             for keyname in struct_info_keys:
@@ -365,8 +366,10 @@ def main():
 
     #annotate computational/experime
     structure_dict,editing_levels_dict=annotate_structure(editing_levels_dict,bprna_data,args.approach)
-    
-    write_feature_matrix(editing_levels_dict,structure_dict,outf)
+    source=args.source
+    if source.__contains__('_'):
+        source=source.replace('_','.') 
+    write_feature_matrix(editing_levels_dict,structure_dict,outf,source)
     
 if __name__=="__main__":
     main()
