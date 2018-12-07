@@ -9,25 +9,33 @@ options(warn=-1)
 
 ## Read in user arguments ## 
 option_list=list(
-  make_option(c("--features_mat"),type="character",default=NULL,help="Path to feature matrix",metavar="character"),
-  make_option(c("--output_dir"),type="character",default=".",help="Directory to store output files",metavar="character"),
-  make_option(c("--n_iter",type="numeric",default=10,help="Number of train/test splits to generate for training",metavar="numeric")),
-  make_option(c("--seed",type="numeric",default=1234,help="Random seed integer",metavar="numeric")),
-  make_option(c("--train_split_size",type="numeric",default=.8,help="Fraction of feature matrix entries to use for training",metavar="numeric")),
-  make_option(c("--number_trees",type="numeric",default=500,help="Number of trees to grow in random forest",metavar="numeric")),
-  make_option(c("--n_features_to_plot",type="numeric",default=10,help="N most important features to plot",metavar="numeric"))
+  make_option(c("--features_mat",type="character",default=NULL,help="Path to feature matrix")),
+  make_option(c("--output_dir",type="character",default=".",help="Directory to store output files")),
+  make_option(c("--n_iter",type="integer",default=10,help="Number of train/test splits to generate for training")),
+  make_option(c("--seed",type="integer",default=1234,help="Random seed integer")),
+  make_option(c("--train_split_size",type="double",default=as.double(0.8),help="Fraction of feature matrix entries to use for training")),
+  make_option(c("--number_trees",type="integer",default=500,help="Number of trees to grow in random forest")),
+  make_option(c("--n_features_to_plot",type="integer",default=10,help="N most important features to plot"))
+ 
   
 )
 opt_parser=OptionParser(option_list=option_list)
 opt=parse_args(opt_parser)
+
+
+if (is.null(opt$features_mat)){
+  print_help(opt_parser)
+    stop("At least one argument must be supplied (input file).n", call.=FALSE)
+    }
+    
 output_dir=opt$output_dir
 features_mat=opt$features_mat
-n_iter=opt$n_iter
-seed_int=opt$seed
-train_split_size=opt$train_split_size
+n_iter=as.integer(opt$n_iter)
+seed_int=as.integer(opt$seed)
+train_split_size=as.double(opt$train_split_size)
 test_split_size=1-train_split_size
-number_trees=opt$number_trees
-n_features_to_plot=opt$n_features_to_plot
+number_trees=as.integer(opt$number_trees)
+n_features_to_plot=as.integer(opt$n_features_to_plot)
 
 ##create the output directory if it doesn't exist 
 dir.create(paste(getwd(),output_dir,sep='/'),showWarnings = FALSE)
