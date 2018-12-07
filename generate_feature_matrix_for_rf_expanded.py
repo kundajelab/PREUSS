@@ -236,6 +236,7 @@ def annotate_structure(editing_levels,bprna_data,approach):
 def write_feature_matrix(editing_levels,structure_dict,outf,source):
     outf=open(outf,'w')
     header=None
+    id_dict=dict() 
     for cur_id in editing_levels.keys():
         mut_info_keys=list(editing_levels[cur_id]['mut'][0].keys())
         struct_info_keys=list(structure_dict[cur_id].keys())
@@ -250,7 +251,7 @@ def write_feature_matrix(editing_levels,structure_dict,outf,source):
             struct_info=structure_dict[cur_id]
             if mut_info['mtype']=="wt":
                 num_mutations=0
-            outf.write(str(cur_id)+'\t'+source+'\t'+str(editing_level)+'\t'+str(num_mutations))
+            outf.write(str(cur_id)+"_"+str(i)+'\t'+source+'\t'+str(editing_level)+'\t'+str(num_mutations))
             for keyname in mut_info_keys:
                 outf.write('\t'+str(mut_info[keyname]))
             for keyname in struct_info_keys:
