@@ -59,8 +59,8 @@ def main():
             var_value=round(variance(all_values),3) 
             var_rank=round(variance(all_ranks),3)
         else:
-            var_value=0
-            var_rank=0 
+            var_value=1000
+            var_rank=1000
         outf.write('\t'+'\t'.join([str(mean_rank),str(mean_value),str(var_rank),str(var_value)])+'\n')
         
 if __name__=="__main__":
