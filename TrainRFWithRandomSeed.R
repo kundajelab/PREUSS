@@ -81,6 +81,10 @@ data=data[colSums(is.na(data)) < nrow(data)]
 #fill in missing values via imputation 
 data <- na.roughfix(data)
 
+#Remove any columns with 0 variance 
+data=data[sapply(data,var)>0]
+
+
 ## Train and Test Splits
 
 #number of iterations of data splitting + random forest 
