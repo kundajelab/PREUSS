@@ -6,6 +6,8 @@ outf=open(sys.argv[1]+'.cleaned','w')
 rna_id_dict=dict()
 outf.write(data[0].replace(',','\t')+'\n')
 for line in data[1::]:
+    while 'None' in line: 
+        line=line.replace('None','NA') 
     tokens=line.split(',')
     cur_id=tokens[0]
     if cur_id not in rna_id_dict:
