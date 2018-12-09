@@ -27,26 +27,56 @@ if (is.null(opt$features_mat)){
   print_help(opt_parser)
     stop("At least one argument must be supplied (input file).n", call.=FALSE)
     }
-    
+if(is.null(opt$output_dir)){
+   output_dir='.'
+}else{
 output_dir=opt$output_dir
-features_mat=opt$features_mat
+}
+    
+if(is.null(opt$n_iter)){
+n_iter=10
+}else{
 n_iter=as.integer(opt$n_iter)
+}
+if(is.null(opt$seed)){
+seed_int=1234
+}else{
 seed_int=as.integer(opt$seed)
+}
+if (is.null(opt$train_split_size)){
+train_split_size=0.8
+}else{
 train_split_size=as.double(opt$train_split_size)
+}
 test_split_size=1-train_split_size
+
+if (is.null(opt$number_trees)){
+number_trees=500
+}else{
 number_trees=as.integer(opt$number_trees)
+}
+if (is.null(opt$n_features_to_plot)){
+n_features_to_plot=10
+}else{
 n_features_to_plot=as.integer(opt$n_features_to_plot)
+}
+features_mat=opt$features_mat
+
+
 
 ##create the output directory if it doesn't exist 
 dir.create(paste(getwd(),output_dir,sep='/'),showWarnings = FALSE)
 
 ##Load Feature Matrix 
 data=read.table(features_mat,header=TRUE,sep='\t',row.names = 1)
-data=data[is.na(data$editing_level)==FALSE,]
+data=data[is.na(data$editing_value)==FALSE,]
 
 #set random seed 
 set.seed(seed_int)
 print(paste("seed:",seed_int))
+
+#drop any columns that are composed of NA entirely
+data=data[colSums(is.na(data)) < nrow(data)]
 
 #fill in missing values via imputation 
 data <- na.roughfix(data)
@@ -82,10 +112,10 @@ for(iter in seq(1,n_iter)){
   train_split=data[train_indices,]
   test_split=data[-train_indices,]
 
-  ytrain=train_split$editing_level
-  xtrain=train_split[,3:ncol(train_split)]
-  ytest=test_split$editing_level
-  xtest=test_split[,3:ncol(test_split)]
+  ytrain=train_split$editing_value
+  xtrain=train_split[,2:ncol(train_split)]
+  ytest=test_split$editing_value
+  xtest=test_split[,2:ncol(test_split)]
 
   forest=randomForest(y=ytrain,
                       x=xtrain,
@@ -209,7 +239,7 @@ write.table(importance,file=paste(output_dir,"FeatureImportance.tsv",sep='/'),se
 for(feature in row.names(importance)[1:n_features_to_plot])
 {
   feat_vals=data[feature]
-  editing_vals=data$editing_level
+  editing_vals=data$editing_value
   feat_df=data.frame(feat_vals,editing_vals)
   names(feat_df)=c("FeatureValue","EditingLevel")
   p6=ggplot(data=feat_df,

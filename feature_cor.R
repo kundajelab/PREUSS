@@ -66,7 +66,7 @@ print(heatmap.2(as.matrix(spearman_cor$r),
           Colv=TRUE,
           scale="none",
           trace="none",
-          margins = c(15,15)
+          margins = c(20,20)
           ))
 dev.off() 
 
@@ -77,6 +77,6 @@ print(heatmap.2(as.matrix(pearson_cor$r),
                 Colv=TRUE,
                 scale="none",
                 trace="none",
-                margins=c(15,15)
+                margins=c(20,20)
 ))
 dev.off() 

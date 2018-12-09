@@ -16,18 +16,22 @@ options(warn=-1)
 ```
 
 ```{r output_dir,include=FALSE}
-output_dir="NEIL1_RandomForest"
+output_dir="xin_neil1"
 dir.create(paste(getwd(),output_dir,sep='/'),showWarnings = FALSE)
 ```
 ##Load Feature Matrix 
 ```{r joint_train,echo=FALSE, warning=FALSE,warning=FALSE}
-data=read.table("../feature_matrices/NEIL1.features.txt",header=TRUE,sep='\t',row.names = 1)
-data=data[is.na(data$editing_level)==FALSE,]
+data=read.table("xin_feature_matrices/neil1_computational.features.csv.cleaned",header=TRUE,sep='\t',row.names = 1)
+data=data[is.na(data$editing_value)==FALSE,]
 
 #set random seed 
 seed_int=1234
 set.seed(seed_int)
 print(paste("seed:",seed_int))
+
+#drop any columns that are composed of NA entirely 
+data=data[colSums(is.na(data)) < nrow(data)]
+
 #fill in missing values via imputation 
 data <- na.roughfix(data)
 ```
@@ -35,7 +39,7 @@ data <- na.roughfix(data)
 ## Train and Test Splits
 ```{r generate_splits,echo=FALSE, warning=FALSE}
 #number of iterations of data splitting + random forest 
-n_iter=2
+n_iter=10
 #define train/test split sizes and number of iterations. 
 train_split_size=0.80
 test_split_size=0.20 
@@ -73,10 +77,10 @@ for(iter in seq(1,n_iter)){
   train_split=data[train_indices,]
   test_split=data[-train_indices,]
 
-  ytrain=train_split$editing_level
-  xtrain=train_split[,3:ncol(train_split)]
-  ytest=test_split$editing_level
-  xtest=test_split[,3:ncol(test_split)]
+  ytrain=train_split$editing_value
+  xtrain=train_split[,2:ncol(train_split)]
+  ytest=test_split$editing_value
+  xtest=test_split[,2:ncol(test_split)]
 
   forest=randomForest(y=ytrain,
                       x=xtrain,
@@ -213,7 +217,7 @@ n_features_to_plot=10
 for(feature in row.names(importance)[1:n_features_to_plot])
 {
   feat_vals=data[feature]
-  editing_vals=data$editing_level
+  editing_vals=data$editing_value
   feat_df=data.frame(feat_vals,editing_vals)
   names(feat_df)=c("FeatureValue","EditingLevel")
   p6=ggplot(data=feat_df,
