@@ -128,7 +128,7 @@ for(iter in seq(1,n_iter)){
   #extract predictions and performance metrics from the random forest 
   predictions_training_data=forest$predicted
   predictions_test_data=forest$test$predicted
-  feat_importance=forest$importance
+  feat_importance=importance(forest)
   train_mse_iter=mean(forest$mse)
   train_var_explained_iter=mean(forest$rsq)
   test_mse_iter=mean(forest$test$mse)
@@ -230,10 +230,10 @@ write.table(v_test,file=paste(output_dir,"TestDataPerformance.tsv",sep='/'),col.
 
 ## Merge the forests into one ensembl to calculate feature importance 
 all_forests=do.call(combine,forests)
-importance=all_forests$importance
-print(importance)
+combined_importance=importance(all_forests)
+print(combined_importance)
 #varImpPlot(all_forests,n.var=10,main="Feature Rank (top 10) from Ensemble of Random Forests")
-write.table(importance,file=paste(output_dir,"FeatureImportance.tsv",sep='/'),sep='\t',row.names=TRUE,col.names=TRUE,quote=FALSE)
+write.table(combined_importance,file=paste(output_dir,"FeatureImportance.tsv",sep='/'),sep='\t',row.names=TRUE,col.names=TRUE,quote=FALSE)
 
 ## Generate Feature vs Editing Level plots for Top 10 Features 
 for(feature in row.names(importance)[1:n_features_to_plot])
