@@ -1,0 +1,7 @@
+run the script: https://github.com/kundajelab/adar_editing/blob/master/2dGraphs/convert_bpRNA_to_2dGraph.sh to fully annotate a bpRNA pickle for any given substrate. This will generate 3 output files:
+
+https://github.com/kundajelab/adar_editing/blob/master/2dGraphs/NEIL1.Combined.distance.tsv.gz --> shortest path from each node in an isoform to all other nodes in the isoform (first column in output is the isoform, second column is 1-based position of first node, 2nd column is 1-based position of 2nd node, 3rd column is the length of the shortest path between the 2 nodes)
+
+https://github.com/kundajelab/adar_editing/blob/master/2dGraphs/NEIL1.Combined.nodes.tsv.gz --> isoform id , node index (1-based), base call at position, structure at position
+
+https://github.com/kundajelab/adar_editing/blob/master/2dGraphs/NEIL1.Combined.edges.tsv.gz --> isoform id, first node, second node for all nodes that have an "edge" between them
