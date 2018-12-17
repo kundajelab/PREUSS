@@ -8,9 +8,11 @@ class Graph():
         self.weights has all the weights between two nodes,
         with the two nodes as a tuple as the key
         e.g. {('X', 'A'): 7, ('X', 'B'): 2, ...}
+        self.nodes is a dict with key equal to sequence position; value is a tuple of sequence character and corresponding structure value 
         """
         self.edges = defaultdict(list)
         self.weights = {}
+        self.nodes={}
         
     def add_edge(self, from_node, to_node, weight):
         # Note: assumes edges are bi-directional

@@ -3,7 +3,8 @@ python generate_feature_matrix_for_rf_expanded.py --rna_lib_structure_summary_js
        --bpRNA_pickle /srv/scratch/annashch/adar_editing/bpRNA_wrapper/NEIL1.bpRNA.pkl \
        --outf NEIL1.features.txt \
        --approach computational \
-       --source NEIL1
+       --source NEIL1 \
+       --calculate_2d_distance
 echo "DONE NEIL1"
 
 echo "NEIL1 SHAPEMAPPER" 
@@ -11,7 +12,8 @@ python generate_feature_matrix_for_rf_expanded.py --rna_lib_structure_summary_js
        --bpRNA_pickle /srv/scratch/annashch/adar_editing/bpRNA_wrapper/NEIL1.SHAPEMAPPER2.bpRNA.pkl \
        --outf NEIL1.SHAPEMAPPER2.features.txt \
        --approach computational \
-       --source NEIL1.SHAPEMAPPER
+       --source NEIL1.SHAPEMAPPER \
+       --calculate_2d_distance
 echo "DONE NEIL1 SHAPEMAPPER"
 
 echo "TTYH2.BC" 
@@ -19,7 +21,8 @@ python generate_feature_matrix_for_rf_expanded.py --rna_lib_structure_summary_js
        --bpRNA_pickle /srv/scratch/annashch/adar_editing/bpRNA_wrapper/TTYH2.BC.bpRNA.pkl \
        --outf TTYH2.BC.features.txt \
        --approach computational \
-       --source TTYH2.BC
+       --source TTYH2.BC \
+       --calculate_2d_distance
 echo "DONE TTYH2.BC"
 
 echo "TTYH2.ECS"
@@ -27,7 +30,8 @@ python generate_feature_matrix_for_rf_expanded.py --rna_lib_structure_summary_js
        --bpRNA_pickle /srv/scratch/annashch/adar_editing/bpRNA_wrapper/TTYH2.ECS.bpRNA.pkl \
        --outf TTYH2.ECS.features.txt \
        --approach computational \
-       --source TTYH2.ECS
+       --source TTYH2.ECS \
+       --calculate_2d_distance
 echo "DONE TTYH2.ECS"
 
 echo "AJUBA" 
@@ -35,5 +39,7 @@ python generate_feature_matrix_for_rf_expanded.py --rna_lib_structure_summary_js
        --bpRNA_pickle /srv/scratch/annashch/adar_editing/bpRNA_wrapper/AJUBA.bpRNA.pkl \
        --outf AJUBA.features.txt \
        --approach computational \
-       --source AJUBA
+       --source AJUBA \
+       --calculate_2d_distance
 echo "DONE AJUBA" 
+

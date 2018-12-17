@@ -3,6 +3,10 @@ import pickle
 import pdb
 import json 
 import argparse
+#import functions for calculation of 2d distance
+import sys
+sys.path.append("2dGraphs")
+from convert_bpRNA_to_2dGraph import * 
 
 def parse_args():
     parser=argparse.ArgumentParser(description="generate feature matrix for adar edited RNA")
@@ -11,7 +15,8 @@ def parse_args():
     parser.add_argument("--outf")
     parser.add_argument("--annotate_bootstraps",action='store_true',default=False)
     parser.add_argument("--approach",default="computational",choices=["computational","experimental"])
-    parser.add_argument("--source",default="NA") 
+    parser.add_argument("--source",default="NA")
+    parser.add_argument("--calculate_2d_distance",action='store_true',default=False)
     return parser.parse_args()
 
 def format_id(rna_id):
@@ -138,7 +143,7 @@ def get_downstream_nonstem_info(features,editing_site,annotation):
         ,x1feat_downstream_of_edit_site_3prime_cp \
         ,feat_end
 
-def annotate_structure(editing_levels,bprna_data,approach):
+def annotate_structure(editing_levels,bprna_data,approach,calculate_2d_distance):
     '''
     For each mutation: 
         mfeat
@@ -149,6 +154,7 @@ def annotate_structure(editing_levels,bprna_data,approach):
     editing_feature
     hairping_length
     stem_length
+    mp_2d_dist_to_edit --> 2d distance of mutation position to the editing site 
 
     x1feat_downstream_of_edit_site,
     x1feat_downstream_of_edit_site_length_editing_strand,
@@ -184,22 +190,34 @@ def annotate_structure(editing_levels,bprna_data,approach):
         stem_length=get_structure_length(features,editing_site,'S') 
         #get the hairpin length
         hairpin_length=get_structure_length(features,editing_site,'H')
+
+        #if 2D distance is requested, represent the bpRNA data as a 2D graph
+        cur_graph=None
+        if(calculate_2d_distance==True):
+            cur_graph=get_graph_representation(bprna_data[cur_id],approach)
+            
         for i in range(len(editing_levels[cur_id]['mut'].keys())):
             mfeat=None
             mfeat_prev=None
             mfeat_next=None
             mfeat_same_as_edit=None
-        
+            mp_2d_dist_to_edit=None
+            
             #Annotate current mutation 
             #SHIFT mp to 0-indexing as well
             mp=editing_levels[cur_id]['mut'][i]['mp']
             if mp!=None:
                 mp=int(mp)-1
                 mfeat,mfeat_prev,mfeat_next,mfeat_same_as_edit=get_bprna_feature_labels(mp,features,editing_site)
+                #get 2d distance between editing site and mp
+                if cur_graph!=None:
+                    shortest_path_edit_mp,mp_2d_dist_to_edit=dijkstra(cur_graph,editing_site,mp)
+                    
             editing_levels[cur_id]['mut'][i]['mfeat']=mfeat
             editing_levels[cur_id]['mut'][i]['mfeat_prev']=mfeat_prev
             editing_levels[cur_id]['mut'][i]['mfeat_next']=mfeat_next
             editing_levels[cur_id]['mut'][i]['mfeat_same_as_edit']=mfeat_same_as_edit
+            editing_levels[cur_id]['mut'][i]['mp_2d_dist_to_edit']=mp_2d_dist_to_edit
                         
             
         #length of internal loop downstream of editing site, type of loop, closing pair 
@@ -365,8 +383,8 @@ def main():
         annotation_base_in_stem_freq(editing_levels_dict,bprna_data,outf,'H')
     
 
-    #annotate computational/experime
-    structure_dict,editing_levels_dict=annotate_structure(editing_levels_dict,bprna_data,args.approach)
+    #annotate computational/experimental
+    structure_dict,editing_levels_dict=annotate_structure(editing_levels_dict,bprna_data,args.approach,args.calculate_2d_distance)
     source=args.source
     if source.__contains__('_'):
         source=source.replace('_','.') 

@@ -1,7 +1,9 @@
 from Graph import *
+import pdb
 
 def dijkstra(graph,initial,end):
     #shortest path is a dict of nodes whose value is tuple (prev node, weight)
+    #pdb.set_trace() 
     shortest_paths={initial:(None,0)}
     current_node=initial
     visited=set([])
@@ -22,13 +24,13 @@ def dijkstra(graph,initial,end):
             return "Route impossible between start node:"+str(initial)+" and " +str(end)
         #next node is the destination with the lowest weight
         current_node=min(next_destinations,key=lambda k: next_destinations[k][1])
-        # Work back through destinations in shortest path
-        path = []
-        while current_node is not None:
-            path.append(current_node)
-            next_node = shortest_paths[current_node][0]
-            current_node = next_node
-        # Reverse path
-        path = path[::-1]
-        return path, len(path)
+    # Work back through destinations in shortest path
+    path = []
+    while current_node is not None:
+        path.append(current_node)
+        next_node = shortest_paths[current_node][0]
+        current_node = next_node
+    # Reverse path
+    path = path[::-1]
+    return path, len(path)
     
