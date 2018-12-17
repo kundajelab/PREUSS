@@ -1,328 +1,328 @@
-cur_id	editing_level	num_mutations	mp	adist	mref	malt	mtype	mfeat	mfeat_prev	mfeat_next	mfeat_same_as_edit	editing_feature	stem_length	hairpin_length	x1feat_downstream_of_edit_site	x1feat_downstream_of_edit_site_length_editing_strand	x1feat_downstream_of_edit_site_length_complementary_strand	x1feat_downstream_of_edit_site_5prime_cp	x1feat_downstream_of_edit_site_3prime_cp	x2feat_downstream_of_edit_site	x2feat_downstream_of_edit_site_length_editing_strand	x2feat_downstream_of_edit_site_length_complementary_strand	x2feat_downstream_of_edit_site_5prime_cp	x2feat_downstream_of_edit_site_3prime_cp
-TTYH_BC_000	0.306	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_001	0.2755	1	79	8	G	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_002	0.3245	1	80	7	G	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_003	0.3885	1	81	6	G	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_004	0.2045	1	82	5	U	A	mismatch	S	H	B	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_005	0.324	1	83	4	G	A	mismatch	S	H	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_006	0.306	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_007	0.1775	1	85	2	C	A	mismatch	I	S	S	1	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
-TTYH_BC_008	0.404	1	86	1	C	A	mismatch	I	S	S	1	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
-TTYH_BC_009	0.21	1	88	-1	G	A	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_010	0.428	1	89	-2	G	A	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_011	0.2585	1	90	-3	G	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_012	0.3165	1	91	-4	C	A	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_013	0.302	1	92	-5	G	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_014	0.2535	1	93	-6	C	A	mismatch	B	S	S	0	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
-TTYH_BC_015	0.329	1	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_016	0.34	1	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_017	0.3055	1	79	8	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_018	0.3225	1	80	7	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_019	0.469	1	81	6	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_020	0.4825	1	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_021	0.366	1	84	3	A	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_022	0.212	1	85	2	C	U	mismatch	S	I	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_023	0.149	1	86	1	C	U	mismatch	S	I	I	0	I	2	8	I	1	1	U:G	C:G	I	1	1	U:G	C:G
-TTYH_BC_024	0.1785	1	88	-1	G	U	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_025	0.303	1	89	-2	G	U	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_026	0.255	1	90	-3	G	U	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_027	0.285	1	91	-4	C	U	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_028	0.2575	1	92	-5	G	U	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_029	0.3795	1	93	-6	C	U	mismatch	S	B	E	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_030	0.232	1	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_031	0.2975	1	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_032	0.1805	1	81	6	G	C	mismatch	S	H	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_033	0.3035	1	82	5	U	C	mismatch	S	H	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_034	0.405	1	83	4	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_035	0.4315	1	84	3	A	C	mismatch	S	H	I	0	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_036	0.0345	1	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_037	0.2115	1	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_038	0.178	1	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_039	0.2125	1	92	-5	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_040	0.331	1	94	-7	U	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_041	0.3995	1	95	-8	U	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_042	0.538	1	82	5	U	G	mismatch	S	H	B	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_043	0.0765	1	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_044	0.568	1	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_045	0.3175	1	91	-4	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_046	0.253	1	93	-6	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_047	0.3925	1	94	-7	U	G	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_048	0.4835	1	95	-8	U	G	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_049	0.349	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_049	0.349	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_050	0.201	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_050	0.201	2	81	6	G	C	mismatch	S	I	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_051	0.294	2	79	8	G	C	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_051	0.294	2	82	5	U	G	mismatch	S	B	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_052	0.3525	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_052	0.3525	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_053	0.383	2	79	8	G	C	mismatch	I	S	S	0	I	6	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_053	0.383	2	84	3	A	C	mismatch	S	I	I	0	I	6	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_054	0.055	2	79	8	G	C	mismatch	I	S	S	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_054	0.055	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_055	0.1295	2	79	8	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_055	0.1295	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_056	0.011	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_056	0.011	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_057	0.2515	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_057	0.2515	2	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_058	0.168	2	79	8	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_058	0.168	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_059	0.324	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_059	0.324	2	91	-4	C	U	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_060	0.1005	2	79	8	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_060	0.1005	2	92	-5	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_061	None	2	79	8	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_061	None	2	93	-6	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_062	0.3215	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_062	0.3215	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_063	0.28	2	79	8	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_063	0.28	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_064	0.2405	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_064	0.2405	2	81	6	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_065	0.3615	2	80	7	G	C	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_065	0.3615	2	82	5	U	G	mismatch	S	B	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_066	0.3895	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_066	0.3895	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_067	0.3695	2	80	7	G	C	mismatch	I	S	S	0	I	5	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_067	0.3695	2	84	3	A	C	mismatch	S	I	I	0	I	5	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_068	0.047	2	80	7	G	C	mismatch	I	S	S	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_068	0.047	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_069	0.145	2	80	7	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_069	0.145	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_070	0.0085	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_070	0.0085	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_071	0.266	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_071	0.266	2	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_072	0.1715	2	80	7	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_072	0.1715	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_073	0.3275	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_073	0.3275	2	91	-4	C	U	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_074	0.1505	2	80	7	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_074	0.1505	2	92	-5	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_075	None	2	80	7	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_075	None	2	93	-6	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_076	0.319	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_076	0.319	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_077	0.3235	2	80	7	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_077	0.3235	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_078	0.255	2	81	6	G	C	mismatch	S	H	B	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_078	0.255	2	82	5	U	G	mismatch	S	H	B	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_079	0.2695	2	81	6	G	C	mismatch	S	H	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_079	0.2695	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_080	0.251	2	81	6	G	C	mismatch	S	H	I	0	I	3	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_080	0.251	2	84	3	A	C	mismatch	S	I	I	0	I	3	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_081	0.084	2	81	6	G	C	mismatch	S	H	B	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_081	0.084	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_082	0.0015	2	81	6	G	C	mismatch	S	H	I	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_082	0.0015	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_083	0.001	2	81	6	G	C	mismatch	S	H	I	0	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_083	0.001	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_084	0.1465	2	81	6	G	C	mismatch	I	S	S	0	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_084	0.1465	2	89	-2	G	C	mismatch	S	I	I	1	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_085	0.081	2	81	6	G	C	mismatch	S	H	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_085	0.081	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_086	0.273	2	81	6	G	C	mismatch	S	H	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_086	0.273	2	91	-4	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_087	0.111	2	81	6	G	C	mismatch	S	H	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_087	0.111	2	92	-5	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_088	0.086	2	81	6	G	C	mismatch	S	H	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_088	0.086	2	93	-6	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_089	0.268	2	81	6	G	C	mismatch	S	H	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_089	0.268	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_090	0.267	2	81	6	G	C	mismatch	S	H	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_090	0.267	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_091	0.3525	2	82	5	U	G	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_091	0.3525	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_092	0.2885	2	82	5	U	G	mismatch	S	H	I	0	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_092	0.2885	2	84	3	A	C	mismatch	S	H	I	0	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_093	0.0845	2	82	5	U	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_093	0.0845	2	85	2	C	G	mismatch	S	I	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_094	0.0625	2	82	5	U	G	mismatch	S	H	I	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_094	0.0625	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_095	0.0005	2	82	5	U	G	mismatch	S	H	B	0	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_095	0.0005	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_096	0.2065	2	82	5	U	G	mismatch	B	S	S	0	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_096	0.2065	2	89	-2	G	C	mismatch	S	B	I	1	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_097	0.1745	2	82	5	U	G	mismatch	S	H	B	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_097	0.1745	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_098	0.272	2	82	5	U	G	mismatch	S	H	B	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_098	0.272	2	91	-4	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_099	0.209	2	82	5	U	G	mismatch	S	H	B	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_099	0.209	2	92	-5	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_100	None	2	82	5	U	G	mismatch	S	H	B	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_100	None	2	93	-6	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_101	0.4405	2	82	5	U	G	mismatch	S	H	B	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_101	0.4405	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_102	0.3265	2	82	5	U	G	mismatch	S	H	B	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_102	0.3265	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_103	0.5645	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_103	0.5645	2	84	3	A	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_104	0.094	2	83	4	G	U	mismatch	S	B	I	0	I	4	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_104	0.094	2	85	2	C	G	mismatch	S	B	I	0	I	4	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_105	0.182	2	83	4	G	U	mismatch	I	S	S	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_105	0.182	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_106	0.004	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_106	0.004	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_107	0.2885	2	83	4	G	U	mismatch	B	S	S	0	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_107	0.2885	2	89	-2	G	C	mismatch	S	B	I	1	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_108	0.1675	2	83	4	G	U	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_108	0.1675	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_109	0.2525	2	83	4	G	U	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_109	0.2525	2	91	-4	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_110	0.121	2	83	4	G	U	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_110	0.121	2	92	-5	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_111	0.2775	2	83	4	G	U	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_111	0.2775	2	93	-6	C	G	mismatch	S	B	E	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_112	0.445	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_112	0.445	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_113	0.453	2	83	4	G	U	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_113	0.453	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_114	0.051	2	84	3	A	C	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_114	0.051	2	85	2	C	G	mismatch	S	B	I	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_115	0.2005	2	84	3	A	C	mismatch	S	H	B	0	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_115	0.2005	2	86	1	C	G	mismatch	S	H	B	0	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_116	0.007	2	84	3	A	C	mismatch	S	H	I	0	I	24	8	I	3	1	C:G	C:G	I	3	1	C:G	C:G
-TTYH_BC_116	0.007	2	88	-1	G	C	mismatch	I	S	S	1	I	24	8	I	3	1	C:G	C:G	I	3	1	C:G	C:G
-TTYH_BC_117	0.203	2	84	3	A	C	mismatch	S	H	I	0	I	24	8	I	6	4	C:G	C:G	I	6	4	C:G	C:G
-TTYH_BC_117	0.203	2	89	-2	G	C	mismatch	I	S	S	1	I	24	8	I	6	4	C:G	C:G	I	6	4	C:G	C:G
-TTYH_BC_118	0.1305	2	84	3	A	C	mismatch	S	H	B	0	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
-TTYH_BC_118	0.1305	2	90	-3	G	C	mismatch	I	S	S	0	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
-TTYH_BC_119	0.229	2	84	3	A	C	mismatch	S	H	B	0	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
-TTYH_BC_119	0.229	2	91	-4	C	G	mismatch	S	B	E	0	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
-TTYH_BC_120	0.1145	2	84	3	A	C	mismatch	S	H	I	0	I	24	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_120	0.1145	2	92	-5	G	C	mismatch	B	S	S	0	I	24	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_121	0.233	2	84	3	A	C	mismatch	S	H	B	0	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
-TTYH_BC_121	0.233	2	93	-6	C	G	mismatch	S	B	E	0	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
-TTYH_BC_122	0.4365	2	84	3	A	C	mismatch	S	H	I	0	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_122	0.4365	2	94	-7	U	A	mismatch	I	S	S	0	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_123	0.395	2	84	3	A	C	mismatch	S	H	I	0	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_123	0.395	2	95	-8	U	A	mismatch	I	S	S	0	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_124	0.062	2	85	2	C	G	mismatch	S	B	I	0	I	2	8	I	2	2	G:C	C:G	I	2	2	G:C	C:G
-TTYH_BC_124	0.062	2	86	1	C	G	mismatch	I	S	S	1	I	2	8	I	2	2	G:C	C:G	I	2	2	G:C	C:G
-TTYH_BC_125	0.0005	2	85	2	C	G	mismatch	S	B	B	0	B	3	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
-TTYH_BC_125	0.0005	2	88	-1	G	C	mismatch	S	B	I	0	B	3	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
-TTYH_BC_126	0.0165	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	5	5	C:G	C:G	I	5	5	C:G	C:G
-TTYH_BC_126	0.0165	2	89	-2	G	C	mismatch	I	S	S	1	I	3	8	I	5	5	C:G	C:G	I	5	5	C:G	C:G
-TTYH_BC_127	0.0275	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_127	0.0275	2	90	-3	G	C	mismatch	I	S	S	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_128	0.2635	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_128	0.2635	2	91	-4	C	G	mismatch	S	I	E	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_129	0.018	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_129	0.018	2	92	-5	G	C	mismatch	I	S	S	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_130	0.063	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_130	0.063	2	93	-6	C	G	mismatch	S	B	E	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_131	0.0245	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_131	0.0245	2	94	-7	U	A	mismatch	I	S	S	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_132	0.021	2	85	2	C	G	mismatch	S	B	I	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_132	0.021	2	95	-8	U	A	mismatch	I	S	S	0	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_133	0.0	2	86	1	C	G	mismatch	S	I	I	0	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_133	0.0	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_134	0.0045	2	86	1	C	G	mismatch	B	S	S	0	S	1	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_134	0.0045	2	89	-2	G	C	mismatch	S	B	I	1	S	1	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
-TTYH_BC_135	0.003	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_135	0.003	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_136	0.2655	2	86	1	C	G	mismatch	I	S	S	1	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
-TTYH_BC_136	0.2655	2	91	-4	C	G	mismatch	S	I	E	0	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
-TTYH_BC_137	0.003	2	86	1	C	G	mismatch	S	I	I	0	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
-TTYH_BC_137	0.003	2	92	-5	G	C	mismatch	B	S	S	0	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
-TTYH_BC_138	0.139	2	86	1	C	G	mismatch	S	I	I	0	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
-TTYH_BC_138	0.139	2	93	-6	C	G	mismatch	B	S	S	0	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
-TTYH_BC_139	0.0375	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_139	0.0375	2	94	-7	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_140	0.005	2	86	1	C	G	mismatch	S	I	B	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_140	0.005	2	95	-8	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_141	0.0015	2	88	-1	G	C	mismatch	S	I	I	0	I	21	8	I	5	2	U:G	G:C	I	5	2	U:G	G:C
-TTYH_BC_141	0.0015	2	89	-2	G	C	mismatch	S	I	I	0	I	21	8	I	5	2	U:G	G:C	I	5	2	U:G	G:C
-TTYH_BC_142	0.0345	1	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_143	0.018	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_143	0.018	2	91	-4	C	G	mismatch	S	I	E	0	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_144	0.001	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_144	0.001	2	92	-5	G	C	mismatch	I	S	S	0	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_145	0.0	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_145	0.0	2	93	-6	C	G	mismatch	S	B	E	0	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_146	0.0145	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_146	0.0145	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_147	0.0035	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_147	0.0035	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
-TTYH_BC_148	0.0415	2	89	-2	G	C	mismatch	S	B	I	1	S	2	8	I	1	4	C:G	C:G	I	1	4	C:G	C:G
-TTYH_BC_148	0.0415	2	90	-3	G	C	mismatch	S	B	I	1	S	2	8	I	1	4	C:G	C:G	I	1	4	C:G	C:G
-TTYH_BC_149	0.015	2	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
-TTYH_BC_149	0.015	2	91	-4	C	G	mismatch	S	I	E	0	I	2	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
-TTYH_BC_150	0.108	2	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	6	5	C:G	G:C	I	6	5	C:G	G:C
-TTYH_BC_150	0.108	2	92	-5	G	C	mismatch	I	S	S	1	I	2	8	I	6	5	C:G	G:C	I	6	5	C:G	G:C
-TTYH_BC_151	0.0395	2	89	-2	G	C	mismatch	S	B	B	1	S	2	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
-TTYH_BC_151	0.0395	2	93	-6	C	G	mismatch	S	B	E	0	S	2	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
-TTYH_BC_152	0.217	2	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_152	0.217	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_153	0.1655	2	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_153	0.1655	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_154	0.178	1	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_155	0.1365	2	90	-3	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_155	0.1365	2	92	-5	G	C	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_156	0.116	2	90	-3	G	C	mismatch	S	B	E	0	B	21	8	B	5	0	U:G	G:U	B	5	0	U:G	G:U
-TTYH_BC_156	0.116	2	93	-6	C	G	mismatch	S	B	E	0	B	21	8	B	5	0	U:G	G:U	B	5	0	U:G	G:U
-TTYH_BC_157	0.1205	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_157	0.1205	2	94	-7	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_158	0.0885	2	90	-3	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_158	0.0885	2	95	-8	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_159	0.121	2	91	-4	C	G	mismatch	S	I	B	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_159	0.121	2	92	-5	G	C	mismatch	B	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_160	0.279	2	91	-4	C	G	mismatch	S	B	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_160	0.279	2	93	-6	C	G	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_161	0.0425	2	91	-4	C	G	mismatch	S	B	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_161	0.0425	2	94	-7	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_162	0.045	2	91	-4	C	G	mismatch	S	B	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_162	0.045	2	95	-8	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_163	None	2	92	-5	G	C	mismatch	B	S	S	0	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
-TTYH_BC_163	None	2	93	-6	C	G	mismatch	B	S	S	0	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
-TTYH_BC_164	0.226	2	92	-5	G	C	mismatch	I	S	S	0	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
-TTYH_BC_164	0.226	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
-TTYH_BC_165	0.165	2	92	-5	G	C	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_165	0.165	2	95	-8	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_166	0.1995	2	93	-6	C	G	mismatch	S	B	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_166	0.1995	2	94	-7	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_167	0.081	2	93	-6	C	G	mismatch	S	B	I	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_167	0.081	2	95	-8	U	A	mismatch	I	S	S	0	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
-TTYH_BC_168	0.3655	2	94	-7	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_168	0.3655	2	95	-8	U	A	mismatch	I	S	S	0	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_169	0.0255	2	86	1	C	A	mismatch	I	S	S	1	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
-TTYH_BC_169	0.0255	2	88	-1	G	A	mismatch	I	S	S	1	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
-TTYH_BC_170	0.013	2	86	1	C	A	mismatch	I	S	S	1	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
-TTYH_BC_170	0.013	2	88	-1	G	U	mismatch	I	S	S	1	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
-TTYH_BC_171	0.001	2	86	1	C	A	mismatch	I	S	S	1	I	22	8	I	4	2	G:U	G:C	I	4	2	G:U	G:C
-TTYH_BC_171	0.001	2	88	-1	G	C	mismatch	S	I	I	0	I	22	8	I	4	2	G:U	G:C	I	4	2	G:U	G:C
-TTYH_BC_172	0.0035	2	86	1	C	U	mismatch	S	I	I	0	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
-TTYH_BC_172	0.0035	2	88	-1	G	A	mismatch	I	S	S	1	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
-TTYH_BC_173	0.005	2	86	1	C	U	mismatch	S	I	I	0	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
-TTYH_BC_173	0.005	2	88	-1	G	U	mismatch	I	S	S	1	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
-TTYH_BC_174	0.001	2	86	1	C	U	mismatch	S	I	I	0	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
-TTYH_BC_174	0.001	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
-TTYH_BC_175	0.004	2	86	1	C	G	mismatch	S	I	I	0	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_175	0.004	2	88	-1	G	A	mismatch	I	S	S	1	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_176	0.005	2	86	1	C	G	mismatch	S	I	I	0	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_176	0.005	2	88	-1	G	U	mismatch	I	S	S	1	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_177	0.0	2	86	1	C	G	mismatch	S	I	I	0	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_177	0.0	2	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
-TTYH_BC_178	None	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_179	None	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	2	1	U:G	C:G	I	2	1	U:G	C:G
-TTYH_BC_180	None	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_181	None	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
-TTYH_BC_182	None	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	3	1	C:G	C:G	I	3	1	C:G	C:G
-TTYH_BC_183	None	0	None	None	None	None	wt	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
-TTYH_BC_184	0.0035	5	82	5	U	G	mismatch	S	H	B	0	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_184	0.0035	5	83	4	G	U	mismatch	S	H	B	0	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_184	0.0035	5	84	3	A	C	mismatch	S	H	B	0	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_184	0.0035	5	85	2	C	G	mismatch	S	H	B	0	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_184	0.0035	5	86	1	C	G	mismatch	S	H	B	0	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
-TTYH_BC_185	0.02	3	84	3	A	C	mismatch	S	H	I	0	I	23	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
-TTYH_BC_185	0.02	3	85	2	C	G	mismatch	I	S	S	1	I	23	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
-TTYH_BC_185	0.02	3	86	1	C	G	mismatch	I	S	S	1	I	23	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
-TTYH_BC_186	0.0	5	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
-TTYH_BC_186	0.0	5	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
-TTYH_BC_186	0.0	5	90	-3	G	C	mismatch	I	S	S	1	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
-TTYH_BC_186	0.0	5	91	-4	C	G	mismatch	S	I	B	0	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
-TTYH_BC_186	0.0	5	92	-5	G	C	mismatch	B	S	S	0	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
-TTYH_BC_187	0.0	3	88	-1	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_187	0.0	3	89	-2	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
-TTYH_BC_187	0.0	3	90	-3	G	C	mismatch	I	S	S	1	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+cur_id	source	editing_level	num_mutations	mp	adist	mref	malt	mtype	mfeat	mfeat_prev	mfeat_next	mfeat_same_as_edit	mp_2d_dist_to_edit	editing_feature	stem_length	hairpin_length	x1feat_downstream_of_edit_site	x1feat_downstream_of_edit_site_length_editing_strand	x1feat_downstream_of_edit_site_length_complementary_strand	x1feat_downstream_of_edit_site_5prime_cp	x1feat_downstream_of_edit_site_3prime_cp	x2feat_downstream_of_edit_site	x2feat_downstream_of_edit_site_length_editing_strand	x2feat_downstream_of_edit_site_length_complementary_strand	x2feat_downstream_of_edit_site_5prime_cp	x2feat_downstream_of_edit_site_3prime_cp
+TTYH_BC_000_0	TTYH2.BC	0.306	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_001_0	TTYH2.BC	0.2755	1	79	8	G	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_002_0	TTYH2.BC	0.3245	1	80	7	G	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_003_0	TTYH2.BC	0.3885	1	81	6	G	A	mismatch	I	S	S	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_004_0	TTYH2.BC	0.2045	1	82	5	U	A	mismatch	S	H	B	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_005_0	TTYH2.BC	0.324	1	83	4	G	A	mismatch	S	H	I	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_006_0	TTYH2.BC	0.306	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_007_0	TTYH2.BC	0.1775	1	85	2	C	A	mismatch	I	S	S	1	3	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
+TTYH_BC_008_0	TTYH2.BC	0.404	1	86	1	C	A	mismatch	I	S	S	1	2	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
+TTYH_BC_009_0	TTYH2.BC	0.21	1	88	-1	G	A	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_010_0	TTYH2.BC	0.428	1	89	-2	G	A	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_011_0	TTYH2.BC	0.2585	1	90	-3	G	A	mismatch	I	S	S	0	4	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_012_0	TTYH2.BC	0.3165	1	91	-4	C	A	mismatch	B	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_013_0	TTYH2.BC	0.302	1	92	-5	G	A	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_014_0	TTYH2.BC	0.2535	1	93	-6	C	A	mismatch	B	S	S	0	7	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
+TTYH_BC_015_0	TTYH2.BC	0.329	1	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_016_0	TTYH2.BC	0.34	1	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_017_0	TTYH2.BC	0.3055	1	79	8	G	U	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_018_0	TTYH2.BC	0.3225	1	80	7	G	U	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_019_0	TTYH2.BC	0.469	1	81	6	G	U	mismatch	I	S	S	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_020_0	TTYH2.BC	0.4825	1	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_021_0	TTYH2.BC	0.366	1	84	3	A	U	mismatch	I	S	S	0	4	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_022_0	TTYH2.BC	0.212	1	85	2	C	U	mismatch	S	I	I	0	3	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_023_0	TTYH2.BC	0.149	1	86	1	C	U	mismatch	S	I	I	0	2	I	2	8	I	1	1	U:G	C:G	I	1	1	U:G	C:G
+TTYH_BC_024_0	TTYH2.BC	0.1785	1	88	-1	G	U	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_025_0	TTYH2.BC	0.303	1	89	-2	G	U	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_026_0	TTYH2.BC	0.255	1	90	-3	G	U	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_027_0	TTYH2.BC	0.285	1	91	-4	C	U	mismatch	B	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_028_0	TTYH2.BC	0.2575	1	92	-5	G	U	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_029_0	TTYH2.BC	0.3795	1	93	-6	C	U	mismatch	S	B	E	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_030_0	TTYH2.BC	0.232	1	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_031_0	TTYH2.BC	0.2975	1	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_032_0	TTYH2.BC	0.1805	1	81	6	G	C	mismatch	S	H	I	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_033_0	TTYH2.BC	0.3035	1	82	5	U	C	mismatch	S	H	I	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_034_0	TTYH2.BC	0.405	1	83	4	G	C	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_035_0	TTYH2.BC	0.4315	1	84	3	A	C	mismatch	S	H	I	0	4	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_036_0	TTYH2.BC	0.0345	1	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_037_0	TTYH2.BC	0.2115	1	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_038_0	TTYH2.BC	0.178	1	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_039_0	TTYH2.BC	0.2125	1	92	-5	G	C	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_040_0	TTYH2.BC	0.331	1	94	-7	U	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_041_0	TTYH2.BC	0.3995	1	95	-8	U	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_042_0	TTYH2.BC	0.538	1	82	5	U	G	mismatch	S	H	B	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_043_0	TTYH2.BC	0.0765	1	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_044_0	TTYH2.BC	0.568	1	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_045_0	TTYH2.BC	0.3175	1	91	-4	C	G	mismatch	S	B	E	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_046_0	TTYH2.BC	0.253	1	93	-6	C	G	mismatch	S	B	E	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_047_0	TTYH2.BC	0.3925	1	94	-7	U	G	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_048_0	TTYH2.BC	0.4835	1	95	-8	U	G	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_049_0	TTYH2.BC	0.349	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_049_1	TTYH2.BC	0.349	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_050_0	TTYH2.BC	0.201	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_050_1	TTYH2.BC	0.201	2	81	6	G	C	mismatch	S	I	I	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_051_0	TTYH2.BC	0.294	2	79	8	G	C	mismatch	B	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_051_1	TTYH2.BC	0.294	2	82	5	U	G	mismatch	S	B	I	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_052_0	TTYH2.BC	0.3525	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_052_1	TTYH2.BC	0.3525	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_053_0	TTYH2.BC	0.383	2	79	8	G	C	mismatch	I	S	S	0	9	I	6	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_053_1	TTYH2.BC	0.383	2	84	3	A	C	mismatch	S	I	I	0	4	I	6	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_054_0	TTYH2.BC	0.055	2	79	8	G	C	mismatch	I	S	S	0	9	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_054_1	TTYH2.BC	0.055	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_055_0	TTYH2.BC	0.1295	2	79	8	G	C	mismatch	I	S	S	0	9	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_055_1	TTYH2.BC	0.1295	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_056_0	TTYH2.BC	0.011	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_056_1	TTYH2.BC	0.011	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_057_0	TTYH2.BC	0.2515	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_057_1	TTYH2.BC	0.2515	2	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_058_0	TTYH2.BC	0.168	2	79	8	G	C	mismatch	I	S	S	0	9	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_058_1	TTYH2.BC	0.168	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_059_0	TTYH2.BC	0.324	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_059_1	TTYH2.BC	0.324	2	91	-4	C	U	mismatch	B	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_060_0	TTYH2.BC	0.1005	2	79	8	G	C	mismatch	I	S	S	0	9	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_060_1	TTYH2.BC	0.1005	2	92	-5	G	C	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_061_0	TTYH2.BC	None	2	79	8	G	C	mismatch	I	S	S	0	9	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_061_1	TTYH2.BC	None	2	93	-6	C	G	mismatch	S	B	E	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_062_0	TTYH2.BC	0.3215	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_062_1	TTYH2.BC	0.3215	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_063_0	TTYH2.BC	0.28	2	79	8	G	C	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_063_1	TTYH2.BC	0.28	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_064_0	TTYH2.BC	0.2405	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_064_1	TTYH2.BC	0.2405	2	81	6	G	C	mismatch	I	S	S	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_065_0	TTYH2.BC	0.3615	2	80	7	G	C	mismatch	B	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_065_1	TTYH2.BC	0.3615	2	82	5	U	G	mismatch	S	B	I	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_066_0	TTYH2.BC	0.3895	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_066_1	TTYH2.BC	0.3895	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_067_0	TTYH2.BC	0.3695	2	80	7	G	C	mismatch	I	S	S	0	8	I	5	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_067_1	TTYH2.BC	0.3695	2	84	3	A	C	mismatch	S	I	I	0	4	I	5	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_068_0	TTYH2.BC	0.047	2	80	7	G	C	mismatch	I	S	S	0	8	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_068_1	TTYH2.BC	0.047	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_069_0	TTYH2.BC	0.145	2	80	7	G	C	mismatch	I	S	S	0	8	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_069_1	TTYH2.BC	0.145	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_070_0	TTYH2.BC	0.0085	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_070_1	TTYH2.BC	0.0085	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_071_0	TTYH2.BC	0.266	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_071_1	TTYH2.BC	0.266	2	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_072_0	TTYH2.BC	0.1715	2	80	7	G	C	mismatch	I	S	S	0	8	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_072_1	TTYH2.BC	0.1715	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_073_0	TTYH2.BC	0.3275	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_073_1	TTYH2.BC	0.3275	2	91	-4	C	U	mismatch	B	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_074_0	TTYH2.BC	0.1505	2	80	7	G	C	mismatch	I	S	S	0	8	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_074_1	TTYH2.BC	0.1505	2	92	-5	G	C	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_075_0	TTYH2.BC	None	2	80	7	G	C	mismatch	I	S	S	0	8	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_075_1	TTYH2.BC	None	2	93	-6	C	G	mismatch	S	B	E	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_076_0	TTYH2.BC	0.319	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_076_1	TTYH2.BC	0.319	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_077_0	TTYH2.BC	0.3235	2	80	7	G	C	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_077_1	TTYH2.BC	0.3235	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_078_0	TTYH2.BC	0.255	2	81	6	G	C	mismatch	S	H	B	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_078_1	TTYH2.BC	0.255	2	82	5	U	G	mismatch	S	H	B	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_079_0	TTYH2.BC	0.2695	2	81	6	G	C	mismatch	S	H	I	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_079_1	TTYH2.BC	0.2695	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_080_0	TTYH2.BC	0.251	2	81	6	G	C	mismatch	S	H	I	0	7	I	3	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_080_1	TTYH2.BC	0.251	2	84	3	A	C	mismatch	S	I	I	0	4	I	3	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_081_0	TTYH2.BC	0.084	2	81	6	G	C	mismatch	S	H	B	0	7	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_081_1	TTYH2.BC	0.084	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_082_0	TTYH2.BC	0.0015	2	81	6	G	C	mismatch	S	H	I	0	7	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_082_1	TTYH2.BC	0.0015	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_083_0	TTYH2.BC	0.001	2	81	6	G	C	mismatch	S	H	I	0	7	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_083_1	TTYH2.BC	0.001	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_084_0	TTYH2.BC	0.1465	2	81	6	G	C	mismatch	I	S	S	0	7	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_084_1	TTYH2.BC	0.1465	2	89	-2	G	C	mismatch	S	I	I	1	3	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_085_0	TTYH2.BC	0.081	2	81	6	G	C	mismatch	S	H	I	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_085_1	TTYH2.BC	0.081	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_086_0	TTYH2.BC	0.273	2	81	6	G	C	mismatch	S	H	I	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_086_1	TTYH2.BC	0.273	2	91	-4	C	G	mismatch	S	B	E	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_087_0	TTYH2.BC	0.111	2	81	6	G	C	mismatch	S	H	I	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_087_1	TTYH2.BC	0.111	2	92	-5	G	C	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_088_0	TTYH2.BC	0.086	2	81	6	G	C	mismatch	S	H	I	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_088_1	TTYH2.BC	0.086	2	93	-6	C	G	mismatch	S	B	E	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_089_0	TTYH2.BC	0.268	2	81	6	G	C	mismatch	S	H	I	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_089_1	TTYH2.BC	0.268	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_090_0	TTYH2.BC	0.267	2	81	6	G	C	mismatch	S	H	I	0	7	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_090_1	TTYH2.BC	0.267	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_091_0	TTYH2.BC	0.3525	2	82	5	U	G	mismatch	I	S	S	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_091_1	TTYH2.BC	0.3525	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_092_0	TTYH2.BC	0.2885	2	82	5	U	G	mismatch	S	H	I	0	6	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_092_1	TTYH2.BC	0.2885	2	84	3	A	C	mismatch	S	H	I	0	4	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_093_0	TTYH2.BC	0.0845	2	82	5	U	G	mismatch	S	B	I	0	6	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_093_1	TTYH2.BC	0.0845	2	85	2	C	G	mismatch	S	I	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_094_0	TTYH2.BC	0.0625	2	82	5	U	G	mismatch	S	H	I	0	6	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_094_1	TTYH2.BC	0.0625	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_095_0	TTYH2.BC	0.0005	2	82	5	U	G	mismatch	S	H	B	0	6	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_095_1	TTYH2.BC	0.0005	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_096_0	TTYH2.BC	0.2065	2	82	5	U	G	mismatch	B	S	S	0	6	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_096_1	TTYH2.BC	0.2065	2	89	-2	G	C	mismatch	S	B	I	1	3	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_097_0	TTYH2.BC	0.1745	2	82	5	U	G	mismatch	S	H	B	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_097_1	TTYH2.BC	0.1745	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_098_0	TTYH2.BC	0.272	2	82	5	U	G	mismatch	S	H	B	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_098_1	TTYH2.BC	0.272	2	91	-4	C	G	mismatch	S	B	E	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_099_0	TTYH2.BC	0.209	2	82	5	U	G	mismatch	S	H	B	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_099_1	TTYH2.BC	0.209	2	92	-5	G	C	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_100_0	TTYH2.BC	None	2	82	5	U	G	mismatch	S	H	B	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_100_1	TTYH2.BC	None	2	93	-6	C	G	mismatch	S	B	E	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_101_0	TTYH2.BC	0.4405	2	82	5	U	G	mismatch	S	H	B	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_101_1	TTYH2.BC	0.4405	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_102_0	TTYH2.BC	0.3265	2	82	5	U	G	mismatch	S	H	B	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_102_1	TTYH2.BC	0.3265	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_103_0	TTYH2.BC	0.5645	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_103_1	TTYH2.BC	0.5645	2	84	3	A	C	mismatch	I	S	S	0	4	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_104_0	TTYH2.BC	0.094	2	83	4	G	U	mismatch	S	B	I	0	5	I	4	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_104_1	TTYH2.BC	0.094	2	85	2	C	G	mismatch	S	B	I	0	3	I	4	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_105_0	TTYH2.BC	0.182	2	83	4	G	U	mismatch	I	S	S	0	5	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_105_1	TTYH2.BC	0.182	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_106_0	TTYH2.BC	0.004	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_106_1	TTYH2.BC	0.004	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_107_0	TTYH2.BC	0.2885	2	83	4	G	U	mismatch	B	S	S	0	5	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_107_1	TTYH2.BC	0.2885	2	89	-2	G	C	mismatch	S	B	I	1	3	S	2	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_108_0	TTYH2.BC	0.1675	2	83	4	G	U	mismatch	I	S	S	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_108_1	TTYH2.BC	0.1675	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_109_0	TTYH2.BC	0.2525	2	83	4	G	U	mismatch	I	S	S	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_109_1	TTYH2.BC	0.2525	2	91	-4	C	G	mismatch	S	B	E	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_110_0	TTYH2.BC	0.121	2	83	4	G	U	mismatch	I	S	S	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_110_1	TTYH2.BC	0.121	2	92	-5	G	C	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_111_0	TTYH2.BC	0.2775	2	83	4	G	U	mismatch	I	S	S	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_111_1	TTYH2.BC	0.2775	2	93	-6	C	G	mismatch	S	B	E	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_112_0	TTYH2.BC	0.445	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_112_1	TTYH2.BC	0.445	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_113_0	TTYH2.BC	0.453	2	83	4	G	U	mismatch	I	S	S	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_113_1	TTYH2.BC	0.453	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_114_0	TTYH2.BC	0.051	2	84	3	A	C	mismatch	B	S	S	0	4	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_114_1	TTYH2.BC	0.051	2	85	2	C	G	mismatch	S	B	I	0	3	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_115_0	TTYH2.BC	0.2005	2	84	3	A	C	mismatch	S	H	B	0	4	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_115_1	TTYH2.BC	0.2005	2	86	1	C	G	mismatch	S	H	B	0	2	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_116_0	TTYH2.BC	0.007	2	84	3	A	C	mismatch	S	H	I	0	4	I	24	8	I	3	1	C:G	C:G	I	3	1	C:G	C:G
+TTYH_BC_116_1	TTYH2.BC	0.007	2	88	-1	G	C	mismatch	I	S	S	1	2	I	24	8	I	3	1	C:G	C:G	I	3	1	C:G	C:G
+TTYH_BC_117_0	TTYH2.BC	0.203	2	84	3	A	C	mismatch	S	H	I	0	4	I	24	8	I	6	4	C:G	C:G	I	6	4	C:G	C:G
+TTYH_BC_117_1	TTYH2.BC	0.203	2	89	-2	G	C	mismatch	I	S	S	1	3	I	24	8	I	6	4	C:G	C:G	I	6	4	C:G	C:G
+TTYH_BC_118_0	TTYH2.BC	0.1305	2	84	3	A	C	mismatch	S	H	B	0	4	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
+TTYH_BC_118_1	TTYH2.BC	0.1305	2	90	-3	G	C	mismatch	I	S	S	0	4	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
+TTYH_BC_119_0	TTYH2.BC	0.229	2	84	3	A	C	mismatch	S	H	B	0	4	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
+TTYH_BC_119_1	TTYH2.BC	0.229	2	91	-4	C	G	mismatch	S	B	E	0	5	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
+TTYH_BC_120_0	TTYH2.BC	0.1145	2	84	3	A	C	mismatch	S	H	I	0	4	I	24	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_120_1	TTYH2.BC	0.1145	2	92	-5	G	C	mismatch	B	S	S	0	6	I	24	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_121_0	TTYH2.BC	0.233	2	84	3	A	C	mismatch	S	H	B	0	4	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
+TTYH_BC_121_1	TTYH2.BC	0.233	2	93	-6	C	G	mismatch	S	B	E	0	7	B	24	8	B	2	0	C:G	G:C	B	2	0	C:G	G:C
+TTYH_BC_122_0	TTYH2.BC	0.4365	2	84	3	A	C	mismatch	S	H	I	0	4	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_122_1	TTYH2.BC	0.4365	2	94	-7	U	A	mismatch	I	S	S	0	8	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_123_0	TTYH2.BC	0.395	2	84	3	A	C	mismatch	S	H	I	0	4	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_123_1	TTYH2.BC	0.395	2	95	-8	U	A	mismatch	I	S	S	0	9	I	24	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_124_0	TTYH2.BC	0.062	2	85	2	C	G	mismatch	S	B	I	0	3	I	2	8	I	2	2	G:C	C:G	I	2	2	G:C	C:G
+TTYH_BC_124_1	TTYH2.BC	0.062	2	86	1	C	G	mismatch	I	S	S	1	2	I	2	8	I	2	2	G:C	C:G	I	2	2	G:C	C:G
+TTYH_BC_125_0	TTYH2.BC	0.0005	2	85	2	C	G	mismatch	S	B	B	0	3	B	3	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
+TTYH_BC_125_1	TTYH2.BC	0.0005	2	88	-1	G	C	mismatch	S	B	I	0	2	B	3	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
+TTYH_BC_126_0	TTYH2.BC	0.0165	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	5	5	C:G	C:G	I	5	5	C:G	C:G
+TTYH_BC_126_1	TTYH2.BC	0.0165	2	89	-2	G	C	mismatch	I	S	S	1	3	I	3	8	I	5	5	C:G	C:G	I	5	5	C:G	C:G
+TTYH_BC_127_0	TTYH2.BC	0.0275	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_127_1	TTYH2.BC	0.0275	2	90	-3	G	C	mismatch	I	S	S	0	4	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_128_0	TTYH2.BC	0.2635	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_128_1	TTYH2.BC	0.2635	2	91	-4	C	G	mismatch	S	I	E	0	5	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_129_0	TTYH2.BC	0.018	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_129_1	TTYH2.BC	0.018	2	92	-5	G	C	mismatch	I	S	S	0	6	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_130_0	TTYH2.BC	0.063	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_130_1	TTYH2.BC	0.063	2	93	-6	C	G	mismatch	S	B	E	0	7	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_131_0	TTYH2.BC	0.0245	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_131_1	TTYH2.BC	0.0245	2	94	-7	U	A	mismatch	I	S	S	0	8	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_132_0	TTYH2.BC	0.021	2	85	2	C	G	mismatch	S	B	I	0	3	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_132_1	TTYH2.BC	0.021	2	95	-8	U	A	mismatch	I	S	S	0	9	I	3	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_133_0	TTYH2.BC	0.0	2	86	1	C	G	mismatch	S	I	I	0	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_133_1	TTYH2.BC	0.0	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_134_0	TTYH2.BC	0.0045	2	86	1	C	G	mismatch	B	S	S	0	2	S	1	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_134_1	TTYH2.BC	0.0045	2	89	-2	G	C	mismatch	S	B	I	1	3	S	1	8	I	2	5	C:G	C:G	I	2	5	C:G	C:G
+TTYH_BC_135_0	TTYH2.BC	0.003	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_135_1	TTYH2.BC	0.003	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_136_0	TTYH2.BC	0.2655	2	86	1	C	G	mismatch	I	S	S	1	2	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
+TTYH_BC_136_1	TTYH2.BC	0.2655	2	91	-4	C	G	mismatch	S	I	E	0	5	I	22	8	I	4	3	G:U	C:G	I	4	3	G:U	C:G
+TTYH_BC_137_0	TTYH2.BC	0.003	2	86	1	C	G	mismatch	S	I	I	0	2	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
+TTYH_BC_137_1	TTYH2.BC	0.003	2	92	-5	G	C	mismatch	B	S	S	0	6	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
+TTYH_BC_138_0	TTYH2.BC	0.139	2	86	1	C	G	mismatch	S	I	I	0	2	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
+TTYH_BC_138_1	TTYH2.BC	0.139	2	93	-6	C	G	mismatch	B	S	S	0	7	I	2	8	I	1	1	G:C	C:G	I	1	1	G:C	C:G
+TTYH_BC_139_0	TTYH2.BC	0.0375	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_139_1	TTYH2.BC	0.0375	2	94	-7	U	A	mismatch	I	S	S	0	8	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_140_0	TTYH2.BC	0.005	2	86	1	C	G	mismatch	S	I	B	0	2	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_140_1	TTYH2.BC	0.005	2	95	-8	U	A	mismatch	I	S	S	0	9	B	2	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_141_0	TTYH2.BC	0.0015	2	88	-1	G	C	mismatch	S	I	I	0	2	I	21	8	I	5	2	U:G	G:C	I	5	2	U:G	G:C
+TTYH_BC_141_1	TTYH2.BC	0.0015	2	89	-2	G	C	mismatch	S	I	I	0	3	I	21	8	I	5	2	U:G	G:C	I	5	2	U:G	G:C
+TTYH_BC_142_0	TTYH2.BC	0.0345	1	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_143_0	TTYH2.BC	0.018	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_143_1	TTYH2.BC	0.018	2	91	-4	C	G	mismatch	S	I	E	0	5	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_144_0	TTYH2.BC	0.001	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_144_1	TTYH2.BC	0.001	2	92	-5	G	C	mismatch	I	S	S	0	6	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_145_0	TTYH2.BC	0.0	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_145_1	TTYH2.BC	0.0	2	93	-6	C	G	mismatch	S	B	E	0	7	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_146_0	TTYH2.BC	0.0145	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_146_1	TTYH2.BC	0.0145	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_147_0	TTYH2.BC	0.0035	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_147_1	TTYH2.BC	0.0035	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	2	2	C:G	C:G	I	2	2	C:G	C:G
+TTYH_BC_148_0	TTYH2.BC	0.0415	2	89	-2	G	C	mismatch	S	B	I	1	3	S	2	8	I	1	4	C:G	C:G	I	1	4	C:G	C:G
+TTYH_BC_148_1	TTYH2.BC	0.0415	2	90	-3	G	C	mismatch	S	B	I	1	4	S	2	8	I	1	4	C:G	C:G	I	1	4	C:G	C:G
+TTYH_BC_149_0	TTYH2.BC	0.015	2	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
+TTYH_BC_149_1	TTYH2.BC	0.015	2	91	-4	C	G	mismatch	S	I	E	0	5	I	2	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
+TTYH_BC_150_0	TTYH2.BC	0.108	2	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	6	5	C:G	G:C	I	6	5	C:G	G:C
+TTYH_BC_150_1	TTYH2.BC	0.108	2	92	-5	G	C	mismatch	I	S	S	1	6	I	2	8	I	6	5	C:G	G:C	I	6	5	C:G	G:C
+TTYH_BC_151_0	TTYH2.BC	0.0395	2	89	-2	G	C	mismatch	S	B	B	1	3	S	2	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
+TTYH_BC_151_1	TTYH2.BC	0.0395	2	93	-6	C	G	mismatch	S	B	E	0	7	S	2	8	B	1	0	C:G	C:G	B	1	0	C:G	C:G
+TTYH_BC_152_0	TTYH2.BC	0.217	2	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_152_1	TTYH2.BC	0.217	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_153_0	TTYH2.BC	0.1655	2	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_153_1	TTYH2.BC	0.1655	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_154_0	TTYH2.BC	0.178	1	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_155_0	TTYH2.BC	0.1365	2	90	-3	G	C	mismatch	I	S	S	0	4	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_155_1	TTYH2.BC	0.1365	2	92	-5	G	C	mismatch	I	S	S	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_156_0	TTYH2.BC	0.116	2	90	-3	G	C	mismatch	S	B	E	0	4	B	21	8	B	5	0	U:G	G:U	B	5	0	U:G	G:U
+TTYH_BC_156_1	TTYH2.BC	0.116	2	93	-6	C	G	mismatch	S	B	E	0	7	B	21	8	B	5	0	U:G	G:U	B	5	0	U:G	G:U
+TTYH_BC_157_0	TTYH2.BC	0.1205	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_157_1	TTYH2.BC	0.1205	2	94	-7	U	A	mismatch	I	S	S	0	8	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_158_0	TTYH2.BC	0.0885	2	90	-3	G	C	mismatch	I	S	S	0	4	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_158_1	TTYH2.BC	0.0885	2	95	-8	U	A	mismatch	I	S	S	0	9	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_159_0	TTYH2.BC	0.121	2	91	-4	C	G	mismatch	S	I	B	0	5	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_159_1	TTYH2.BC	0.121	2	92	-5	G	C	mismatch	B	S	S	0	6	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_160_0	TTYH2.BC	0.279	2	91	-4	C	G	mismatch	S	B	I	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_160_1	TTYH2.BC	0.279	2	93	-6	C	G	mismatch	I	S	S	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_161_0	TTYH2.BC	0.0425	2	91	-4	C	G	mismatch	S	B	I	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_161_1	TTYH2.BC	0.0425	2	94	-7	U	A	mismatch	I	S	S	0	8	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_162_0	TTYH2.BC	0.045	2	91	-4	C	G	mismatch	S	B	I	0	5	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_162_1	TTYH2.BC	0.045	2	95	-8	U	A	mismatch	I	S	S	0	9	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_163_0	TTYH2.BC	None	2	92	-5	G	C	mismatch	B	S	S	0	6	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
+TTYH_BC_163_1	TTYH2.BC	None	2	93	-6	C	G	mismatch	B	S	S	0	7	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
+TTYH_BC_164_0	TTYH2.BC	0.226	2	92	-5	G	C	mismatch	I	S	S	0	6	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
+TTYH_BC_164_1	TTYH2.BC	0.226	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	2	C:G	C:G	I	1	2	C:G	C:G
+TTYH_BC_165_0	TTYH2.BC	0.165	2	92	-5	G	C	mismatch	I	S	S	0	6	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_165_1	TTYH2.BC	0.165	2	95	-8	U	A	mismatch	I	S	S	0	9	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_166_0	TTYH2.BC	0.1995	2	93	-6	C	G	mismatch	S	B	I	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_166_1	TTYH2.BC	0.1995	2	94	-7	U	A	mismatch	I	S	S	0	8	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_167_0	TTYH2.BC	0.081	2	93	-6	C	G	mismatch	S	B	I	0	7	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_167_1	TTYH2.BC	0.081	2	95	-8	U	A	mismatch	I	S	S	0	9	B	2	8	B	1	0	C:G	G:C	B	1	0	C:G	G:C
+TTYH_BC_168_0	TTYH2.BC	0.3655	2	94	-7	U	A	mismatch	I	S	S	0	8	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_168_1	TTYH2.BC	0.3655	2	95	-8	U	A	mismatch	I	S	S	0	9	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_169_0	TTYH2.BC	0.0255	2	86	1	C	A	mismatch	I	S	S	1	2	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
+TTYH_BC_169_1	TTYH2.BC	0.0255	2	88	-1	G	A	mismatch	I	S	S	1	2	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
+TTYH_BC_170_0	TTYH2.BC	0.013	2	86	1	C	A	mismatch	I	S	S	1	2	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
+TTYH_BC_170_1	TTYH2.BC	0.013	2	88	-1	G	U	mismatch	I	S	S	1	2	I	21	8	I	6	6	U:G	C:G	I	6	6	U:G	C:G
+TTYH_BC_171_0	TTYH2.BC	0.001	2	86	1	C	A	mismatch	I	S	S	1	2	I	22	8	I	4	2	G:U	G:C	I	4	2	G:U	G:C
+TTYH_BC_171_1	TTYH2.BC	0.001	2	88	-1	G	C	mismatch	S	I	I	0	2	I	22	8	I	4	2	G:U	G:C	I	4	2	G:U	G:C
+TTYH_BC_172_0	TTYH2.BC	0.0035	2	86	1	C	U	mismatch	S	I	I	0	2	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
+TTYH_BC_172_1	TTYH2.BC	0.0035	2	88	-1	G	A	mismatch	I	S	S	1	2	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
+TTYH_BC_173_0	TTYH2.BC	0.005	2	86	1	C	U	mismatch	S	I	I	0	2	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
+TTYH_BC_173_1	TTYH2.BC	0.005	2	88	-1	G	U	mismatch	I	S	S	1	2	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
+TTYH_BC_174_0	TTYH2.BC	0.001	2	86	1	C	U	mismatch	S	I	I	0	2	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
+TTYH_BC_174_1	TTYH2.BC	0.001	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	2	U:G	C:G	I	2	2	U:G	C:G
+TTYH_BC_175_0	TTYH2.BC	0.004	2	86	1	C	G	mismatch	S	I	I	0	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_175_1	TTYH2.BC	0.004	2	88	-1	G	A	mismatch	I	S	S	1	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_176_0	TTYH2.BC	0.005	2	86	1	C	G	mismatch	S	I	I	0	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_176_1	TTYH2.BC	0.005	2	88	-1	G	U	mismatch	I	S	S	1	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_177_0	TTYH2.BC	0.0	2	86	1	C	G	mismatch	S	I	I	0	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_177_1	TTYH2.BC	0.0	2	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	2	1	G:C	C:G	I	2	1	G:C	C:G
+TTYH_BC_178_0	TTYH2.BC	None	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_179_0	TTYH2.BC	None	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	2	1	U:G	C:G	I	2	1	U:G	C:G
+TTYH_BC_180_0	TTYH2.BC	None	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_181_0	TTYH2.BC	None	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	2	1	C:G	C:G	I	2	1	C:G	C:G
+TTYH_BC_182_0	TTYH2.BC	None	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	3	1	C:G	C:G	I	3	1	C:G	C:G
+TTYH_BC_183_0	TTYH2.BC	None	0	None	None	None	None	wt	None	None	None	None	None	I	2	8	I	1	1	C:G	C:G	I	1	1	C:G	C:G
+TTYH_BC_184_0	TTYH2.BC	0.0035	5	82	5	U	G	mismatch	S	H	B	0	6	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_184_1	TTYH2.BC	0.0035	5	83	4	G	U	mismatch	S	H	B	0	5	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_184_2	TTYH2.BC	0.0035	5	84	3	A	C	mismatch	S	H	B	0	4	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_184_3	TTYH2.BC	0.0035	5	85	2	C	G	mismatch	S	H	B	0	3	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_184_4	TTYH2.BC	0.0035	5	86	1	C	G	mismatch	S	H	B	0	2	B	25	8	B	1	0	G:C	G:C	B	1	0	G:C	G:C
+TTYH_BC_185_0	TTYH2.BC	0.02	3	84	3	A	C	mismatch	S	H	I	0	4	I	23	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
+TTYH_BC_185_1	TTYH2.BC	0.02	3	85	2	C	G	mismatch	I	S	S	1	3	I	23	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
+TTYH_BC_185_2	TTYH2.BC	0.02	3	86	1	C	G	mismatch	I	S	S	1	2	I	23	8	I	3	2	C:G	C:G	I	3	2	C:G	C:G
+TTYH_BC_186_0	TTYH2.BC	0.0	5	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
+TTYH_BC_186_1	TTYH2.BC	0.0	5	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
+TTYH_BC_186_2	TTYH2.BC	0.0	5	90	-3	G	C	mismatch	I	S	S	1	4	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
+TTYH_BC_186_3	TTYH2.BC	0.0	5	91	-4	C	G	mismatch	S	I	B	0	5	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
+TTYH_BC_186_4	TTYH2.BC	0.0	5	92	-5	G	C	mismatch	B	S	S	0	6	I	2	8	I	4	4	C:G	C:G	I	4	4	C:G	C:G
+TTYH_BC_187_0	TTYH2.BC	0.0	3	88	-1	G	C	mismatch	I	S	S	1	2	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_187_1	TTYH2.BC	0.0	3	89	-2	G	C	mismatch	I	S	S	1	3	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G
+TTYH_BC_187_2	TTYH2.BC	0.0	3	90	-3	G	C	mismatch	I	S	S	1	4	I	2	8	I	5	4	C:G	C:G	I	5	4	C:G	C:G

@@ -1,475 +1,475 @@
-cur_id	editing_level	num_mutations	mp	adist	mref	malt	mtype	mfeat	mfeat_prev	mfeat_next	mfeat_same_as_edit	editing_feature	stem_length	hairpin_length	x1feat_downstream_of_edit_site	x1feat_downstream_of_edit_site_length_editing_strand	x1feat_downstream_of_edit_site_length_complementary_strand	x1feat_downstream_of_edit_site_5prime_cp	x1feat_downstream_of_edit_site_3prime_cp	x2feat_downstream_of_edit_site	x2feat_downstream_of_edit_site_length_editing_strand	x2feat_downstream_of_edit_site_length_complementary_strand	x2feat_downstream_of_edit_site_5prime_cp	x2feat_downstream_of_edit_site_3prime_cp
-001	0.58	1	44	6	G	A	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-002	0.45	1	45	5	G	A	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-003	0.52	1	46	4	G	A	mismatch	S	H	B	0	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-004	0.45	1	47	3	G	A	mismatch	S	H	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-005	0.59	1	48	2	C	A	mismatch	S	H	I	0	I	8	5	I	2	1	A:U	U:A	I	2	1	A:U	U:A
-006	0.4	1	52	-2	G	A	mismatch	S	I	I	0	I	6	4	I	2	1	A:U	U:A	I	2	1	A:U	U:A
-007	0.52	1	53	-3	G	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-008	0.56	1	54	-4	C	A	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-009	0.7	1	55	-5	U	A	mismatch	S	B	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-010	0.53	1	56	-6	A	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-011	0.59	1	57	-7	C	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-012	0.65	1	58	-8	G	A	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-013	0.49	1	59	-9	G	A	mismatch	S	B	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-014	0.58	1	60	-10	G	A	mismatch	S	I	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-015	0.54	1	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-016	0.64	1	62	-12	C	A	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-017	0.52	1	49	1	A	C	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-018	0.91	1	51	-1	A	C	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-019	0.57	1	44	6	G	U	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-020	0.51	1	45	5	G	U	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-021	0.54	1	46	4	G	U	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-022	0.36	1	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-023	0.55	1	48	2	C	U	mismatch	I	S	S	1	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-024	0.37	1	52	-2	G	U	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-025	0.46	1	53	-3	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-026	0.68	1	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-027	0.54	1	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-028	0.63	1	56	-6	A	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-029	0.6	1	57	-7	C	U	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-030	0.56	1	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-031	0.44	1	59	-9	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-032	0.59	1	60	-10	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-033	0.55	1	61	-11	U	C	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-034	0.61	1	62	-12	C	U	mismatch	S	B	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-035	0.32	1	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-036	0.18	1	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-037	0.52	1	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-038	0.32	1	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-039	0.46	1	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-040	0.51	1	47	3	G	C	mismatch	B	S	S	0	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-041	0.48	1	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-042	0.16	1	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-043	0.35	1	53	-3	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-044	0.55	1	54	-4	C	G	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-045	0.67	1	55	-5	U	G	mismatch	S	B	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-046	0.6	1	56	-6	A	G	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-047	0.59	1	57	-7	C	G	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-048	0.51	1	58	-8	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-049	0.34	1	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-050	0.55	1	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-051	0.63	1	61	-11	U	G	mismatch	S	B	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-052	0.61	1	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-053	0.49	1	39	11	C	A	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-054	0.53	1	38	12	C	A	mismatch	H	S	S	0	I	8	3	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-055	0.57	1	37	13	C	A	mismatch	H	S	S	0	I	8	3	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-056	0.6	1	36	14	U	A	mismatch	B	S	S	0	I	5	5	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-057	0.53	1	35	15	G	A	mismatch	I	S	S	0	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-058	0.56	1	34	16	U	A	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-059	0.58	1	33	17	C	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-060	0.57	1	32	18	U	A	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-061	0.67	1	31	19	C	A	mismatch	I	S	S	0	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-062	0.7	1	30	20	C	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-063	0.64	1	29	21	U	A	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-064	0.63	1	28	22	U	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-065	0.63	1	27	23	G	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-066	0.66	1	26	24	U	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-067	0.58	1	25	25	C	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-068	0.63	1	24	26	C	A	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-069	0.6	1	23	27	G	A	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-070	0.58	1	39	11	C	U	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-071	0.58	1	38	12	C	U	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-072	0.56	1	37	13	C	U	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-073	0.57	1	36	14	U	C	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-074	0.58	1	35	15	G	C	mismatch	S	I	H	0	I	5	3	I	3	2	G:C	U:A	I	3	2	G:C	U:A
-075	0.47	1	34	16	U	C	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-076	0.45	1	33	17	C	U	mismatch	S	I	H	0	S	7	4	I	2	1	G:C	U:A	I	2	1	G:C	U:A
-077	0.56	1	32	18	U	C	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-078	0.54	1	31	19	C	U	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-079	0.54	1	30	20	C	U	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-080	0.59	1	29	21	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-081	0.56	1	28	22	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-082	0.59	1	27	23	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-083	0.61	1	26	24	U	C	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-084	0.64	1	25	25	C	U	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-085	0.6	1	24	26	C	U	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-086	0.59	1	23	27	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-087	0.6	1	39	11	C	G	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-088	0.59	1	38	12	C	G	mismatch	H	S	S	0	I	8	3	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-089	0.61	1	37	13	C	G	mismatch	I	S	S	0	I	3	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-090	0.66	1	36	14	U	G	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-091	0.53	1	35	15	G	U	mismatch	I	S	S	0	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-092	0.69	1	34	16	U	G	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-093	0.55	1	33	17	C	G	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-094	0.27	1	32	18	U	G	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-095	0.16	1	31	19	C	G	mismatch	S	I	H	0	B	5	4	B	2	0	C:G	A:U	B	2	0	C:G	A:U
-096	0.13	1	30	20	C	G	mismatch	S	I	I	0	I	6	4	I	2	1	A:U	U:G	I	2	1	A:U	U:G
-097	0.34	1	29	21	U	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-098	0.17	1	28	22	U	G	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-099	0.63	1	27	23	G	U	mismatch	S	I	H	0	S	2	5	I	3	2	C:G	U:G	I	3	2	C:G	U:G
-100	0.16	1	26	24	U	G	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-101	0.3	1	25	25	C	G	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-102	0.4	1	24	26	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-103	0.61	1	23	27	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-104	0.51	2	39	11	C	G	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-104	0.51	2	44	6	G	C	mismatch	S	H	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-105	0.53	2	38	12	C	G	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-105	0.53	2	45	5	G	C	mismatch	S	H	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-106	0.67	2	37	13	C	G	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-106	0.67	2	46	4	G	C	mismatch	S	H	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-107	0.47	2	36	14	U	G	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-107	0.47	2	47	3	G	U	mismatch	S	H	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-108	0.13	2	35	15	G	C	mismatch	S	I	H	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-108	0.13	2	48	2	C	G	mismatch	S	H	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-109	0.59	2	34	16	U	A	mismatch	S	I	H	0	I	6	4	I	1	1	U:A	U:A	I	1	1	U:A	U:A
-109	0.59	2	49	1	A	U	mismatch	S	H	I	0	I	6	4	I	1	1	U:A	U:A	I	1	1	U:A	U:A
-110	0.46	2	32	18	U	A	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	A:U	I	1	1	A:U	A:U
-110	0.46	2	51	-1	A	U	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	A:U	I	1	1	A:U	A:U
-111	0.55	2	31	19	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-111	0.55	2	52	-2	G	C	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-112	0.36	2	30	20	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-112	0.36	2	53	-3	G	C	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-113	0.51	2	28	22	U	A	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-113	0.51	2	56	-6	A	U	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-114	None	2	27	23	G	C	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-114	None	2	57	-7	C	G	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-115	0.4	2	26	24	U	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-115	0.4	2	58	-8	G	U	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-116	None	2	25	25	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-116	None	2	59	-9	G	C	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-117	None	2	24	26	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-117	None	2	60	-10	G	C	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-118	None	2	23	27	G	C	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-118	None	2	62	-12	C	G	mismatch	S	B	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-119	0.36	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-120	0.37	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-121	0.46	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-122	0.39	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-123	0.4	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-124	0.4	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-125	0.78	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-126	0.4	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-127	0.02	4	52	-2	G	C	mismatch	S	H	I	0	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
-127	0.02	4	53	-3	G	C	mismatch	S	H	I	0	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
-127	0.02	4	56	-6	A	U	mismatch	S	H	I	0	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
-127	0.02	4	57	-7	C	G	mismatch	S	H	I	0	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
-128	0.01	3	52	-2	G	C	mismatch	S	H	I	0	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
-128	0.01	3	53	-3	G	C	mismatch	S	H	I	0	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
-128	0.01	3	56	-6	A	U	mismatch	I	S	S	0	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
-129	0.21	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	4	4	A:U	U:A	I	4	4	A:U	U:A
-130	0.02	5	44	6	G	C	mismatch	S	I	H	0	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-130	0.02	5	45	5	G	C	mismatch	S	I	H	0	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-130	0.02	5	46	4	G	C	mismatch	H	S	S	1	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-130	0.02	5	47	3	G	U	mismatch	H	S	S	1	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-130	0.02	5	48	2	C	G	mismatch	H	S	S	1	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-131	0.03	4	45	5	G	C	mismatch	S	I	H	0	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
-131	0.03	4	46	4	G	C	mismatch	S	I	H	0	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
-131	0.03	4	47	3	G	U	mismatch	S	I	H	0	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
-131	0.03	4	48	2	C	G	mismatch	H	S	S	1	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
-132	0.04	3	46	4	G	C	mismatch	S	H	I	0	I	4	4	I	4	2	C:G	U:A	I	4	2	C:G	U:A
-132	0.04	3	47	3	G	U	mismatch	I	S	S	1	I	4	4	I	4	2	C:G	U:A	I	4	2	C:G	U:A
-132	0.04	3	48	2	C	G	mismatch	I	S	S	1	I	4	4	I	4	2	C:G	U:A	I	4	2	C:G	U:A
-133	0.49	0	None	None	None	None	wt	None	None	None	None	I	8	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-134	0.07	0	None	None	None	None	wt	None	None	None	None	I	3	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-135	0.12	0	None	None	None	None	wt	None	None	None	None	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-136	0.09	0	None	None	None	None	wt	None	None	None	None	S	9	4	I	2	1	G:C	U:A	I	2	1	G:C	U:A
-137	0.3	0	None	None	None	None	wt	None	None	None	None	I	8	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-138	0.01	0	None	None	None	None	wt	None	None	None	None	I	8	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-139	0.07	2	44	6	G	C	mismatch	S	I	H	0	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-139	0.07	2	45	5	G	C	mismatch	S	I	H	0	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-140	0.11	2	44	6	G	C	mismatch	S	I	H	0	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
-140	0.11	2	46	4	G	C	mismatch	H	S	S	1	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
-141	0.17	2	44	6	G	C	mismatch	H	S	S	0	I	2	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-141	0.17	2	47	3	G	U	mismatch	I	S	S	0	I	2	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-142	0.01	2	44	6	G	C	mismatch	H	S	S	0	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
-142	0.01	2	48	2	C	G	mismatch	S	H	I	0	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
-143	0.07	2	44	6	G	C	mismatch	S	I	H	0	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
-143	0.07	2	52	-2	G	C	mismatch	S	H	I	0	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
-144	0.25	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-144	0.25	2	53	-3	G	C	mismatch	I	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-145	0.6	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-145	0.6	2	54	-4	C	U	mismatch	I	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-146	0.44	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-146	0.44	2	55	-5	U	C	mismatch	I	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-147	0.59	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-147	0.59	2	56	-6	A	U	mismatch	I	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-148	0.05	2	44	6	G	C	mismatch	I	S	S	0	I	3	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-148	0.05	2	57	-7	C	G	mismatch	S	B	I	0	I	3	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-149	0.5	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-149	0.5	2	58	-8	G	U	mismatch	I	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-150	0.33	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-150	0.33	2	59	-9	G	C	mismatch	I	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-151	0.26	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-151	0.26	2	60	-10	G	C	mismatch	I	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-152	0.25	2	44	6	G	C	mismatch	S	I	H	0	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
-152	0.25	2	61	-11	U	A	mismatch	S	I	I	0	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
-153	None	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-153	None	2	62	-12	C	G	mismatch	B	S	S	0	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-154	0.01	2	45	5	G	C	mismatch	S	I	H	0	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
-154	0.01	2	46	4	G	C	mismatch	S	I	H	0	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
-155	0.03	2	45	5	G	C	mismatch	S	I	H	0	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
-155	0.03	2	47	3	G	U	mismatch	H	S	S	1	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
-156	0.01	2	45	5	G	C	mismatch	H	S	S	0	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
-156	0.01	2	48	2	C	G	mismatch	S	H	I	0	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
-157	0.03	2	45	5	G	C	mismatch	S	I	H	0	H	4	4	H	5	0	G:C	None	H	5	0	G:C	None
-157	0.03	2	52	-2	G	C	mismatch	S	H	I	0	H	4	4	H	5	0	G:C	None	H	5	0	G:C	None
-158	0.01	2	45	5	G	C	mismatch	S	I	H	0	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-158	0.01	2	53	-3	G	C	mismatch	S	H	I	0	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
-159	0.35	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-159	0.35	2	54	-4	C	U	mismatch	I	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-160	0.06	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-160	0.06	2	55	-5	U	C	mismatch	I	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-161	0.08	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-161	0.08	2	56	-6	A	U	mismatch	I	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-162	0.01	2	45	5	G	C	mismatch	B	S	S	0	I	2	5	I	3	3	G:C	U:A	I	3	3	G:C	U:A
-162	0.01	2	57	-7	C	G	mismatch	S	B	I	0	I	2	5	I	3	3	G:C	U:A	I	3	3	G:C	U:A
-163	0.06	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-163	0.06	2	58	-8	G	U	mismatch	I	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-164	0.09	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-164	0.09	2	59	-9	G	C	mismatch	I	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-165	0.14	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-165	0.14	2	60	-10	G	C	mismatch	I	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-166	0.07	2	45	5	G	C	mismatch	S	I	H	0	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
-166	0.07	2	61	-11	U	A	mismatch	S	I	I	0	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
-167	0.1	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-167	0.1	2	62	-12	C	G	mismatch	B	S	S	0	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-168	0.06	2	46	4	G	C	mismatch	I	S	S	0	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-168	0.06	2	47	3	G	U	mismatch	I	S	S	0	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-169	0.05	2	46	4	G	C	mismatch	S	H	B	0	B	7	4	B	2	0	A:U	G:C	B	2	0	A:U	G:C
-169	0.05	2	48	2	C	G	mismatch	S	H	B	0	B	7	4	B	2	0	A:U	G:C	B	2	0	A:U	G:C
-170	0.02	2	46	4	G	C	mismatch	S	I	H	0	H	4	3	H	4	0	G:C	None	H	4	0	G:C	None
-170	0.02	2	52	-2	G	C	mismatch	S	H	I	0	H	4	3	H	4	0	G:C	None	H	4	0	G:C	None
-171	0.06	2	46	4	G	C	mismatch	S	I	H	0	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
-171	0.06	2	53	-3	G	C	mismatch	S	H	I	0	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
-172	0.17	2	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-172	0.17	2	54	-4	C	U	mismatch	I	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-173	0.03	2	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-173	0.03	2	55	-5	U	C	mismatch	I	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-174	0.06	2	46	4	G	C	mismatch	S	I	H	0	H	4	4	H	6	0	C:G	None	H	6	0	C:G	None
-174	0.06	2	56	-6	A	U	mismatch	S	H	I	0	H	4	4	H	6	0	C:G	None	H	6	0	C:G	None
-175	0.05	2	46	4	G	C	mismatch	I	S	S	0	B	2	5	B	2	0	C:G	A:U	B	2	0	C:G	A:U
-175	0.05	2	57	-7	C	G	mismatch	S	B	I	0	B	2	5	B	2	0	C:G	A:U	B	2	0	C:G	A:U
-176	0.04	2	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-176	0.04	2	58	-8	G	U	mismatch	I	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-177	0.07	2	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-177	0.07	2	59	-9	G	C	mismatch	I	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-178	None	2	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-178	None	2	60	-10	G	C	mismatch	I	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-179	None	2	46	4	G	C	mismatch	S	I	H	0	H	3	4	H	6	0	C:G	None	H	6	0	C:G	None
-179	None	2	61	-11	U	A	mismatch	S	I	I	0	H	3	4	H	6	0	C:G	None	H	6	0	C:G	None
-180	None	2	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-180	None	2	62	-12	C	G	mismatch	B	S	S	0	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-181	0.01	2	47	3	G	U	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-181	0.01	2	48	2	C	G	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-182	0.01	2	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-182	0.01	2	52	-2	G	C	mismatch	I	S	S	1	I	2	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-183	0.02	2	47	3	G	U	mismatch	H	S	S	1	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
-183	0.02	2	53	-3	G	C	mismatch	S	H	I	0	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
-184	0.35	2	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-184	0.35	2	54	-4	C	U	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-185	0.08	2	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-185	0.08	2	55	-5	U	C	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-186	0.12	2	47	3	G	U	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-186	0.12	2	56	-6	A	U	mismatch	I	S	S	0	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-187	0.02	2	47	3	G	U	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-187	0.02	2	57	-7	C	G	mismatch	S	B	I	0	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-188	0.08	2	47	3	G	U	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-188	0.08	2	58	-8	G	U	mismatch	I	S	S	0	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-189	0.02	2	47	3	G	U	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-189	0.02	2	59	-9	G	C	mismatch	I	S	S	0	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-190	None	2	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-190	None	2	60	-10	G	C	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-191	None	2	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-191	None	2	61	-11	U	A	mismatch	B	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-192	None	2	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-192	None	2	62	-12	C	G	mismatch	B	S	S	0	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-193	0.02	2	48	2	C	G	mismatch	B	S	S	1	B	7	5	B	8	0	G:U	A:U	B	8	0	G:U	A:U
-193	0.02	2	52	-2	G	C	mismatch	B	S	S	1	B	7	5	B	8	0	G:U	A:U	B	8	0	G:U	A:U
-194	0.01	2	48	2	C	G	mismatch	S	H	I	0	I	4	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-194	0.01	2	53	-3	G	C	mismatch	I	S	S	0	I	4	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-195	0.02	2	48	2	C	G	mismatch	I	S	S	1	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-195	0.02	2	54	-4	C	U	mismatch	I	S	S	0	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-196	0.02	2	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-196	0.02	2	55	-5	U	C	mismatch	S	B	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-197	0.07	2	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-197	0.07	2	56	-6	A	U	mismatch	I	S	S	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-198	0.23	2	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-198	0.23	2	57	-7	C	G	mismatch	S	B	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-199	0.03	2	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-199	0.03	2	58	-8	G	U	mismatch	I	S	S	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-200	0.02	2	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-200	0.02	2	59	-9	G	C	mismatch	I	S	S	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-201	None	2	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-201	None	2	60	-10	G	C	mismatch	I	S	S	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-202	0.03	2	48	2	C	G	mismatch	I	S	S	1	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-202	0.03	2	61	-11	U	A	mismatch	B	S	S	0	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-203	0.3	2	48	2	C	G	mismatch	I	S	S	1	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-203	0.3	2	62	-12	C	G	mismatch	B	S	S	0	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
-204	0.02	2	52	-2	G	C	mismatch	S	H	I	0	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
-204	0.02	2	53	-3	G	C	mismatch	S	H	I	0	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
-205	0.09	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-205	0.09	2	54	-4	C	U	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-206	0.04	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-206	0.04	2	55	-5	U	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-207	0.1	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	7	6	A:U	G:C	I	7	6	A:U	G:C
-207	0.1	2	56	-6	A	U	mismatch	I	S	S	1	I	6	4	I	7	6	A:U	G:C	I	7	6	A:U	G:C
-208	0.03	2	52	-2	G	C	mismatch	I	S	S	1	I	9	5	I	3	1	A:U	C:G	I	3	1	A:U	C:G
-208	0.03	2	57	-7	C	G	mismatch	S	B	I	0	I	9	5	I	3	1	A:U	C:G	I	3	1	A:U	C:G
-209	0.09	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-209	0.09	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-210	0.06	2	52	-2	G	C	mismatch	S	M	H	0	M	5	4	M	2	0	C:G	A:U	M	2	0	C:G	A:U
-210	0.06	2	59	-9	G	C	mismatch	S	H	M	0	M	5	4	M	2	0	C:G	A:U	M	2	0	C:G	A:U
-211	0.1	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-211	0.1	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-212	0.2	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-212	0.2	2	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-213	0.1	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-213	0.1	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-214	0.42	2	53	-3	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-214	0.42	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-215	0.17	2	53	-3	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-215	0.17	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-216	0.18	2	53	-3	G	C	mismatch	S	H	I	0	H	6	2	H	3	0	C:G	None	H	3	0	C:G	None
-216	0.18	2	56	-6	A	U	mismatch	S	H	I	0	H	6	2	H	3	0	C:G	None	H	3	0	C:G	None
-217	0.08	2	53	-3	G	C	mismatch	S	H	I	0	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
-217	0.08	2	57	-7	C	G	mismatch	I	S	S	0	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
-218	0.09	2	53	-3	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-218	0.09	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-219	0.02	2	53	-3	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-219	0.02	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-220	0.08	2	53	-3	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-220	0.08	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-221	0.19	2	53	-3	G	C	mismatch	S	H	I	0	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
-221	0.19	2	61	-11	U	A	mismatch	S	I	I	0	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
-222	0.27	2	53	-3	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-222	0.27	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-223	0.5	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-223	0.5	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-224	0.66	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-224	0.66	2	56	-6	A	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-225	0.19	2	54	-4	C	U	mismatch	B	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-225	0.19	2	57	-7	C	G	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-226	0.67	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-226	0.67	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-227	0.28	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-227	0.28	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-228	0.55	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-228	0.55	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-229	0.72	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-229	0.72	2	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-230	0.61	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-230	0.61	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-231	0.33	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-231	0.33	2	56	-6	A	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-232	0.12	2	55	-5	U	C	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-232	0.12	2	57	-7	C	G	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-233	0.41	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-233	0.41	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-234	0.11	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-234	0.11	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-235	0.16	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-235	0.16	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-236	0.48	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-236	0.48	2	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-237	0.51	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-237	0.51	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-238	0.22	2	56	-6	A	U	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-238	0.22	2	57	-7	C	G	mismatch	S	I	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-239	0.31	2	56	-6	A	U	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-239	0.31	2	58	-8	G	U	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-240	0.06	2	56	-6	A	U	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-240	0.06	2	59	-9	G	C	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-241	0.23	2	56	-6	A	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-241	0.23	2	60	-10	G	C	mismatch	S	I	B	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-242	0.35	2	56	-6	A	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-242	0.35	2	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-243	0.63	2	56	-6	A	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-243	0.63	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-244	0.17	2	57	-7	C	G	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-244	0.17	2	58	-8	G	U	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-245	0.23	2	57	-7	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-245	0.23	2	59	-9	G	C	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-246	0.14	2	57	-7	C	G	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-246	0.14	2	60	-10	G	C	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-247	None	2	57	-7	C	G	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-247	None	2	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-248	0.58	2	57	-7	C	G	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-248	0.58	2	62	-12	C	G	mismatch	I	S	S	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-249	0.3	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-249	0.3	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-250	0.29	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-250	0.29	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-251	0.38	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-251	0.38	2	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-252	0.51	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-252	0.51	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-253	0.06	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-253	0.06	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-254	0.23	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-254	0.23	2	61	-11	U	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-255	0.26	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-255	0.26	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-256	None	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-256	None	2	61	-11	U	A	mismatch	I	S	S	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-257	None	2	60	-10	G	C	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-257	None	2	62	-12	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-258	0.48	2	61	-11	U	A	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-258	0.48	2	62	-12	C	G	mismatch	S	I	I	0	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
-259	0.0	2	44	6	G	C	mismatch	H	S	S	0	I	4	6	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-259	0.0	2	49	1	A	U	mismatch	I	S	S	1	I	4	6	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-260	0.0	2	45	5	G	C	mismatch	B	S	S	0	I	3	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-260	0.0	2	49	1	A	U	mismatch	I	S	S	1	I	3	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-261	0.01	2	46	4	G	C	mismatch	B	S	S	0	I	2	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-261	0.01	2	49	1	A	U	mismatch	I	S	S	1	I	2	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-262	0.0	2	47	3	G	U	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-262	0.0	2	49	1	A	U	mismatch	I	S	S	1	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
-263	0.01	2	48	2	C	G	mismatch	S	H	I	0	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-263	0.01	2	49	1	A	U	mismatch	I	S	S	1	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
-264	0.01	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	3	3	C:G	C:G	I	3	3	C:G	C:G
-264	0.01	2	51	-1	A	U	mismatch	I	S	S	1	I	5	4	I	3	3	C:G	C:G	I	3	3	C:G	C:G
-265	0.01	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	7	6	C:G	U:A	I	7	6	C:G	U:A
-265	0.01	2	52	-2	G	C	mismatch	I	S	S	1	I	5	4	I	7	6	C:G	U:A	I	7	6	C:G	U:A
-266	0.02	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-266	0.02	2	53	-3	G	C	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-267	0.11	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-267	0.11	2	54	-4	C	U	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-268	0.03	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-268	0.03	2	55	-5	U	C	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-269	0.07	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-269	0.07	2	56	-6	A	U	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-270	0.08	2	49	1	A	U	mismatch	I	S	S	1	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-270	0.08	2	57	-7	C	G	mismatch	S	B	I	0	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
-271	0.02	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-271	0.02	2	58	-8	G	U	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-272	0.03	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-272	0.03	2	59	-9	G	C	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-273	0.01	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-273	0.01	2	60	-10	G	C	mismatch	I	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-274	None	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-274	None	2	61	-11	U	A	mismatch	B	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-275	0.18	2	49	1	A	U	mismatch	I	S	S	1	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-275	0.18	2	62	-12	C	G	mismatch	B	S	S	0	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
-276	0.04	2	44	6	G	C	mismatch	H	S	S	0	I	5	6	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-276	0.04	2	51	-1	A	U	mismatch	I	S	S	1	I	5	6	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-277	0.01	2	45	5	G	C	mismatch	B	S	S	0	I	4	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-277	0.01	2	51	-1	A	U	mismatch	I	S	S	1	I	4	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-278	0.0	2	46	4	G	C	mismatch	B	S	S	0	I	3	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-278	0.0	2	51	-1	A	U	mismatch	I	S	S	1	I	3	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-279	0.01	2	47	3	G	U	mismatch	I	S	S	0	I	2	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-279	0.01	2	51	-1	A	U	mismatch	I	S	S	1	I	2	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-280	0.02	2	48	2	C	G	mismatch	S	H	I	0	I	7	8	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-280	0.02	2	51	-1	A	U	mismatch	I	S	S	1	I	7	8	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-281	0.005	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-281	0.005	2	52	-2	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-282	0.004	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-282	0.004	2	53	-3	G	C	mismatch	I	S	S	1	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
-283	0.12	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-283	0.12	2	54	-4	C	U	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-284	0.03	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-284	0.03	2	55	-5	U	C	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-285	0.05	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-285	0.05	2	56	-6	A	U	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-286	0.04	2	51	-1	A	U	mismatch	B	S	S	1	B	9	5	B	2	0	A:U	G:C	B	2	0	A:U	G:C
-286	0.04	2	57	-7	C	G	mismatch	S	B	I	0	B	9	5	B	2	0	A:U	G:C	B	2	0	A:U	G:C
-287	0.05	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-287	0.05	2	58	-8	G	U	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-288	0.0	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-288	0.0	2	59	-9	G	C	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-289	0.04	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-289	0.04	2	60	-10	G	C	mismatch	I	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-290	0.03	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-290	0.03	2	61	-11	U	A	mismatch	B	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-291	0.02	2	51	-1	A	U	mismatch	I	S	S	1	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-291	0.02	2	62	-12	C	G	mismatch	B	S	S	0	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
-292	0.64	0	None	None	None	None	wt	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+cur_id	source	editing_level	num_mutations	mp	adist	mref	malt	mtype	mfeat	mfeat_prev	mfeat_next	mfeat_same_as_edit	mp_2d_dist_to_edit	editing_feature	stem_length	hairpin_length	x1feat_downstream_of_edit_site	x1feat_downstream_of_edit_site_length_editing_strand	x1feat_downstream_of_edit_site_length_complementary_strand	x1feat_downstream_of_edit_site_5prime_cp	x1feat_downstream_of_edit_site_3prime_cp	x2feat_downstream_of_edit_site	x2feat_downstream_of_edit_site_length_editing_strand	x2feat_downstream_of_edit_site_length_complementary_strand	x2feat_downstream_of_edit_site_5prime_cp	x2feat_downstream_of_edit_site_3prime_cp
+001_0	NEIL1	0.58	1	44	6	G	A	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+002_0	NEIL1	0.45	1	45	5	G	A	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+003_0	NEIL1	0.52	1	46	4	G	A	mismatch	S	H	B	0	5	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+004_0	NEIL1	0.45	1	47	3	G	A	mismatch	S	H	I	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+005_0	NEIL1	0.59	1	48	2	C	A	mismatch	S	H	I	0	3	I	8	5	I	2	1	A:U	U:A	I	2	1	A:U	U:A
+006_0	NEIL1	0.4	1	52	-2	G	A	mismatch	S	I	I	0	3	I	6	4	I	2	1	A:U	U:A	I	2	1	A:U	U:A
+007_0	NEIL1	0.52	1	53	-3	G	A	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+008_0	NEIL1	0.56	1	54	-4	C	A	mismatch	S	I	B	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+009_0	NEIL1	0.7	1	55	-5	U	A	mismatch	S	B	B	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+010_0	NEIL1	0.53	1	56	-6	A	C	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+011_0	NEIL1	0.59	1	57	-7	C	A	mismatch	I	S	S	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+012_0	NEIL1	0.65	1	58	-8	G	A	mismatch	S	I	B	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+013_0	NEIL1	0.49	1	59	-9	G	A	mismatch	S	B	I	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+014_0	NEIL1	0.58	1	60	-10	G	A	mismatch	S	I	I	0	11	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+015_0	NEIL1	0.54	1	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+016_0	NEIL1	0.64	1	62	-12	C	A	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+017_0	NEIL1	0.52	1	49	1	A	C	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+018_0	NEIL1	0.91	1	51	-1	A	C	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+019_0	NEIL1	0.57	1	44	6	G	U	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+020_0	NEIL1	0.51	1	45	5	G	U	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+021_0	NEIL1	0.54	1	46	4	G	U	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+022_0	NEIL1	0.36	1	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+023_0	NEIL1	0.55	1	48	2	C	U	mismatch	I	S	S	1	3	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+024_0	NEIL1	0.37	1	52	-2	G	U	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+025_0	NEIL1	0.46	1	53	-3	G	U	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+026_0	NEIL1	0.68	1	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+027_0	NEIL1	0.54	1	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+028_0	NEIL1	0.63	1	56	-6	A	U	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+029_0	NEIL1	0.6	1	57	-7	C	U	mismatch	S	I	B	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+030_0	NEIL1	0.56	1	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+031_0	NEIL1	0.44	1	59	-9	G	U	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+032_0	NEIL1	0.59	1	60	-10	G	U	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+033_0	NEIL1	0.55	1	61	-11	U	C	mismatch	B	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+034_0	NEIL1	0.61	1	62	-12	C	U	mismatch	S	B	I	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+035_0	NEIL1	0.32	1	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+036_0	NEIL1	0.18	1	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+037_0	NEIL1	0.52	1	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+038_0	NEIL1	0.32	1	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+039_0	NEIL1	0.46	1	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+040_0	NEIL1	0.51	1	47	3	G	C	mismatch	B	S	S	0	4	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+041_0	NEIL1	0.48	1	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+042_0	NEIL1	0.16	1	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+043_0	NEIL1	0.35	1	53	-3	G	C	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+044_0	NEIL1	0.55	1	54	-4	C	G	mismatch	S	I	B	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+045_0	NEIL1	0.67	1	55	-5	U	G	mismatch	S	B	B	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+046_0	NEIL1	0.6	1	56	-6	A	G	mismatch	S	I	B	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+047_0	NEIL1	0.59	1	57	-7	C	G	mismatch	S	B	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+048_0	NEIL1	0.51	1	58	-8	G	C	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+049_0	NEIL1	0.34	1	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+050_0	NEIL1	0.55	1	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+051_0	NEIL1	0.63	1	61	-11	U	G	mismatch	S	B	I	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+052_0	NEIL1	0.61	1	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+053_0	NEIL1	0.49	1	39	11	C	A	mismatch	H	S	S	0	8	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+054_0	NEIL1	0.53	1	38	12	C	A	mismatch	H	S	S	0	13	I	8	3	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+055_0	NEIL1	0.57	1	37	13	C	A	mismatch	H	S	S	0	13	I	8	3	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+056_0	NEIL1	0.6	1	36	14	U	A	mismatch	B	S	S	0	5	I	5	5	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+057_0	NEIL1	0.53	1	35	15	G	A	mismatch	I	S	S	0	6	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+058_0	NEIL1	0.56	1	34	16	U	A	mismatch	I	S	S	0	5	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+059_0	NEIL1	0.58	1	33	17	C	A	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+060_0	NEIL1	0.57	1	32	18	U	A	mismatch	I	S	S	0	5	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+061_0	NEIL1	0.67	1	31	19	C	A	mismatch	I	S	S	0	6	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+062_0	NEIL1	0.7	1	30	20	C	A	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+063_0	NEIL1	0.64	1	29	21	U	A	mismatch	S	I	I	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+064_0	NEIL1	0.63	1	28	22	U	A	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+065_0	NEIL1	0.63	1	27	23	G	A	mismatch	I	S	S	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+066_0	NEIL1	0.66	1	26	24	U	A	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+067_0	NEIL1	0.58	1	25	25	C	A	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+068_0	NEIL1	0.63	1	24	26	C	A	mismatch	S	I	I	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+069_0	NEIL1	0.6	1	23	27	G	A	mismatch	S	I	I	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+070_0	NEIL1	0.58	1	39	11	C	U	mismatch	S	I	H	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+071_0	NEIL1	0.58	1	38	12	C	U	mismatch	S	I	H	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+072_0	NEIL1	0.56	1	37	13	C	U	mismatch	S	I	H	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+073_0	NEIL1	0.57	1	36	14	U	C	mismatch	S	I	H	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+074_0	NEIL1	0.58	1	35	15	G	C	mismatch	S	I	H	0	5	I	5	3	I	3	2	G:C	U:A	I	3	2	G:C	U:A
+075_0	NEIL1	0.47	1	34	16	U	C	mismatch	I	S	S	0	5	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+076_0	NEIL1	0.45	1	33	17	C	U	mismatch	S	I	H	0	2	S	7	4	I	2	1	G:C	U:A	I	2	1	G:C	U:A
+077_0	NEIL1	0.56	1	32	18	U	C	mismatch	I	S	S	0	5	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+078_0	NEIL1	0.54	1	31	19	C	U	mismatch	S	I	I	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+079_0	NEIL1	0.54	1	30	20	C	U	mismatch	S	I	I	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+080_0	NEIL1	0.59	1	29	21	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+081_0	NEIL1	0.56	1	28	22	U	C	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+082_0	NEIL1	0.59	1	27	23	G	C	mismatch	I	S	S	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+083_0	NEIL1	0.61	1	26	24	U	C	mismatch	S	I	I	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+084_0	NEIL1	0.64	1	25	25	C	U	mismatch	S	I	I	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+085_0	NEIL1	0.6	1	24	26	C	U	mismatch	S	I	I	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+086_0	NEIL1	0.59	1	23	27	G	C	mismatch	I	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+087_0	NEIL1	0.6	1	39	11	C	G	mismatch	H	S	S	0	8	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+088_0	NEIL1	0.59	1	38	12	C	G	mismatch	H	S	S	0	13	I	8	3	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+089_0	NEIL1	0.61	1	37	13	C	G	mismatch	I	S	S	0	6	I	3	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+090_0	NEIL1	0.66	1	36	14	U	G	mismatch	I	S	S	0	5	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+091_0	NEIL1	0.53	1	35	15	G	U	mismatch	I	S	S	0	6	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+092_0	NEIL1	0.69	1	34	16	U	G	mismatch	I	S	S	0	5	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+093_0	NEIL1	0.55	1	33	17	C	G	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+094_0	NEIL1	0.27	1	32	18	U	G	mismatch	I	S	S	0	5	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+095_0	NEIL1	0.16	1	31	19	C	G	mismatch	S	I	H	0	6	B	5	4	B	2	0	C:G	A:U	B	2	0	C:G	A:U
+096_0	NEIL1	0.13	1	30	20	C	G	mismatch	S	I	I	0	6	I	6	4	I	2	1	A:U	U:G	I	2	1	A:U	U:G
+097_0	NEIL1	0.34	1	29	21	U	G	mismatch	S	I	I	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+098_0	NEIL1	0.17	1	28	22	U	G	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+099_0	NEIL1	0.63	1	27	23	G	U	mismatch	S	I	H	0	2	S	2	5	I	3	2	C:G	U:G	I	3	2	C:G	U:G
+100_0	NEIL1	0.16	1	26	24	U	G	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+101_0	NEIL1	0.3	1	25	25	C	G	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+102_0	NEIL1	0.4	1	24	26	C	G	mismatch	S	I	I	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+103_0	NEIL1	0.61	1	23	27	G	U	mismatch	I	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+104_0	NEIL1	0.51	2	39	11	C	G	mismatch	S	I	H	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+104_1	NEIL1	0.51	2	44	6	G	C	mismatch	S	H	I	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+105_0	NEIL1	0.53	2	38	12	C	G	mismatch	S	I	H	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+105_1	NEIL1	0.53	2	45	5	G	C	mismatch	S	H	I	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+106_0	NEIL1	0.67	2	37	13	C	G	mismatch	S	I	H	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+106_1	NEIL1	0.67	2	46	4	G	C	mismatch	S	H	I	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+107_0	NEIL1	0.47	2	36	14	U	G	mismatch	S	I	H	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+107_1	NEIL1	0.47	2	47	3	G	U	mismatch	S	H	I	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+108_0	NEIL1	0.13	2	35	15	G	C	mismatch	S	I	H	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+108_1	NEIL1	0.13	2	48	2	C	G	mismatch	S	H	I	0	3	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+109_0	NEIL1	0.59	2	34	16	U	A	mismatch	S	I	H	0	3	I	6	4	I	1	1	U:A	U:A	I	1	1	U:A	U:A
+109_1	NEIL1	0.59	2	49	1	A	U	mismatch	S	H	I	0	2	I	6	4	I	1	1	U:A	U:A	I	1	1	U:A	U:A
+110_0	NEIL1	0.46	2	32	18	U	A	mismatch	S	I	I	0	3	I	6	4	I	1	1	A:U	A:U	I	1	1	A:U	A:U
+110_1	NEIL1	0.46	2	51	-1	A	U	mismatch	S	I	I	0	2	I	6	4	I	1	1	A:U	A:U	I	1	1	A:U	A:U
+111_0	NEIL1	0.55	2	31	19	C	G	mismatch	S	I	I	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+111_1	NEIL1	0.55	2	52	-2	G	C	mismatch	S	I	I	0	3	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+112_0	NEIL1	0.36	2	30	20	C	G	mismatch	S	I	I	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+112_1	NEIL1	0.36	2	53	-3	G	C	mismatch	S	I	I	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+113_0	NEIL1	0.51	2	28	22	U	A	mismatch	S	I	I	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+113_1	NEIL1	0.51	2	56	-6	A	U	mismatch	S	I	B	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+114_0	NEIL1	None	2	27	23	G	C	mismatch	S	I	I	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+114_1	NEIL1	None	2	57	-7	C	G	mismatch	S	I	B	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+115_0	NEIL1	0.4	2	26	24	U	G	mismatch	S	I	I	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+115_1	NEIL1	0.4	2	58	-8	G	U	mismatch	S	I	B	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+116_0	NEIL1	None	2	25	25	C	G	mismatch	S	I	I	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+116_1	NEIL1	None	2	59	-9	G	C	mismatch	S	I	B	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+117_0	NEIL1	None	2	24	26	C	G	mismatch	S	I	I	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+117_1	NEIL1	None	2	60	-10	G	C	mismatch	S	I	B	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+118_0	NEIL1	None	2	23	27	G	C	mismatch	S	I	I	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+118_1	NEIL1	None	2	62	-12	C	G	mismatch	S	B	I	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+119_0	NEIL1	0.36	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+120_0	NEIL1	0.37	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+121_0	NEIL1	0.46	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+122_0	NEIL1	0.39	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+123_0	NEIL1	0.4	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+124_0	NEIL1	0.4	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+125_0	NEIL1	0.78	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+126_0	NEIL1	0.4	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+127_0	NEIL1	0.02	4	52	-2	G	C	mismatch	S	H	I	0	3	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
+127_1	NEIL1	0.02	4	53	-3	G	C	mismatch	S	H	I	0	4	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
+127_2	NEIL1	0.02	4	56	-6	A	U	mismatch	S	H	I	0	7	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
+127_3	NEIL1	0.02	4	57	-7	C	G	mismatch	S	H	I	0	8	H	6	4	H	5	0	G:C	None	H	5	0	G:C	None
+128_0	NEIL1	0.01	3	52	-2	G	C	mismatch	S	H	I	0	3	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
+128_1	NEIL1	0.01	3	53	-3	G	C	mismatch	S	H	I	0	4	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
+128_2	NEIL1	0.01	3	56	-6	A	U	mismatch	I	S	S	0	7	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
+129_0	NEIL1	0.21	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	4	4	A:U	U:A	I	4	4	A:U	U:A
+130_0	NEIL1	0.02	5	44	6	G	C	mismatch	S	I	H	0	5	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+130_1	NEIL1	0.02	5	45	5	G	C	mismatch	S	I	H	0	4	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+130_2	NEIL1	0.02	5	46	4	G	C	mismatch	H	S	S	1	5	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+130_3	NEIL1	0.02	5	47	3	G	U	mismatch	H	S	S	1	4	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+130_4	NEIL1	0.02	5	48	2	C	G	mismatch	H	S	S	1	3	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+131_0	NEIL1	0.03	4	45	5	G	C	mismatch	S	I	H	0	5	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
+131_1	NEIL1	0.03	4	46	4	G	C	mismatch	S	I	H	0	4	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
+131_2	NEIL1	0.03	4	47	3	G	U	mismatch	S	I	H	0	3	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
+131_3	NEIL1	0.03	4	48	2	C	G	mismatch	H	S	S	1	3	H	5	3	H	3	0	U:A	None	H	3	0	U:A	None
+132_0	NEIL1	0.04	3	46	4	G	C	mismatch	S	H	I	0	5	I	4	4	I	4	2	C:G	U:A	I	4	2	C:G	U:A
+132_1	NEIL1	0.04	3	47	3	G	U	mismatch	I	S	S	1	4	I	4	4	I	4	2	C:G	U:A	I	4	2	C:G	U:A
+132_2	NEIL1	0.04	3	48	2	C	G	mismatch	I	S	S	1	3	I	4	4	I	4	2	C:G	U:A	I	4	2	C:G	U:A
+133_0	NEIL1	0.49	0	None	None	None	None	wt	None	None	None	None	None	I	8	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+134_0	NEIL1	0.07	0	None	None	None	None	wt	None	None	None	None	None	I	3	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+135_0	NEIL1	0.12	0	None	None	None	None	wt	None	None	None	None	None	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+136_0	NEIL1	0.09	0	None	None	None	None	wt	None	None	None	None	None	S	9	4	I	2	1	G:C	U:A	I	2	1	G:C	U:A
+137_0	NEIL1	0.3	0	None	None	None	None	wt	None	None	None	None	None	I	8	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+138_0	NEIL1	0.01	0	None	None	None	None	wt	None	None	None	None	None	I	8	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+139_0	NEIL1	0.07	2	44	6	G	C	mismatch	S	I	H	0	5	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+139_1	NEIL1	0.07	2	45	5	G	C	mismatch	S	I	H	0	4	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+140_0	NEIL1	0.11	2	44	6	G	C	mismatch	S	I	H	0	5	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
+140_1	NEIL1	0.11	2	46	4	G	C	mismatch	H	S	S	1	5	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
+141_0	NEIL1	0.17	2	44	6	G	C	mismatch	H	S	S	0	7	I	2	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+141_1	NEIL1	0.17	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+142_0	NEIL1	0.01	2	44	6	G	C	mismatch	H	S	S	0	7	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
+142_1	NEIL1	0.01	2	48	2	C	G	mismatch	S	H	I	0	3	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
+143_0	NEIL1	0.07	2	44	6	G	C	mismatch	S	I	H	0	5	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
+143_1	NEIL1	0.07	2	52	-2	G	C	mismatch	S	H	I	0	3	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
+144_0	NEIL1	0.25	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+144_1	NEIL1	0.25	2	53	-3	G	C	mismatch	I	S	S	0	4	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+145_0	NEIL1	0.6	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+145_1	NEIL1	0.6	2	54	-4	C	U	mismatch	I	S	S	0	5	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+146_0	NEIL1	0.44	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+146_1	NEIL1	0.44	2	55	-5	U	C	mismatch	I	S	S	0	6	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+147_0	NEIL1	0.59	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+147_1	NEIL1	0.59	2	56	-6	A	U	mismatch	I	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+148_0	NEIL1	0.05	2	44	6	G	C	mismatch	I	S	S	0	7	I	3	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+148_1	NEIL1	0.05	2	57	-7	C	G	mismatch	S	B	I	0	8	I	3	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+149_0	NEIL1	0.5	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+149_1	NEIL1	0.5	2	58	-8	G	U	mismatch	I	S	S	0	9	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+150_0	NEIL1	0.33	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+150_1	NEIL1	0.33	2	59	-9	G	C	mismatch	I	S	S	0	10	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+151_0	NEIL1	0.26	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+151_1	NEIL1	0.26	2	60	-10	G	C	mismatch	I	S	S	0	11	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+152_0	NEIL1	0.25	2	44	6	G	C	mismatch	S	I	H	0	5	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
+152_1	NEIL1	0.25	2	61	-11	U	A	mismatch	S	I	I	0	12	H	3	6	H	8	0	C:G	None	H	8	0	C:G	None
+153_0	NEIL1	None	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+153_1	NEIL1	None	2	62	-12	C	G	mismatch	B	S	S	0	13	I	5	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+154_0	NEIL1	0.01	2	45	5	G	C	mismatch	S	I	H	0	5	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
+154_1	NEIL1	0.01	2	46	4	G	C	mismatch	S	I	H	0	4	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
+155_0	NEIL1	0.03	2	45	5	G	C	mismatch	S	I	H	0	5	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
+155_1	NEIL1	0.03	2	47	3	G	U	mismatch	H	S	S	1	4	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
+156_0	NEIL1	0.01	2	45	5	G	C	mismatch	H	S	S	0	6	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
+156_1	NEIL1	0.01	2	48	2	C	G	mismatch	S	H	I	0	3	I	4	6	I	1	3	A:U	U:A	I	1	3	A:U	U:A
+157_0	NEIL1	0.03	2	45	5	G	C	mismatch	S	I	H	0	5	H	4	4	H	5	0	G:C	None	H	5	0	G:C	None
+157_1	NEIL1	0.03	2	52	-2	G	C	mismatch	S	H	I	0	3	H	4	4	H	5	0	G:C	None	H	5	0	G:C	None
+158_0	NEIL1	0.01	2	45	5	G	C	mismatch	S	I	H	0	4	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+158_1	NEIL1	0.01	2	53	-3	G	C	mismatch	S	H	I	0	4	H	4	5	H	6	0	C:G	None	H	6	0	C:G	None
+159_0	NEIL1	0.35	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+159_1	NEIL1	0.35	2	54	-4	C	U	mismatch	I	S	S	0	5	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+160_0	NEIL1	0.06	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+160_1	NEIL1	0.06	2	55	-5	U	C	mismatch	I	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+161_0	NEIL1	0.08	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+161_1	NEIL1	0.08	2	56	-6	A	U	mismatch	I	S	S	0	7	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+162_0	NEIL1	0.01	2	45	5	G	C	mismatch	B	S	S	0	6	I	2	5	I	3	3	G:C	U:A	I	3	3	G:C	U:A
+162_1	NEIL1	0.01	2	57	-7	C	G	mismatch	S	B	I	0	8	I	2	5	I	3	3	G:C	U:A	I	3	3	G:C	U:A
+163_0	NEIL1	0.06	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+163_1	NEIL1	0.06	2	58	-8	G	U	mismatch	I	S	S	0	9	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+164_0	NEIL1	0.09	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+164_1	NEIL1	0.09	2	59	-9	G	C	mismatch	I	S	S	0	10	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+165_0	NEIL1	0.14	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+165_1	NEIL1	0.14	2	60	-10	G	C	mismatch	I	S	S	0	11	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+166_0	NEIL1	0.07	2	45	5	G	C	mismatch	S	I	H	0	5	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
+166_1	NEIL1	0.07	2	61	-11	U	A	mismatch	S	I	I	0	12	H	3	5	H	7	0	C:G	None	H	7	0	C:G	None
+167_0	NEIL1	0.1	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+167_1	NEIL1	0.1	2	62	-12	C	G	mismatch	B	S	S	0	13	I	4	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+168_0	NEIL1	0.06	2	46	4	G	C	mismatch	I	S	S	0	5	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+168_1	NEIL1	0.06	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+169_0	NEIL1	0.05	2	46	4	G	C	mismatch	S	H	B	0	5	B	7	4	B	2	0	A:U	G:C	B	2	0	A:U	G:C
+169_1	NEIL1	0.05	2	48	2	C	G	mismatch	S	H	B	0	3	B	7	4	B	2	0	A:U	G:C	B	2	0	A:U	G:C
+170_0	NEIL1	0.02	2	46	4	G	C	mismatch	S	I	H	0	5	H	4	3	H	4	0	G:C	None	H	4	0	G:C	None
+170_1	NEIL1	0.02	2	52	-2	G	C	mismatch	S	H	I	0	3	H	4	3	H	4	0	G:C	None	H	4	0	G:C	None
+171_0	NEIL1	0.06	2	46	4	G	C	mismatch	S	I	H	0	4	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
+171_1	NEIL1	0.06	2	53	-3	G	C	mismatch	S	H	I	0	4	H	4	4	H	5	0	C:G	None	H	5	0	C:G	None
+172_0	NEIL1	0.17	2	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+172_1	NEIL1	0.17	2	54	-4	C	U	mismatch	I	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+173_0	NEIL1	0.03	2	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+173_1	NEIL1	0.03	2	55	-5	U	C	mismatch	I	S	S	0	6	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+174_0	NEIL1	0.06	2	46	4	G	C	mismatch	S	I	H	0	5	H	4	4	H	6	0	C:G	None	H	6	0	C:G	None
+174_1	NEIL1	0.06	2	56	-6	A	U	mismatch	S	H	I	0	7	H	4	4	H	6	0	C:G	None	H	6	0	C:G	None
+175_0	NEIL1	0.05	2	46	4	G	C	mismatch	I	S	S	0	5	B	2	5	B	2	0	C:G	A:U	B	2	0	C:G	A:U
+175_1	NEIL1	0.05	2	57	-7	C	G	mismatch	S	B	I	0	8	B	2	5	B	2	0	C:G	A:U	B	2	0	C:G	A:U
+176_0	NEIL1	0.04	2	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+176_1	NEIL1	0.04	2	58	-8	G	U	mismatch	I	S	S	0	9	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+177_0	NEIL1	0.07	2	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+177_1	NEIL1	0.07	2	59	-9	G	C	mismatch	I	S	S	0	10	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+178_0	NEIL1	None	2	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+178_1	NEIL1	None	2	60	-10	G	C	mismatch	I	S	S	0	11	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+179_0	NEIL1	None	2	46	4	G	C	mismatch	S	I	H	0	5	H	3	4	H	6	0	C:G	None	H	6	0	C:G	None
+179_1	NEIL1	None	2	61	-11	U	A	mismatch	S	I	I	0	12	H	3	4	H	6	0	C:G	None	H	6	0	C:G	None
+180_0	NEIL1	None	2	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+180_1	NEIL1	None	2	62	-12	C	G	mismatch	B	S	S	0	13	I	3	3	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+181_0	NEIL1	0.01	2	47	3	G	U	mismatch	I	S	S	1	4	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+181_1	NEIL1	0.01	2	48	2	C	G	mismatch	I	S	S	1	3	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+182_0	NEIL1	0.01	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+182_1	NEIL1	0.01	2	52	-2	G	C	mismatch	I	S	S	1	3	I	2	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+183_0	NEIL1	0.02	2	47	3	G	U	mismatch	H	S	S	1	4	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
+183_1	NEIL1	0.02	2	53	-3	G	C	mismatch	S	H	I	0	4	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
+184_0	NEIL1	0.35	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+184_1	NEIL1	0.35	2	54	-4	C	U	mismatch	I	S	S	0	5	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+185_0	NEIL1	0.08	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+185_1	NEIL1	0.08	2	55	-5	U	C	mismatch	I	S	S	0	6	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+186_0	NEIL1	0.12	2	47	3	G	U	mismatch	I	S	S	1	4	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+186_1	NEIL1	0.12	2	56	-6	A	U	mismatch	I	S	S	0	7	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+187_0	NEIL1	0.02	2	47	3	G	U	mismatch	I	S	S	1	4	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+187_1	NEIL1	0.02	2	57	-7	C	G	mismatch	S	B	I	0	8	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+188_0	NEIL1	0.08	2	47	3	G	U	mismatch	I	S	S	1	4	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+188_1	NEIL1	0.08	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+189_0	NEIL1	0.02	2	47	3	G	U	mismatch	I	S	S	1	4	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+189_1	NEIL1	0.02	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+190_0	NEIL1	None	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+190_1	NEIL1	None	2	60	-10	G	C	mismatch	I	S	S	0	11	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+191_0	NEIL1	None	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+191_1	NEIL1	None	2	61	-11	U	A	mismatch	B	S	S	0	12	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+192_0	NEIL1	None	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+192_1	NEIL1	None	2	62	-12	C	G	mismatch	B	S	S	0	13	I	2	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+193_0	NEIL1	0.02	2	48	2	C	G	mismatch	B	S	S	1	3	B	7	5	B	8	0	G:U	A:U	B	8	0	G:U	A:U
+193_1	NEIL1	0.02	2	52	-2	G	C	mismatch	B	S	S	1	3	B	7	5	B	8	0	G:U	A:U	B	8	0	G:U	A:U
+194_0	NEIL1	0.01	2	48	2	C	G	mismatch	S	H	I	0	3	I	4	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+194_1	NEIL1	0.01	2	53	-3	G	C	mismatch	I	S	S	0	4	I	4	6	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+195_0	NEIL1	0.02	2	48	2	C	G	mismatch	I	S	S	1	3	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+195_1	NEIL1	0.02	2	54	-4	C	U	mismatch	I	S	S	0	5	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+196_0	NEIL1	0.02	2	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+196_1	NEIL1	0.02	2	55	-5	U	C	mismatch	S	B	I	0	6	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+197_0	NEIL1	0.07	2	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+197_1	NEIL1	0.07	2	56	-6	A	U	mismatch	I	S	S	0	7	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+198_0	NEIL1	0.23	2	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+198_1	NEIL1	0.23	2	57	-7	C	G	mismatch	S	B	I	0	8	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+199_0	NEIL1	0.03	2	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+199_1	NEIL1	0.03	2	58	-8	G	U	mismatch	I	S	S	0	9	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+200_0	NEIL1	0.02	2	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+200_1	NEIL1	0.02	2	59	-9	G	C	mismatch	I	S	S	0	10	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+201_0	NEIL1	None	2	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+201_1	NEIL1	None	2	60	-10	G	C	mismatch	I	S	S	0	11	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+202_0	NEIL1	0.03	2	48	2	C	G	mismatch	I	S	S	1	3	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+202_1	NEIL1	0.03	2	61	-11	U	A	mismatch	B	S	S	0	12	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+203_0	NEIL1	0.3	2	48	2	C	G	mismatch	I	S	S	1	3	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+203_1	NEIL1	0.3	2	62	-12	C	G	mismatch	B	S	S	0	13	I	4	4	I	3	3	G:U	U:A	I	3	3	G:U	U:A
+204_0	NEIL1	0.02	2	52	-2	G	C	mismatch	S	H	I	0	3	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
+204_1	NEIL1	0.02	2	53	-3	G	C	mismatch	S	H	I	0	4	H	4	5	H	6	0	G:C	None	H	6	0	G:C	None
+205_0	NEIL1	0.09	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+205_1	NEIL1	0.09	2	54	-4	C	U	mismatch	I	S	S	1	5	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+206_0	NEIL1	0.04	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+206_1	NEIL1	0.04	2	55	-5	U	C	mismatch	I	S	S	1	6	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+207_0	NEIL1	0.1	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	7	6	A:U	G:C	I	7	6	A:U	G:C
+207_1	NEIL1	0.1	2	56	-6	A	U	mismatch	I	S	S	1	7	I	6	4	I	7	6	A:U	G:C	I	7	6	A:U	G:C
+208_0	NEIL1	0.03	2	52	-2	G	C	mismatch	I	S	S	1	3	I	9	5	I	3	1	A:U	C:G	I	3	1	A:U	C:G
+208_1	NEIL1	0.03	2	57	-7	C	G	mismatch	S	B	I	0	8	I	9	5	I	3	1	A:U	C:G	I	3	1	A:U	C:G
+209_0	NEIL1	0.09	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+209_1	NEIL1	0.09	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+210_0	NEIL1	0.06	2	52	-2	G	C	mismatch	S	M	H	0	3	M	5	4	M	2	0	C:G	A:U	M	2	0	C:G	A:U
+210_1	NEIL1	0.06	2	59	-9	G	C	mismatch	S	H	M	0	5	M	5	4	M	2	0	C:G	A:U	M	2	0	C:G	A:U
+211_0	NEIL1	0.1	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+211_1	NEIL1	0.1	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+212_0	NEIL1	0.2	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+212_1	NEIL1	0.2	2	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+213_0	NEIL1	0.1	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+213_1	NEIL1	0.1	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+214_0	NEIL1	0.42	2	53	-3	G	C	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+214_1	NEIL1	0.42	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+215_0	NEIL1	0.17	2	53	-3	G	C	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+215_1	NEIL1	0.17	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+216_0	NEIL1	0.18	2	53	-3	G	C	mismatch	S	H	I	0	4	H	6	2	H	3	0	C:G	None	H	3	0	C:G	None
+216_1	NEIL1	0.18	2	56	-6	A	U	mismatch	S	H	I	0	7	H	6	2	H	3	0	C:G	None	H	3	0	C:G	None
+217_0	NEIL1	0.08	2	53	-3	G	C	mismatch	S	H	I	0	4	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
+217_1	NEIL1	0.08	2	57	-7	C	G	mismatch	I	S	S	0	8	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
+218_0	NEIL1	0.09	2	53	-3	G	C	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+218_1	NEIL1	0.09	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+219_0	NEIL1	0.02	2	53	-3	G	C	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+219_1	NEIL1	0.02	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+220_0	NEIL1	0.08	2	53	-3	G	C	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+220_1	NEIL1	0.08	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+221_0	NEIL1	0.19	2	53	-3	G	C	mismatch	S	H	I	0	4	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
+221_1	NEIL1	0.19	2	61	-11	U	A	mismatch	S	I	I	0	12	H	3	6	H	8	0	G:C	None	H	8	0	G:C	None
+222_0	NEIL1	0.27	2	53	-3	G	C	mismatch	I	S	S	0	4	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+222_1	NEIL1	0.27	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+223_0	NEIL1	0.5	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+223_1	NEIL1	0.5	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+224_0	NEIL1	0.66	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+224_1	NEIL1	0.66	2	56	-6	A	U	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+225_0	NEIL1	0.19	2	54	-4	C	U	mismatch	B	S	S	0	5	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+225_1	NEIL1	0.19	2	57	-7	C	G	mismatch	S	B	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+226_0	NEIL1	0.67	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+226_1	NEIL1	0.67	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+227_0	NEIL1	0.28	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+227_1	NEIL1	0.28	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+228_0	NEIL1	0.55	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+228_1	NEIL1	0.55	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+229_0	NEIL1	0.72	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+229_1	NEIL1	0.72	2	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+230_0	NEIL1	0.61	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+230_1	NEIL1	0.61	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+231_0	NEIL1	0.33	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+231_1	NEIL1	0.33	2	56	-6	A	U	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+232_0	NEIL1	0.12	2	55	-5	U	C	mismatch	S	B	I	0	6	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+232_1	NEIL1	0.12	2	57	-7	C	G	mismatch	S	B	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+233_0	NEIL1	0.41	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+233_1	NEIL1	0.41	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+234_0	NEIL1	0.11	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+234_1	NEIL1	0.11	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+235_0	NEIL1	0.16	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+235_1	NEIL1	0.16	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+236_0	NEIL1	0.48	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+236_1	NEIL1	0.48	2	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+237_0	NEIL1	0.51	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+237_1	NEIL1	0.51	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+238_0	NEIL1	0.22	2	56	-6	A	U	mismatch	I	S	S	0	7	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+238_1	NEIL1	0.22	2	57	-7	C	G	mismatch	S	I	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+239_0	NEIL1	0.31	2	56	-6	A	U	mismatch	I	S	S	0	7	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+239_1	NEIL1	0.31	2	58	-8	G	U	mismatch	I	S	S	0	9	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+240_0	NEIL1	0.06	2	56	-6	A	U	mismatch	I	S	S	0	7	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+240_1	NEIL1	0.06	2	59	-9	G	C	mismatch	I	S	S	0	10	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+241_0	NEIL1	0.23	2	56	-6	A	U	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+241_1	NEIL1	0.23	2	60	-10	G	C	mismatch	S	I	B	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+242_0	NEIL1	0.35	2	56	-6	A	U	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+242_1	NEIL1	0.35	2	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+243_0	NEIL1	0.63	2	56	-6	A	U	mismatch	I	S	S	0	7	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+243_1	NEIL1	0.63	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+244_0	NEIL1	0.17	2	57	-7	C	G	mismatch	S	B	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+244_1	NEIL1	0.17	2	58	-8	G	U	mismatch	I	S	S	0	9	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+245_0	NEIL1	0.23	2	57	-7	C	G	mismatch	S	I	I	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+245_1	NEIL1	0.23	2	59	-9	G	C	mismatch	S	I	I	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+246_0	NEIL1	0.14	2	57	-7	C	G	mismatch	S	B	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+246_1	NEIL1	0.14	2	60	-10	G	C	mismatch	I	S	S	0	11	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+247_0	NEIL1	None	2	57	-7	C	G	mismatch	I	S	S	0	8	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+247_1	NEIL1	None	2	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+248_0	NEIL1	0.58	2	57	-7	C	G	mismatch	S	B	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+248_1	NEIL1	0.58	2	62	-12	C	G	mismatch	I	S	S	0	13	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+249_0	NEIL1	0.3	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+249_1	NEIL1	0.3	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+250_0	NEIL1	0.29	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+250_1	NEIL1	0.29	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+251_0	NEIL1	0.38	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+251_1	NEIL1	0.38	2	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+252_0	NEIL1	0.51	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+252_1	NEIL1	0.51	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+253_0	NEIL1	0.06	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+253_1	NEIL1	0.06	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+254_0	NEIL1	0.23	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+254_1	NEIL1	0.23	2	61	-11	U	A	mismatch	I	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+255_0	NEIL1	0.26	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+255_1	NEIL1	0.26	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+256_0	NEIL1	None	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+256_1	NEIL1	None	2	61	-11	U	A	mismatch	I	S	S	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+257_0	NEIL1	None	2	60	-10	G	C	mismatch	S	I	I	0	11	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+257_1	NEIL1	None	2	62	-12	C	G	mismatch	S	I	I	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+258_0	NEIL1	0.48	2	61	-11	U	A	mismatch	S	I	I	0	12	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+258_1	NEIL1	0.48	2	62	-12	C	G	mismatch	S	I	I	0	13	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
+259_0	NEIL1	0.0	2	44	6	G	C	mismatch	H	S	S	0	7	I	4	6	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+259_1	NEIL1	0.0	2	49	1	A	U	mismatch	I	S	S	1	2	I	4	6	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+260_0	NEIL1	0.0	2	45	5	G	C	mismatch	B	S	S	0	6	I	3	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+260_1	NEIL1	0.0	2	49	1	A	U	mismatch	I	S	S	1	2	I	3	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+261_0	NEIL1	0.01	2	46	4	G	C	mismatch	B	S	S	0	5	I	2	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+261_1	NEIL1	0.01	2	49	1	A	U	mismatch	I	S	S	1	2	I	2	3	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+262_0	NEIL1	0.0	2	47	3	G	U	mismatch	I	S	S	1	4	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+262_1	NEIL1	0.0	2	49	1	A	U	mismatch	I	S	S	1	2	I	6	5	I	4	3	G:C	U:A	I	4	3	G:C	U:A
+263_0	NEIL1	0.01	2	48	2	C	G	mismatch	S	H	I	0	3	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+263_1	NEIL1	0.01	2	49	1	A	U	mismatch	I	S	S	1	2	I	8	5	I	2	1	G:U	U:A	I	2	1	G:U	U:A
+264_0	NEIL1	0.01	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	3	3	C:G	C:G	I	3	3	C:G	C:G
+264_1	NEIL1	0.01	2	51	-1	A	U	mismatch	I	S	S	1	2	I	5	4	I	3	3	C:G	C:G	I	3	3	C:G	C:G
+265_0	NEIL1	0.01	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	7	6	C:G	U:A	I	7	6	C:G	U:A
+265_1	NEIL1	0.01	2	52	-2	G	C	mismatch	I	S	S	1	3	I	5	4	I	7	6	C:G	U:A	I	7	6	C:G	U:A
+266_0	NEIL1	0.02	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+266_1	NEIL1	0.02	2	53	-3	G	C	mismatch	I	S	S	0	4	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+267_0	NEIL1	0.11	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+267_1	NEIL1	0.11	2	54	-4	C	U	mismatch	I	S	S	0	5	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+268_0	NEIL1	0.03	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+268_1	NEIL1	0.03	2	55	-5	U	C	mismatch	I	S	S	0	6	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+269_0	NEIL1	0.07	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+269_1	NEIL1	0.07	2	56	-6	A	U	mismatch	I	S	S	0	7	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+270_0	NEIL1	0.08	2	49	1	A	U	mismatch	I	S	S	1	2	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+270_1	NEIL1	0.08	2	57	-7	C	G	mismatch	S	B	I	0	8	I	7	5	I	3	2	G:U	U:A	I	3	2	G:U	U:A
+271_0	NEIL1	0.02	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+271_1	NEIL1	0.02	2	58	-8	G	U	mismatch	I	S	S	0	9	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+272_0	NEIL1	0.03	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+272_1	NEIL1	0.03	2	59	-9	G	C	mismatch	I	S	S	0	10	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+273_0	NEIL1	0.01	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+273_1	NEIL1	0.01	2	60	-10	G	C	mismatch	I	S	S	0	11	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+274_0	NEIL1	None	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+274_1	NEIL1	None	2	61	-11	U	A	mismatch	B	S	S	0	12	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+275_0	NEIL1	0.18	2	49	1	A	U	mismatch	I	S	S	1	2	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+275_1	NEIL1	0.18	2	62	-12	C	G	mismatch	B	S	S	0	13	I	5	4	I	2	2	C:G	U:A	I	2	2	C:G	U:A
+276_0	NEIL1	0.04	2	44	6	G	C	mismatch	H	S	S	0	7	I	5	6	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+276_1	NEIL1	0.04	2	51	-1	A	U	mismatch	I	S	S	1	2	I	5	6	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+277_0	NEIL1	0.01	2	45	5	G	C	mismatch	B	S	S	0	6	I	4	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+277_1	NEIL1	0.01	2	51	-1	A	U	mismatch	I	S	S	1	2	I	4	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+278_0	NEIL1	0.0	2	46	4	G	C	mismatch	B	S	S	0	5	I	3	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+278_1	NEIL1	0.0	2	51	-1	A	U	mismatch	I	S	S	1	2	I	3	3	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+279_0	NEIL1	0.01	2	47	3	G	U	mismatch	I	S	S	0	4	I	2	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+279_1	NEIL1	0.01	2	51	-1	A	U	mismatch	I	S	S	1	2	I	2	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+280_0	NEIL1	0.02	2	48	2	C	G	mismatch	S	H	I	0	3	I	7	8	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+280_1	NEIL1	0.02	2	51	-1	A	U	mismatch	I	S	S	1	2	I	7	8	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+281_0	NEIL1	0.005	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+281_1	NEIL1	0.005	2	52	-2	G	C	mismatch	I	S	S	1	3	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+282_0	NEIL1	0.004	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+282_1	NEIL1	0.004	2	53	-3	G	C	mismatch	I	S	S	1	4	I	6	4	I	6	5	A:U	U:A	I	6	5	A:U	U:A
+283_0	NEIL1	0.12	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+283_1	NEIL1	0.12	2	54	-4	C	U	mismatch	I	S	S	0	5	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+284_0	NEIL1	0.03	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+284_1	NEIL1	0.03	2	55	-5	U	C	mismatch	I	S	S	0	6	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+285_0	NEIL1	0.05	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+285_1	NEIL1	0.05	2	56	-6	A	U	mismatch	I	S	S	0	7	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+286_0	NEIL1	0.04	2	51	-1	A	U	mismatch	B	S	S	1	2	B	9	5	B	2	0	A:U	G:C	B	2	0	A:U	G:C
+286_1	NEIL1	0.04	2	57	-7	C	G	mismatch	S	B	I	0	8	B	9	5	B	2	0	A:U	G:C	B	2	0	A:U	G:C
+287_0	NEIL1	0.05	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+287_1	NEIL1	0.05	2	58	-8	G	U	mismatch	I	S	S	0	9	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+288_0	NEIL1	0.0	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+288_1	NEIL1	0.0	2	59	-9	G	C	mismatch	I	S	S	0	10	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+289_0	NEIL1	0.04	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+289_1	NEIL1	0.04	2	60	-10	G	C	mismatch	I	S	S	0	11	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+290_0	NEIL1	0.03	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+290_1	NEIL1	0.03	2	61	-11	U	A	mismatch	B	S	S	0	12	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+291_0	NEIL1	0.02	2	51	-1	A	U	mismatch	I	S	S	1	2	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+291_1	NEIL1	0.02	2	62	-12	C	G	mismatch	B	S	S	0	13	I	6	4	I	2	2	A:U	C:G	I	2	2	A:U	C:G
+292_0	NEIL1	0.64	0	None	None	None	None	wt	None	None	None	None	None	I	6	4	I	1	1	A:U	U:A	I	1	1	A:U	U:A
