@@ -1,0 +1,124 @@
+## Top 30+ features from mean rank across substrates; (removed mut_prev and mut_next mut_structure ) 
+## all below are subset of top 30+
+render_report("01-ALL-20190109", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt, num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt, site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior, d_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d2_3prm_cp_interior, d_count, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count'
+)
+
+## Remove all mutation-specific and sequence-specific features; structure features only 
+render_report("02-No-mut-seq-No-site-nt", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior, d_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d2_3prm_cp_interior, d_count, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count'
+)
+
+## Remove mutation features, but keep features within 1 bp of editing site 
+render_report("03-No-Mut", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt, site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior, d_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d_count, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count, d2_3prm_cp_interior'
+)
+
+## Mutation-specific features , +/- 1 within editing site  
+render_report("04-Mut-seq+Site-nt", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt, num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt'
+)
+
+## Only mutation features, no editing site features 
+render_report("05-Mut-seq-only", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt'
+)
+
+
+render_report("06-No-Site-seq-struct", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt, d_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d_count, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count, d2_3prm_cp_interior'
+)
+render_report("07-No-Site-seq", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt, site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior, d_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d_count, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count, d2_3prm_cp_interior'
+)
+render_report("08-No-Site-struct", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt, num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt, d_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d_count, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count, d2_3prm_cp_interior'
+)
+render_report("09-Site-seq-only", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt'
+)
+render_report("10-Site-struct-only", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior'
+)
+render_report("11-No-Up", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt, num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt, site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior, d_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d2_3prm_cp_interior, d_count'
+)
+render_report("12-Up-only", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count'
+)
+render_report("13-No-Down", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt, num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt, site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count'
+)
+render_report("14-Down-only", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'd_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d2_3prm_cp_interior, d_count'
+)
+render_report("15-No-up-No-down_Mut+Site", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'site_prev_nt, site_next_nt, num_mutations, mut_pos, mut_site_dist, mut_ref_nt, mut_nt, mut_prev_struct, mut_same_as_site, site_struct, site_length, site_length_interior_es, site_length_interior_ecs, site_3prm_cp_interior'
+)
+render_report("16-Up+Down-only", 
+working_folder,
+dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational',
+split = training_validation_split,
+external_test_dataset_codename_str = 'neil1_computational, ajuba_bc_computational, ttyh2_computational, ttyh2_ecs_bc_experimental, neil1_experimental, neil1_degenerate_computational, ttyh2_bc_degenerate_computational',
+feature_column_str = 'd_all_stem_length, d2_struct, d1_distance, d1_length_stem, d2_distance, d3_distance, d3_length_stem, d2_length_interior_ecs, d2_length_interior_es, d2_3prm_cp_interior, d_count, u1_length_stem, u3_distance, u_all_stem_length, u2_distance, u1_distance, u2_length_stem, u2_struct, u_count'
+)
