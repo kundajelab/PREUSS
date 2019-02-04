@@ -6,14 +6,20 @@ import xgboost
 import shap
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
 
-#Drop any columns that contain features with constant value across datapoints
-def remove_singleval_features(X):
+#Identify any columns that contain features with constant value across datapoints
+def get_singleval_features(X):
     todrop=[]
     for column in X.columns:
         if len(set(X[column]))==1:
             todrop.append(column)
-    X=X.drop(todrop,axis=1)
-    return X
+    return todrop 
+#Identify any columns that contain features with null values across datapoints 
+def get_all_null_features(X):
+    all_null=[]
+    for c in X.columns:
+        if X[c].isnull().all():
+            all_null.append(c)
+    return all_null
 
 def format_for_xgboost(X):
     first=True
