@@ -371,7 +371,8 @@ mut_seq_site=['site_prev_nt',
               'mut_site_dist',
               'mut_ref_nt, mut_nt']
 
-no_mut=["site_struct*",
+no_mut=["free_energy*",
+        "site_struct*",
         "site_prev_struct*",
         "site_next_struct*",
         "site_length_stem*",
@@ -467,3 +468,6 @@ no_mut=["site_struct*",
         "d3_3prm_cp_bulge*",
         "d3_5prm_cp_interior*",
         "d3_3prm_cp_interior*"]
+
+overall_structure=["free_energy*",
+                   "all_stem_length*"]
