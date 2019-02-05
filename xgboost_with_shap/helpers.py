@@ -69,8 +69,9 @@ def format_for_xgboost(X):
     return transformed
 
 def split_train_test_eval_by_mut_pos(data,train_split_percent=0.70,eval_split_percent=0.15,test_split_percent=0.15):
-    valcount,positions=np.histogram(data['mut_pos'], bins=list(set(data['mut_pos'])))
+    valcount,positions=np.histogram(data['mut_pos'], bins=np.unique(np.sort(data['mut_pos'])))
     pos_to_count= dict(zip(positions,valcount))
+    print(pos_to_count)
     positions=list(pos_to_count.keys())
     total=data.shape[0] 
     random.shuffle(positions)
