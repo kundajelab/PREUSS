@@ -6,6 +6,23 @@ import xgboost
 import shap
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
 
+
+def shap_contribs_subgroup(shap_values,feature_group):
+    shap_mean_abs_by_subject=abs(shap_values).mean(axis=0)
+    total_shap=shap_mean_abs_by_subject.sum()
+    shap_mean_abs_by_subject_norm=shap_mean_abs_by_subject/total_shap
+    shap_subset=shap_mean_abs_by_subject_norm[filter_features(shap_values,feature_group)]
+    return shap_subset.sum()
+
+    
+
+def filter_features(df,feature_group):
+    filtered_columns=[] 
+    for f in feature_group:
+        new_cols=list(df.filter(regex=f,axis=1).columns)
+        filtered_columns=filtered_columns+new_cols
+    return filtered_columns
+
 #Identify any columns that contain features with constant value across datapoints
 def get_singleval_features(X):
     todrop=[]
