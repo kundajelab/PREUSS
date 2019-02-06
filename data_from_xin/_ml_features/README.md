@@ -1,5 +1,11 @@
 # ML Feature Changes
 
+## v2.2 - 2019_02_05_
+
+- Add three new features
+    - all_stem_length - include "site" if "site" is Stem
+- The sequence of AJUBA_BC get "sliced"
+
 ## v2 - 2019_01_30
 
 - Add three new features
