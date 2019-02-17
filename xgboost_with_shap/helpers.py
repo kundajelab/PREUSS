@@ -32,7 +32,7 @@ def get_singleval_features(X):
 def get_all_null_features(X):
     all_null=[]
     for c in X.columns:
-        if (pd.isnan(X[c]).all())==True:
+        if (pd.isna(X[c]).all())==True:
             all_null.append(c)
     return all_null
 
