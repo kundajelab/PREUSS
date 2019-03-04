@@ -11,8 +11,17 @@ import math
 def mape(labels,preds,pseudocount=0.01):
     return np.mean(np.abs((labels - preds) /(pseudocount+labels)))
 
-def print_aggregate_peformance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,subset=None,round_places=3):
-    metrics=aggregate_performance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,subset=subset)
+def print_aggregate_peformance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,train_subset=None,eval_subset=None, test_subset=None,round_places=3, positive_thresh=0.5):
+    metrics=aggregate_performance_metrics(train_labels,
+                                          train_preds,
+                                          eval_labels,
+                                          eval_preds,
+                                          test_labels,
+                                          test_preds,
+                                          train_subset=train_subset,
+                                          eval_subset=eval_subset,
+                                          test_subset=test_subset,
+                                          positive_thresh=positive_thresh)
     for key in metrics:
         print(key)
         for subkey in metrics[key]:
@@ -20,30 +29,32 @@ def print_aggregate_peformance_metrics(train_labels,train_preds,eval_labels,eval
             print('\t'+subkey+' : '+str(cur_metric))
             
 
-def aggregate_performance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,subset=None):
-    if subset!=None:
-        train_labels=train_labels[subset]
-        tain_preds=train_preds[subset]
-        eval_labels=eval_labels[subset]
-        eval_preds=eval_preds[subset]
-        test_labels=test_labels[subset]
-        test_preds=test_preds[subset]
-    metrics=dict()     
-    metrics['Train']=get_performance_metrics(train_labels,train_preds)
-    metrics['Eval']=get_performance_metrics(eval_labels,eval_preds)
-    metrics['Test']=get_performance_metrics(test_labels,test_preds)
+def aggregate_performance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,train_subset=None,eval_subset=None,test_subset=None,positive_thresh=0.5):
+    if train_subset!=None:
+        train_labels=train_labels[train_subset]
+        tain_preds=train_preds[train_subset]
+    if eval_subset!=None:
+        eval_labels=eval_labels[eval_subset]
+        eval_preds=eval_preds[eval_subset]
+    if test_subset!=None:
+        test_labels=test_labels[test_subset]
+        test_preds=test_preds[test_subset]
+    metrics=dict()
+    metrics['Train']=get_performance_metrics(train_labels,train_preds,positive_thresh)
+    metrics['Eval']=get_performance_metrics(eval_labels,eval_preds,positive_thresh)
+    metrics['Test']=get_performance_metrics(test_labels,test_preds,positive_thresh)
     return metrics 
 
 
-def get_performance_metrics(labels,preds):
+def get_performance_metrics(labels,preds,positive_thresh):
     metrics=dict() 
     metrics['Spearman corr']=spearmanr(labels,preds)
     metrics['Pearson corr']=pearsonr(labels,preds)
     metrics['MAE']=mean_absolute_error(labels,preds)
     metrics['MAPE']=mape(labels,preds)
     metrics['RMSE']=math.sqrt(mean_squared_error(labels,preds))
-    metrics['auPRC']=average_precision_score(labels>=0.5,preds)
-    metrics['auROC']=roc_auc_score(labels>=0.5,preds)
+    metrics['auPRC']=average_precision_score(labels>positive_thresh,preds)
+    metrics['auROC']=roc_auc_score(labels>=positive_thresh,preds)
     return metrics
 
 
