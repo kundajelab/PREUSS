@@ -3,6 +3,49 @@ import random
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
+from scipy.stats import spearmanr,pearsonr
+from sklearn.metrics import mean_absolute_error, mean_squared_error, average_precision_score, roc_auc_score
+import math 
+
+
+def mape(labels,preds,pseudocount=0.01):
+    return np.mean(np.abs((labels - preds) /(pseudocount+labels)))
+
+def print_aggregate_peformance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,subset=None,round_places=3):
+    metrics=aggregate_performance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,subset=subset)
+    for key in metrics:
+        print(key)
+        for subkey in metrics[key]:
+            cur_metric=metrics[key][subkey]
+            print('\t'+subkey+' : '+str(cur_metric))
+            
+
+def aggregate_performance_metrics(train_labels,train_preds,eval_labels,eval_preds,test_labels,test_preds,subset=None):
+    if subset!=None:
+        train_labels=train_labels[subset]
+        tain_preds=train_preds[subset]
+        eval_labels=eval_labels[subset]
+        eval_preds=eval_preds[subset]
+        test_labels=test_labels[subset]
+        test_preds=test_preds[subset]
+    metrics=dict()     
+    metrics['Train']=get_performance_metrics(train_labels,train_preds)
+    metrics['Eval']=get_performance_metrics(eval_labels,eval_preds)
+    metrics['Test']=get_performance_metrics(test_labels,test_preds)
+    return metrics 
+
+
+def get_performance_metrics(labels,preds):
+    metrics=dict() 
+    metrics['Spearman corr']=spearmanr(labels,preds)
+    metrics['Pearson corr']=pearsonr(labels,preds)
+    metrics['MAE']=mean_absolute_error(labels,preds)
+    metrics['MAPE']=mape(labels,preds)
+    metrics['RMSE']=math.sqrt(mean_squared_error(labels,preds))
+    metrics['auPRC']=average_precision_score(labels>=0.5,preds)
+    metrics['auROC']=roc_auc_score(labels>=0.5,preds)
+    return metrics
+
 
 
 def shap_contribs_subgroup(shap_values,feature_group):
