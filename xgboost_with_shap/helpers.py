@@ -146,3 +146,26 @@ def split_train_test_eval_by_mut_pos(data,train_split_percent=0.70,eval_split_pe
     eval_split=data[data['mut_pos'].isin(eval_pos)]
     test_split=data[data['mut_pos'].isin(test_pos)]
     return train_split,eval_split,test_split
+
+
+def split_train_eval_by_mut_pos(data,train_split_percent=0.85,eval_split_percent=0.15):
+    valcount,positions=np.histogram(data['mut_pos'], bins=np.unique(np.sort(data['mut_pos'])))
+    pos_to_count= dict(zip(positions,valcount))
+    print(pos_to_count)
+    positions=list(pos_to_count.keys())
+    total=data.shape[0] 
+    random.shuffle(positions)
+    added=0
+    train_pos=[]
+    eval_pos=[] 
+    num_train=total*train_split_percent
+    num_eval=total*eval_split_percent 
+    for pos in positions: 
+        added+=pos_to_count[pos]
+        if added < num_train: 
+            train_pos.append(pos)
+        else:
+            eval_pos.append(pos) 
+    train_split=data[data['mut_pos'].isin(train_pos)]
+    eval_split=data[data['mut_pos'].isin(eval_pos)]
+    return train_split,eval_split
