@@ -527,4 +527,7 @@ no_mut=["free_energy*",
 
 overall_structure=[
     "free_energy*",
-    "all_stem_length*"]
+    "all_stem_length*",
+    "sim_nor_score*",
+    "probability_active_conf*",
+    ]
