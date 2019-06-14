@@ -4,7 +4,13 @@
 sub_struct_overall = [
     "all_stem_length",
     "free_energy*",
-    "sim_nor_score*",
+    "sim_nor_score*", #similarity score -->  see Xin's methods 
+    "probability_active_conf*"
+]
+
+biophysical = [
+    "free_energy*",
+    "sim_nor_score*", #similarity score -->  see Xin's methods 
     "probability_active_conf*"
 ]
 
@@ -43,14 +49,14 @@ sub_site_struct = [
    "site_struct*",
    "site_prev_struct*",
    "site_next_struct*",
-   "site_1_1*",
+   "site_1_1*", #if editing site is 1:1 internal loop 
    "site_length*",
    "site_length_stem*",
    "site_length_hairpin*",
    "site_length_bulge*",
    "site_length_internal_es*",
    "site_length_internal_ecs*",
-   "site_5prm_cp_hairpin*",
+   "site_5prm_cp_hairpin*", #5' closing pair of editing site structure 
    "site_5prm_cp_bulge*",
    "site_3prm_cp_bulge*",
    "site_5prm_cp_internal*",
@@ -63,7 +69,7 @@ sub_upstream = [
    "u_all_stem_length*",
    "u_hairpin_length*",
 
-   "u1_exist*",
+   "u1_exist*", #exist 
    "u1_distance*",
    "u1_struct*",
    "u1_length*",
@@ -160,6 +166,40 @@ sub_downstream = [
    "d3_3prm_cp_internal*"
 ]
 
+u1=[
+   "u1_exist*", #exist 
+   "u1_distance*",
+   "u1_struct*",
+   "u1_length*",
+   "u1_length_stem*",
+   "u1_length_hairpin*",
+   "u1_length_bulge*",
+   "u1_length_internal_es*",
+   "u1_length_internal_ecs*",
+   "u1_5prm_cp_hairpin*",
+   "u1_5prm_cp_bulge*",
+   "u1_3prm_cp_bulge*",
+   "u1_5prm_cp_internal*",
+   "u1_3prm_cp_internal*",
+]
+
+d1=[
+   "d1_exist*",
+   "d1_distance*",
+   "d1_struct*",
+   "d1_length*",
+   "d1_length_stem*",
+   "d1_length_hairpin*",
+   "d1_length_bulge*",
+   "d1_length_internal_es*",
+   "d1_length_internal_ecs*",
+   "d1_5prm_cp_hairpin*",
+   "d1_5prm_cp_bulge*",
+   "d1_3prm_cp_bulge*",
+   "d1_5prm_cp_internal*",
+   "d1_3prm_cp_internal*",
+]
+
 # endregion
 
 # Overall Structure
@@ -192,3 +232,4 @@ no_down = sub_struct_overall + mut + site + u
 # NO "Mutation"
 no_mut = sub_struct_overall + site + u + d
 
+u1_d1=u1+d1
