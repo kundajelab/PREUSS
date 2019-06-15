@@ -1,0 +1,4 @@
+Substrate	Spearman	Pearson	MAE	MAPE	RMSE	auPRC	auROC
+AJUBA Comp.	0.62	0.75	0.04	1.31	0.05	0.88	0.94
+NEIL1 Comp.	0.9	0.9	0.044	0.66	0.074	0.81	0.97
+TTYH2 Comp.	0.9	0.88	0.042	0.35	0.04	0.96	0.97
