@@ -96,19 +96,23 @@ def format_for_xgboost(X):
         feature=X[X.columns[i]]
         feat_name=X.columns[i]
         if feature.dtype not in [float,int]:
-            #We need to handle NA values 
-            feature[pd.isna(feature)]="NA"
-            label_encoder = LabelEncoder()
-            feature = label_encoder.fit_transform(feature)
-            feature = feature.reshape(X.shape[0], 1)
-            onehot_encoder = OneHotEncoder(sparse=False)
-            feature = onehot_encoder.fit_transform(feature)
-            #Drop the column corresponding to NA
-            feature=pd.DataFrame(feature,columns=[feat_name+":"+str(j) for j in label_encoder.classes_])
-            embedding_map = dict(zip(label_encoder.classes_, label_encoder.transform(label_encoder.classes_)))
-            if "NA" in embedding_map:
-                todrop=feat_name+":NA"
-                feature=feature.drop([todrop],axis=1)
+            try:
+                #We need to handle NA values 
+                feature[pd.isna(feature)]="NA"
+                label_encoder = LabelEncoder()
+                feature = label_encoder.fit_transform(feature)
+                feature = feature.reshape(X.shape[0], 1)
+                onehot_encoder = OneHotEncoder(sparse=False)
+                feature = onehot_encoder.fit_transform(feature)
+                #Drop the column corresponding to NA
+                feature=pd.DataFrame(feature,columns=[feat_name+":"+str(j) for j in label_encoder.classes_])
+                embedding_map = dict(zip(label_encoder.classes_, label_encoder.transform(label_encoder.classes_)))
+                if "NA" in embedding_map:
+                    todrop=feat_name+":NA"
+                    feature=feature.drop([todrop],axis=1)
+            except:
+                feature = feature.values.reshape(X.shape[0], 1)
+                feature=pd.DataFrame(feature,columns=[feat_name])
         else: 
             feature = feature.values.reshape(X.shape[0], 1)
             feature=pd.DataFrame(feature,columns=[feat_name])
