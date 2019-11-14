@@ -1,0 +1,145 @@
+# =======================================================
+# RNA Library Pipeline - Config File
+#
+# Version: 2.0
+#
+# It contains the "configurations" that helps run the "RNA Lib" pipeline to process & analyze
+# the RNA library data.
+#
+#
+# ## Configurations
+#
+# The config includes the following parts:
+#
+# - Meta Info - such as data source, rna lib, run, etc.
+# - Pipeline configurations
+# - Available analysis options
+#
+#
+# ## NOTES
+#
+# The config file is in YAML format.
+#
+# @link: http://www.yaml.org/
+#
+
+
+# -------------------------------------------------------
+# Meta
+#
+
+# --------- Data Source ---------
+
+# RNA Lib Data Source folder
+# - Absolute path
+# - Under this folder, each "RNA library item" should have its own sub-folder - named by **RNA Barcode**
+data_source_folder_path: '_lib'
+
+# Data Source Code
+# - It MUST be unique
+data_source_code: ''
+
+# Data Source Title
+data_source_title: ''
+
+# Data Source Creation Date
+data_source_date: ''
+
+# Data Source Description
+data_source_description: ''
+
+
+# --------- RNA Lib Info ---------
+
+# RNA Lib sequence file
+# - Relative to "working folder"
+rna_lib_file: 'rna_lib.rlib'
+
+
+# The "RNA ID" of "WT".
+wide_type_rna_id: ''
+# The WT RNA sequence
+# - It needs "RNA" sequence
+wide_type_rna_sequence: ''
+
+
+# --------- Running Meta ---------
+
+# Running Code
+# - It MUST be unique
+running_code: ''
+
+# Running Date
+running_date: ''
+
+# Running Notes
+running_notes: ''
+
+# Running Results Folder
+# - Absolute path
+# - This is also "working folder"
+output_folder_path: '_rna_lib_results'
+
+
+# -------------------------------------------------------
+# Pipeline
+#
+
+# --------- Novobarcode ---------
+
+
+
+# --------- ShapeMapper 2 --------
+
+# Step flag
+run_shapemapper: false
+
+# Sample Data
+# - It will includes three types - "modified", "untreated (non-modified)", "denatured"
+# - It supports "two" types of data source - `folder` or `file`.
+#     - For `file`, be sure to specify both reads - R1 and R2
+# - Both "folder" and "files" are relative to "RNA library item" folder
+shape_use_folder: false
+
+# Files - "modified"
+# - Equivalent CMD parameter -  `--modified --R1 <modified_r1> --R2 <modified_r2>`
+shape_modified_r1: ''
+shape_modified_r2: ''
+# Folder - "modified"
+# - Equivalent CMD parameter -  `--modified --folder <modified_folder>`
+shape_modified_folder: ''
+
+# Files - "untreated (non-modified)"
+# - Equivalent CMD parameter -  `--untreated --R1 <untreated_r1> --R2 <untreated_r2>`
+shape_untreated_r1: ''
+shape_untreated_r2: ''
+# Folder - "untreated (non-modified)"
+# - Equivalent CMD parameter -  `--untreated --folder <untreated_folder>`
+shape_untreated_folder: ''
+
+# Files - "denatured"
+# - Equivalent CMD parameter -  `--denatured --R1 <untreated_r1> --R2 <untreated_r2>`
+shape_denatured_r1: ''
+denatured_r2: ''
+# Folder - "denatured"
+# - Equivalent CMD parameter -  `--denatured --folder <denatured_folder>`
+shape_denatured_folder: ''
+
+# Min Read Depth
+# - Default is: 5000
+# - Equivalent CMD parameter -  `--min-depth 5000`
+shape_min_read_depth: 5000
+
+# Additional flags from the "ShapeMapper 2"
+# `--overwrite` - Overwrite existing files in output and temporary file folders without warning.
+# `--output-counted` - Output the "mutation count" info
+shape_extra_flags: '--overwrite --output-counted'
+
+
+# -------------------------------------------------------
+# Analysis
+#
+
+# --------- bpRNA --------
+
+

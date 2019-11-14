@@ -1,0 +1,223 @@
+---
+output:
+    html_document:
+        toc: yes
+params:
+    title: 'Neil1'
+    working_folder: '/Users/cowfox/Desktop/_rna_lib_analysis/__analysis/2018_12_10-ML_Random_Forest-Tuning'
+    
+    # Dataset "codename" - ONE at a time!!
+    # Possible datasets - neil1_computational, neil1_experimental, neil1_degenerate_computational, ajuba_bc_computational, ttyh2_computational,  ttyh2_ecs_bc_experimental, ttyh2_bc_computational, ttyh2_bc_degenerate_computational, HEK293.WT1, Hela_no_gRNA, Hela_no_gRNA+IFN, u87_ctrl_vs_kd
+    dataset_codename_str: 'neil1_computational'
+
+# 
+title: "ML Feature Exploration - `r params$title`"
+---
+
+```{r "knitr config", cache = FALSE, include=FALSE}
+require("knitr")
+# 
+script_folder_path = getwd()
+if (params$working_folder != '') {
+    # Set it "globally"
+    opts_knit$set(root.dir = params$working_folder)
+}
+
+# Global Chunk Options
+# Ref - https://yihui.name/knitr/options/
+opts_chunk$set(
+    echo = TRUE
+)
+```
+
+```{r Info, include=FALSE}
+# ## Purpose of This Script
+# It aims to run "Random Forest" on the RNA Liv data. 
+# 
+# ## Tutorial of Rmarkdown
+# - https://bookdown.org/yihui/rmarkdown/
+```
+
+```{r Libraries, include=FALSE}
+#
+library(knitr)
+
+# Plot
+library(gplots)
+library(ggplot2)
+library(Hmisc)
+library(corrplot)
+
+library(doMC)  # Multi-core
+
+# Tools
+library(onehot)
+library(rlist)
+library(gtools)
+library(gsubfn)
+library(GetoptLong) # String interpolation - https://cran.r-project.org/web/packages/GetoptLong/vignettes/variable_interpolation.html
+```
+
+```{r Setup, include=FALSE}
+# Clear - NO NEED. It needs "passing params"
+# rm(list=ls())
+
+# Global options
+options(warn=-1)
+
+# Use multi-core
+registerDoMC(cores=8)
+
+# Local scripts
+source(normalizePath(file.path(script_folder_path, './utils.R')))
+source(normalizePath(file.path(script_folder_path, './helper.R')))
+```
+
+```{r Prep, include=FALSE}
+# Set the "Seed" for following "Random Forest" running
+seed_num = 166
+set.seed(seed_num)
+```
+
+# Summary
+
+This script helps explore the ML features. 
+
+# Datasets Pre-processing
+
+The following dataset are checked in this script. 
+
+```{r  List datasets - training & validation, echo=FALSE }
+
+# Build the list of "dataset codenames"
+dataset_meta = c()
+if (params$dataset_codename_str != '') {
+    dataset_meta = str_to_list(params$dataset_codename_str)
+}
+
+# 
+for (dataset_codename in dataset_meta) {
+    #
+    print(GetoptLong::qq("- @{dataset_codename}"))
+}
+
+# ONLY pick the "first" one
+dataset.one = dataset_meta[[1]]
+
+```
+
+
+```{r Load datasets, echo=FALSE, warning=FALSE}
+
+# Temp fix
+# - Use `setwd()` tp set the "working folder" since `opts_knit$set(root.dir = params$working_folder)` not working.
+# - Ignore "warning" in this chunk
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+# Loop into "codenames" and build the "dataset variables"
+# file path
+file_path = GetoptLong::qq("./_output/feature_matrices/@{dataset.one}.features.csv")
+assign(GetoptLong::qq("feature_file_relative_path.@{dataset.one}"), file_path)
+
+# original data
+data_orig = read.csv(file=file_path, header=TRUE, sep=",")
+assign(GetoptLong::qq("data_orig.@{dataset.one}"), data_orig)
+
+```
+
+```{r Pre-processing, echo=FALSE}
+
+#
+dataset.name = GetoptLong::qq("data_orig.@{dataset.one}")
+dataset = get(dataset.name)
+
+# Remove records whose "editing level" is "NA"
+column_to_predict='editing_value'
+dataset = dataset[ is.na(dataset[ , column_to_predict])==FALSE, ]
+
+# Save
+assign(dataset.name, dataset)
+```
+
+
+# Explore - Classification on "ML Feature" against "Editing Level"
+
+Use `boxplot` to help do classification on diff. "ML features". 
+
+The following "ML features" are considered: 
+
+```{r Feature list, echo=FALSE}
+
+#
+features_to_explore = c(
+    "site_struct", "u1_struct", "d1_struct", "site_length"
+)
+
+# 
+for (feature_name in features_to_explore) {
+    #
+    print(GetoptLong::qq("- @{feature_name}"))
+}
+
+```
+
+```{r Feature Classification vs. Editing Level, echo=FALSE, fig.width=10, fig.height=10 }
+
+dataset.name = GetoptLong::qq("data_orig.@{dataset.one}")
+dataset = get(dataset.name)
+
+# Plot function
+gen_plot <- function(dataset, dataset.name, column_name,
+                     xlab, ylab) {
+    # Boxplot
+    # Ref - http://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization
+    plot = ggplot(data = dataset, 
+                aes(x = dataset[, column_name], y = dataset$editing_value, color = dataset[, column_name])
+                ) +
+        geom_boxplot(
+            # 
+            aes(group = cut_width(dataset[, column_name], 0.25)),
+            
+            # Outlier
+            outlier.colour = "red", 
+            outlier.shape = 8,
+            outlier.alpha = 0.5, 
+            outlier.size = 2
+        ) +
+        geom_jitter(
+            shape = 16, 
+            position = position_jitter(0.2) # 0.2 : degree of jitter in x direction
+            ) + 
+        
+        # Theme 
+        theme(
+            legend.position="none" # Remove legend, | “left”,“top”, “right”, “bottom”.
+            ) + 
+        
+        # Labels
+        xlab(GetoptLong::qq("@{xlab}")) +
+        ylab(GetoptLong::qq("@{ylab}")) +
+        ggtitle(GetoptLong::qq("@{dataset.name}"))
+    
+    return(plot)
+}
+
+
+plots = list()
+for (feature_name in features_to_explore) {
+    #
+    plot = gen_plot(dataset, dataset.one, feature_name, 
+                            GetoptLong::qq('@{feature_name}'), GetoptLong::qq('Editing Level'))
+    print(plot)
+    plots = list.append(plots, plot)
+}
+
+# Plot Grid
+multiplot(plotlist = plots, cols = 2)
+```
+
+
+
+

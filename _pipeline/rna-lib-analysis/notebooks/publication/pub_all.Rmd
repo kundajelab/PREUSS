@@ -1,0 +1,1622 @@
+---
+output:
+    html_document:
+        toc: yes
+params:
+    title: 'Neil1 (Computational)'
+    working_folder: '/Users/cowfox/Desktop/_rna_lib_analysis/__analysis/2019_02_18-Publication_Plots'
+
+# 
+title: "Publication Plots - `r params$title`"
+---
+
+```{r "knitr config", cache = FALSE, include=FALSE}
+require("knitr")
+# 
+script_folder_path = getwd()
+if (params$working_folder != '') {
+    # Set it "globally"
+    opts_knit$set(root.dir = params$working_folder)
+}
+
+# Global Chunk Options
+# Ref - https://yihui.name/knitr/options/
+opts_chunk$set(
+    echo = TRUE,
+    message = FALSE
+)
+```
+
+```{r Info, include=FALSE}
+# ## Purpose of This Script
+# It aims to run "Random Forest" on the RNA Liv data. 
+# 
+# ## Tutorial of Rmarkdown
+# - https://bookdown.org/yihui/rmarkdown/
+```
+
+```{r Libraries, include=FALSE}
+#
+library(knitr)
+
+# Plot
+library(gplots)
+library(ggplot2)
+# ggpubr - ggplot2-based publication ready plots
+# http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/
+library(ggpubr)
+library(ggExtra)
+library(Hmisc)
+library(corrplot)
+
+library(doMC)  # Multi-core
+
+# Tools
+library(dplyr)
+library(onehot)
+library(rlist)
+library(gtools)
+library(gsubfn)
+library(GetoptLong) # String interpolation - https://cran.r-project.org/web/packages/GetoptLong/vignettes/variable_interpolation.html
+```
+
+```{r Setup, include=FALSE}
+# Clear - NO NEED. It needs "passing params"
+# rm(list=ls())
+
+# Global options
+options(warn=-1)
+
+# Use multi-core
+registerDoMC(cores=8)
+
+# Local scripts
+# source(normalizePath(file.path(script_folder_path, './utils.R')))
+# source(normalizePath(file.path(script_folder_path, './helper.R')))
+source(normalizePath(file.path(script_folder_path, '../_util/plots.R')))
+```
+
+```{r Prep, include=FALSE}
+# Set the "Seed" for following "Random Forest" running
+seed_num = 166
+set.seed(seed_num)
+```
+
+# Mutation Stats
+
+```{r Mutation Stats, echo=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+
+# Temp fix
+# - Use `setwd()` tp set the "working folder" since `opts_knit$set(root.dir = params$working_folder)` not working.
+# - Ignore "warning" in this chunk
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/mut_type_stats.csv")
+data_orig = read.csv(file=file_path, header=TRUE, sep=",")
+
+# Change the "levels"
+data_orig$isoform <- ordered(data_orig$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+data_orig$mutation_type <- ordered(data_orig$mutation_type, levels=c("Single", "Double", "Others"))
+
+## Bar Plot
+barplot.mutation_stats <- ggbarplot(data_orig, 
+          x = "isoform", y = "count",
+          xlab = "isoform",
+          ylab = "count",
+          
+          # 
+          fill = "mutation_type", color = "mutation_type",
+          palette = c('#95C623', '#ee2059', '#3d82c4'),
+          # palette = "jco",
+          # label = TRUE, lab.col = "white", lab.pos = "in"
+          ) + 
+    scale_x_discrete(limits = c('Neil1', 'TTYH2', 'AJUBA')) + 
+    # 
+    font("legend.title", size = 12, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("xy.text", size = 16, color = "black", face = "plain")
+
+# 
+barplot.mutation_stats
+
+# 
+ggarrange(barplot.mutation_stats, ncol = 1) %>%
+  ggexport(
+      # res = 300,
+      # width = 1500,
+      # height = 1500,
+      filename = GetoptLong::qq("barplot-isoform_mutation_stats.pdf")
+      )
+
+```
+
+```{r Mutation Stats - Pie Chart, echo=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+
+# Temp fix
+# - Use `setwd()` tp set the "working folder" since `opts_knit$set(root.dir = params$working_folder)` not working.
+# - Ignore "warning" in this chunk
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+## Pie Plot
+data.neil1 = data_orig[ data_orig$isoform == 'Neil1' , ]
+data.ttyh2 = data_orig[ data_orig$isoform == 'TTYH2' , ]
+data.ajuba = data_orig[ data_orig$isoform == 'AJUBA' , ]
+
+label.empty = paste0("")
+
+# 
+piechart.mutation_stats.neil1 <- ggpie(data.neil1, 
+          "count",
+          # 
+          fill = "mutation_type", 
+          color = "white",
+          # 
+          # palette = c('#D95F03', '#ee2059', '#3d82c4'),
+          palette = "jco",
+          # 
+          # label = NA,
+          lab.pos = "in", lab.font = "white",
+          )
+
+piechart.mutation_stats.ttyh2 <- ggpie(data.ttyh2, 
+          "count",
+          # 
+          fill = "mutation_type", 
+          color = "white",
+          # 
+          palette = "jco",
+          # 
+          # label = NA,
+          lab.pos = "in", lab.font = "white",
+          )
+    
+piechart.mutation_stats.ajuba <- ggpie(data.ajuba, 
+          "count",
+          # 
+          fill = "mutation_type", 
+          color = "white",
+          # 
+          palette = "jco",
+          # 
+          # label = NA,
+          lab.pos = "in", lab.font = "white",
+          )
+    
+
+# 
+piechart.mutation_stats.neil1
+piechart.mutation_stats.ttyh2
+piechart.mutation_stats.ajuba
+
+# figure.mutation_stats <- ggarrange(
+#     piechart.mutation_stats.neil1, 
+#     piechart.mutation_stats.ttyh2, 
+#     piechart.mutation_stats.ajuba, 
+#           
+#           # 
+#           ncol = 3, nrow = 1, 
+#           
+#           # 
+#           labels = c("Neil1", "TTYH2", "AJUBA"),
+#           # label.x = 0.1,
+#           label.y = 0.9,
+#           
+#           # 
+#           legend = 'bottom',
+#           common.legend = TRUE) +
+#     font("legend.title", size = 16, color = "black", face = "plain") +
+#     font("legend.text", size = 16, color = "black", face = "plain")
+# 
+# figure.mutation_stats <- annotate_figure(figure.mutation_stats,
+#                 bottom = text_grob("Mutation Stats", color = "black", face = "bold", size = 20)
+# )
+# figure.mutation_stats
+
+# 
+# ggarrange(barplot.mutation_stats, ncol = 1) %>%
+#   ggexport(
+#       # res = 300,
+#       # width = 1500,
+#       # height = 1500,
+#       filename = GetoptLong::qq("barplot-isoform_mutation_stats.pdf")
+#       )
+
+ggarrange(piechart.mutation_stats.neil1, ncol = 1) %>%
+  ggexport(
+      # res = 300,
+      # width = 1500,
+      # height = 1500,
+      filename = GetoptLong::qq("piechart-isoform_mutation_stats-neil1.pdf")
+      )
+ggarrange(piechart.mutation_stats.ttyh2, ncol = 1) %>%
+  ggexport(
+      # res = 300,
+      # width = 1500,
+      # height = 1500,
+      filename = GetoptLong::qq("piechart-isoform_mutation_stats-ttyh2.pdf")
+      )
+ggarrange(piechart.mutation_stats.ajuba, ncol = 1) %>%
+  ggexport(
+      # res = 300,
+      # width = 1500,
+      # height = 1500,
+      filename = GetoptLong::qq("piechart-isoform_mutation_stats-ajuba.pdf")
+      )
+
+```
+
+# Exploration on "Combined" ML Feature file
+
+```{r Load Data - "Combined" ML Feature file , warning=FALSE}
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/combined_computational.features.csv")
+data_orig.features = read.csv(file=file_path, header=TRUE, sep=",")
+
+# Remove records whose "editing level" is "NA"
+column_to_predict='editing_value'
+data.features = data_orig.features[ is.na(data_orig.features[ , column_to_predict])==FALSE, ]
+
+```
+
+## Editing Level vs. Free Energy
+
+### Boxplot
+
+```{r Combined - Free Energy Box Plot, echo=FALSE, fig.width=4, fig.height=7}
+
+feature.name = 'free_energy'
+feature.label = 'Free Energy'
+
+dataset.filtered = data.features[ data.features[ , 'editing_value_quantile'] %in% c("0-25", "75-100") , ]
+p_value_comparisons = list(
+    c("0-25", "75-100")
+)
+
+# 
+dataset.filtered$isoform <- ordered(dataset.filtered$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+
+# Box Plot
+boxplot.mut_type <- ggboxplot(dataset.filtered, 
+               y = feature.name,
+               x = "isoform", 
+               
+               # color = "editing_value_quantile",
+               fill = "editing_value_quantile", 
+               
+               # facet.by
+               # facet.by = "isoform", 
+               
+               # Text
+               legend.title = "Editing Level Quantitle",
+               xlab = "", 
+               ylab = feature.label,
+               
+               # Box Width
+               width = 0.4,
+               
+               # Color Palette
+               palette = "jco",
+               add = "jitter",
+               add.params = list(
+                   color = "#555555",
+                   size = 1
+                   ),
+               
+               # bxp.errorbar = TRUE,
+               
+               # Outlier
+               outlier.colour = "red", 
+               outlier.shape = NA,
+               # outlier.shape = 8,  # outlier.shape = NA,
+               outlier.alpha = 0.5, 
+               outlier.size = 2,
+               
+               # 
+               ggtheme = theme_pubr(
+               ) 
+    ) + 
+    # Add a baseline
+    geom_hline(yintercept = mean(dataset.filtered[, feature.name]), linetype = 2) +
+    
+    # 
+    ylim(-90, -30) + 
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain") +
+#
+stat_compare_means(
+    aes(group = editing_value_quantile),
+    method = "t.test",
+    label = "p.signif",
+    size = 4
+    )
+
+# Show in Notebook
+boxplot.mut_type
+
+# 
+# Export to file
+ggarrange(boxplot.mut_type, ncol = 1) %>%
+  ggexport(
+      # 
+      width = 4,
+      filename = GetoptLong::qq("boxplot-combined_computational-@{feature.name}.pdf")
+      )
+
+```
+
+### Scatter Plot
+
+```{r Combined - Free Energy Scatter Plot, echo=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+
+dataset.neil1 = data.features[ data.features[ , 'isoform'] == 'Neil1' , ]
+dataset.ttyh2 = data.features[ data.features[ , 'isoform'] == 'TTYH2' , ]
+dataset.ajuba = data.features[ data.features[ , 'isoform'] == 'AJUBA' , ]
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+# feature.name = 'Neil1'
+# feature.name = 'TTYH2'
+feature.name = 'AJUBA'
+
+dataset.filtered = data.features[ data.features[ , 'isoform'] == feature.name , ]
+
+# 
+scatterplot.free_energy <- ggscatter(
+          # dataset.ajuba,
+          # dataset.ttyh2,
+          # dataset.neil1,
+          dataset.filtered,
+          x = "editing_value", y = "free_energy",
+          
+          xlab = "Editing Level", 
+          ylab = "Free Energy",
+          
+          conf.int = TRUE,                                  # Add confidence interval
+          
+          add = "reg.line",                                 # Add regression line
+          add.params = list(
+              color = "#3a7ebf", 
+              fill = '#eeeeee', # "lightgray",
+              linetype = "dashed"
+              ),
+          
+          title = feature.name,
+          color = '#545960'
+          
+          #
+          # fullrange = TRUE,                         # Extending the regression line
+          # rug = TRUE,                                # Add marginal rug
+          
+          ) +
+    stat_cor(method = "pearson", 
+             aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")), # Use R^2
+             label.x = 0.005, label.y = -55) +  # Add correlation coefficient
+    
+    # 
+    # border("black") +
+    
+    # ylim(-55, -30) +  # Neil1
+    # ylim(-100, -70) +  # TTYH2
+    ylim(-82, -55) +  # AJUBA
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("x.text", size = 16, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+
+
+scatterplot.free_energy
+
+# Export to file
+ggarrange(scatterplot.free_energy, ncol = 1) %>%
+  ggexport(
+      # 
+      # res = 300,
+      # width = 2000,
+      # height = 2000,
+      # filename = GetoptLong::qq("scatter_plot-free_energy_computational-@{feature.name}.png")
+      
+      width = 6,
+      height = 6,
+      filename = GetoptLong::qq("scatter_plot-free_energy_computational-@{feature.name}.pdf")
+      )
+
+
+```
+
+
+## Editing Level vs. Similarity Score
+### Boxplot
+
+```{r Combined - Similarity Score, echo=FALSE, fig.width=4, fig.height=7}
+
+feature.name = 'sim_nor_score'
+feature.label = 'Similarity Score'
+
+dataset.filtered = data.features[ data.features[ , 'editing_value_quantile'] %in% c("0-25", "75-100") , ]
+p_value_comparisons = list(
+    c("0-25", "75-100")
+)
+
+# 
+dataset.filtered$isoform <- ordered(dataset.filtered$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+
+# Box Plot
+boxplot.mut_type <- ggboxplot(dataset.filtered, 
+               y = feature.name,
+               x = "isoform", 
+               
+               # color = "editing_value_quantile",
+               fill = "editing_value_quantile", 
+               
+               # facet.by
+               # facet.by = "isoform", 
+               
+               # Text
+               legend.title = "Editing Level Quantitle",
+               xlab = "", 
+               ylab = feature.label,
+               
+               # Box Width
+               width = 0.4,
+               
+               # Color Palette
+               palette = "jco",
+               add = "jitter",
+               add.params = list(
+                   color = "#555555",
+                   size = 1
+                   ),
+               
+               # bxp.errorbar = TRUE,
+               
+               # Outlier
+               outlier.colour = "red", 
+               outlier.shape = NA,
+               # outlier.shape = 8,  # outlier.shape = NA,
+               outlier.alpha = 0.5, 
+               outlier.size = 2,
+               
+               # 
+               ggtheme = theme_pubr(
+               ) 
+    ) + 
+    # Add a baseline
+    geom_hline(yintercept = mean(dataset.filtered[, feature.name]), linetype = 2) +
+    
+    # 
+    ylim(0.75, 1.02) +
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain") +
+#
+stat_compare_means(
+    aes(group = editing_value_quantile),
+    method = "t.test",
+    label = "p.signif",
+    size = 4
+    )
+
+# Show in Notebook
+boxplot.mut_type
+
+# 
+# Export to file
+ggarrange(boxplot.mut_type, ncol = 1) %>%
+  ggexport(
+      # 
+      width = 4,
+      filename = GetoptLong::qq("boxplot-combined_computational-@{feature.name}.pdf")
+      )
+
+```
+
+### Scatter Plot
+
+```{r Combined - Similarity Score Scatter Plot, echo=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+
+dataset.neil1 = data.features[ data.features[ , 'isoform'] == 'Neil1' , ]
+dataset.ttyh2 = data.features[ data.features[ , 'isoform'] == 'TTYH2' , ]
+dataset.ajuba = data.features[ data.features[ , 'isoform'] == 'AJUBA' , ]
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+# feature.name = 'Neil1'
+# feature.name = 'TTYH2'
+feature.name = 'AJUBA'
+
+dataset.filtered = data.features[ data.features[ , 'isoform'] == feature.name , ]
+
+# 
+scatterplot.similarity_score <- ggscatter(
+          # dataset.ajuba, 
+          # dataset.ttyh2,
+          # dataset.neil1,
+          dataset.filtered,
+          x = "editing_value", y = "sim_nor_score",
+          
+          xlab = "Editing Level", 
+          ylab = "Similarity Score",
+          
+          conf.int = TRUE,                                  # Add confidence interval
+          
+          add = "reg.line",                                 # Add regression line
+          add.params = list(
+              color = "#3a7ebf", 
+              fill = '#eeeeee', # "lightgray",
+              linetype = "dashed"
+              ),
+          
+          title = feature.name,
+          color = '#545960'
+          
+          #
+          # fullrange = TRUE,                         # Extending the regression line
+          # rug = TRUE,                                # Add marginal rug
+          
+          ) +
+    stat_cor(method = "pearson", 
+             aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")), # Use R^2
+             label.x = 0.005, label.y = 1.02) +  # Add correlation coefficient
+    
+    # 
+    # border("black") + 
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+
+
+scatterplot.similarity_score
+
+# Export to file
+ggarrange(scatterplot.similarity_score, ncol = 1) %>%
+  ggexport(
+      # 
+      # res = 300,
+      # width = 2000,
+      # height = 2000,
+      # filename = GetoptLong::qq("scatter_plot-sim_score_computational-@{feature.name}.png")
+      
+      width = 6,
+      height = 6,
+      filename = GetoptLong::qq("scatter_plot-sim_score_computational-@{feature.name}.pdf")
+      )
+
+
+```
+
+
+## Editing Level vs. All Stem Length
+
+```{r Combined - mut_nt, echo=FALSE, fig.width=4, fig.height=7}
+
+feature.name = 'all_stem_length'
+feature.label = 'All Stem Length'
+
+dataset.filtered = data.features[ data.features[ , 'editing_value_quantile'] %in% c("0-25", "75-100") , ]
+p_value_comparisons = list(
+    c("0-25", "75-100")
+)
+
+# 
+dataset.filtered$isoform <- ordered(dataset.filtered$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+
+# Box Plot
+boxplot.mut_type <- ggboxplot(dataset.filtered, 
+               y = feature.name,
+               x = "isoform", 
+               
+               # color = "editing_value_quantile",
+               fill = "editing_value_quantile", 
+               
+               # facet.by
+               # facet.by = "isoform", 
+               
+               # Text
+               legend.title = "Editing Level Quantitle",
+               xlab = "", 
+               ylab = feature.label,
+               
+               # Box Width
+               width = 0.4,
+               
+               # Color Palette
+               palette = "jco",
+               add = "jitter",
+               add.params = list(
+                   color = "#555555",
+                   size = 1
+                   ),
+               
+               # bxp.errorbar = TRUE,
+               
+               # Outlier
+               outlier.colour = "red", 
+               outlier.shape = NA,
+               # outlier.shape = 8,  # outlier.shape = NA,
+               outlier.alpha = 0.5, 
+               outlier.size = 2,
+               
+               # 
+               ggtheme = theme_pubr(
+               ) 
+    ) + 
+    # Add a baseline
+    geom_hline(yintercept = mean(dataset.filtered[, feature.name]), linetype = 2) +
+    
+    # 
+    # ylim(0.75, 1.02) +
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain") +
+#
+stat_compare_means(
+    aes(group = editing_value_quantile),
+    method = "t.test",
+    label = "p.signif",
+    size = 4
+    )
+
+# Show in Notebook
+boxplot.mut_type
+
+# 
+# Export to file
+ggarrange(boxplot.mut_type, ncol = 1) %>%
+  ggexport(
+      # 
+      width = 4,
+      filename = GetoptLong::qq("boxplot-combined_computational-@{feature.name}.pdf")
+      )
+
+```
+
+## Editing Level vs. Editing Site Length
+
+```{r Combined - mut_nt, echo=FALSE, fig.width=4, fig.height=7}
+
+feature.name = 'site_length'
+feature.label = 'Editing Site Length'
+
+dataset.filtered = data.features[ data.features[ , 'editing_value_quantile'] %in% c("0-25", "75-100") , ]
+p_value_comparisons = list(
+    c("0-25", "75-100")
+)
+
+# 
+dataset.filtered$isoform <- ordered(dataset.filtered$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+
+# Box Plot
+boxplot.mut_type <- ggboxplot(dataset.filtered, 
+               y = feature.name,
+               x = "isoform", 
+               
+               # color = "editing_value_quantile",
+               fill = "editing_value_quantile", 
+               
+               # facet.by
+               # facet.by = "isoform", 
+               
+               # Text
+               legend.title = "Editing Level Quantitle",
+               xlab = "", 
+               ylab = feature.label,
+               
+               # Box Width
+               width = 0.4,
+               
+               # Color Palette
+               palette = "jco",
+               add = "jitter",
+               
+               # bxp.errorbar = TRUE,
+               
+               # Outlier
+               outlier.colour = "red", 
+               outlier.shape = NA,
+               # outlier.shape = 8,  # outlier.shape = NA,
+               outlier.alpha = 0.5, 
+               outlier.size = 2,
+               
+               # 
+               ggtheme = theme_pubr(
+               ) 
+    ) + 
+    # Add a baseline
+    geom_hline(yintercept = mean(dataset.filtered[, feature.name]), linetype = 2) +
+    
+    #  ylim(0, 10) +
+    scale_y_continuous(name =feature.label, 
+                       breaks=c(0, 1, 2, 3, 5, 8),
+                       limits=c(0, 8)) + 
+   
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain") +
+#
+stat_compare_means(
+    aes(group = editing_value_quantile),
+    method = "t.test",
+    label = "p.signif",
+    size = 4
+    )
+
+# Show in Notebook
+boxplot.mut_type
+
+# 
+# Export to file
+ggarrange(boxplot.mut_type, ncol = 1) %>%
+  ggexport(
+      # 
+      width = 4,
+      filename = GetoptLong::qq("boxplot-combined_computational-@{feature.name}.pdf")
+      )
+
+```
+
+## Editing Level vs. Probability of Active Confirmation
+
+```{r Combined - probability_active_conf, echo=FALSE, fig.width=4, fig.height=7}
+
+feature.name = 'probability_active_conf'
+feature.label = 'Probability of Active Confirmation'
+
+# FIlter rows
+dataset.filtered = data.features[ data.features[ , 'editing_value_quantile'] %in% c("0-25", "75-100") , ]
+dataset.filtered = dataset.filtered[ !is.na(dataset.filtered[ , 'probability_active_conf']), ]
+
+p_value_comparisons = list(
+    c("0-25", "75-100")
+)
+
+# 
+dataset.filtered$isoform <- ordered(dataset.filtered$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+
+# Box Plot
+boxplot.mut_type <- ggboxplot(dataset.filtered, 
+               y = feature.name,
+               x = "isoform", 
+               
+               # color = "editing_value_quantile",
+               fill = "editing_value_quantile", 
+               
+               # facet.by
+               # facet.by = "isoform", 
+               
+               # Text
+               legend.title = "Editing Level Quantitle",
+               xlab = "", 
+               ylab = feature.label,
+               
+               # Box Width
+               width = 0.4,
+               
+               # Color Palette
+               palette = "jco",
+               # add = "jitter",
+               # add.params = list(
+               #     color = "#555555",
+               #     size = 1
+               #     ),
+               
+               # bxp.errorbar = TRUE,
+               
+               # Outlier
+               outlier.colour = "red", 
+               outlier.shape = NA,
+               # outlier.shape = 8,  # outlier.shape = NA,
+               outlier.alpha = 0.5, 
+               outlier.size = 2,
+               
+               # 
+               ggtheme = theme_pubr(
+               ) 
+    ) + 
+    # Add a baseline
+    geom_hline(yintercept = mean(dataset.filtered[, feature.name]), linetype = 2) +
+    
+    #  ylim(0, 10) +
+    scale_y_continuous(name =feature.label, 
+                       breaks=c(0, 0.1, 0.2, 0.3, 0.5, 0.8, 1),
+                       limits=c(0, 1)) + 
+   
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain") +
+#
+stat_compare_means(
+    aes(group = editing_value_quantile),
+    method = "t.test",
+    label = "p.format", # "p.signif"
+    size = 4
+    )
+
+# Show in Notebook
+boxplot.mut_type
+
+# 
+# Export to file
+ggarrange(boxplot.mut_type, ncol = 1) %>%
+  ggexport(
+      # 
+      width = 4,
+      filename = GetoptLong::qq("boxplot-combined_computational-@{feature.name}.pdf")
+      )
+
+```
+
+
+## Similarity Score vs. Num_mutations
+
+```{r Combined - Similarity Score vs. Num_mutations, echo=FALSE, fig.width=7, fig.height=7}
+
+feature.name = 'sim_nor_score'
+feature.label = 'Similarity Score'
+
+# 
+dataset.filtered = data.features[ data.features[ , 'num_mutations'] > 0 , ]
+# Transform - Num_Mutations
+data.features$num_mutations_orig = data.features$num_mutations
+transformFunc <- function(row){
+    isoform <- row[1]
+    rna_id <- row[2]
+    num_mutations <- row[7] # orig value
+    num_type <- row[9]
+
+    if (num_type == "mismatch") {
+        if (num_mutations == 1) {
+            value = "1"
+        } else if (num_mutations == 2) {
+            value = "2"
+        } else {
+            value = ">2 & indel"
+        }
+    } else if (num_type == "indel") {
+        value = ">2 & indel"
+    } else {
+        value = "0"
+    }
+
+    return(value)
+}
+dataset.filtered$num_mutations <- apply(dataset.filtered, 1, transformFunc)
+
+p_value_comparisons = list(
+    c("1", "2")
+)
+
+# Order
+dataset.filtered$isoform <- ordered(dataset.filtered$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+dataset.filtered$num_mutations <- ordered(dataset.filtered$num_mutations, levels=c("1", "2", ">2 & indel"))
+
+# Box Plot
+boxplot.simularity <- ggboxplot(dataset.filtered, 
+               y = feature.name,
+               x = "isoform", 
+               
+               # color = "editing_value_quantile",
+               fill = "num_mutations", 
+               
+               # facet.by
+               # facet.by = "isoform", 
+               
+               # Text
+               legend.title = "Mutations",
+               xlab = "", 
+               ylab = feature.label,
+               
+               # Box Width
+               width = 0.4,
+               
+               # Color Palette
+               palette = "jco",
+               # add = "jitter",
+               
+               # bxp.errorbar = TRUE,
+               
+               # Outlier
+               outlier.colour = "red", 
+               outlier.shape = NA,
+               # outlier.shape = 8,  # outlier.shape = NA,
+               outlier.alpha = 0.5, 
+               outlier.size = 2,
+               
+               # 
+               ggtheme = theme_pubr(
+               ) 
+    ) + 
+    # Add a baseline
+    geom_hline(yintercept = mean(dataset.filtered[, feature.name]), linetype = 2) +
+    
+    # ylim(0, 10) +
+    # scale_y_continuous(name =feature.label, 
+    #                    breaks=c(0, 1, 2, 3, 5, 8),
+    #                    limits=c(0, 8)) + 
+   
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("x.text", size = 16, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+#
+# stat_compare_means(
+#     # aes(group = num_mutations),
+# 
+#     comparisons = p_value_comparisons,
+# 
+#     method = "t.test",
+#     label = "p.signif",
+#     size = 4
+#     )
+
+# Show in Notebook
+boxplot.simularity
+
+# 
+# Export to file
+ggarrange(boxplot.simularity, ncol = 1) %>%
+  ggexport(
+      #
+      width = 4,
+      filename = GetoptLong::qq("boxplot-combined_computational-@{feature.name}.pdf")
+      )
+
+```
+
+# Ensemble Probability
+
+- Neil1
+- TTYH2
+- AJUBA
+
+## Neil1
+
+```{r Ensemble Probability - Neil1, echo=FALSE, warning=FALSE, fig.width=7, fig.height=7}
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/_ensemble_probability/neil1_ensemble_prob-1.png.csv")
+data_orig.prob.neil1 = read.csv(file=file_path, header=TRUE, sep=",")
+
+# Remove records whose "editing level" is "NA"
+column_to_predict='editing_value'
+data.prob.neil1 = data_orig.prob.neil1[ is.na(data_orig.prob.neil1[ , column_to_predict])==FALSE, ]
+
+## 
+# Params:
+# --wt_structure "..(((.(((((((.(((((((((((.(((.((((((....)))))).)))..))))).)))))).))))).))))).." \
+# --wt_pair "....................(((((.(((.(((((......))))).)))..)))))....................." \
+# --wt_constraint ".........................................>>>>>.>>....>>>...>>>>...>>>...>>>..." \
+
+# Plot
+scatterplot.neil1 <- ggscatter(data.prob.neil1, 
+          x = "probability", y = "editing_value",
+          
+          xlab = "Probability", 
+          ylab = "Editing Level",
+          
+          conf.int = TRUE,                                  # Add confidence interval
+          
+          add = "reg.line",                                 # Add regression line
+          add.params = list(
+              color = "#3b7fbf", 
+              fill = '#3b7fbf' # "lightgray",
+              # linetype = "dashed"
+              ),
+          
+          color = '#545960'
+          #
+          # fullrange = TRUE,                         # Extending the regression line
+          # rug = TRUE,                                # Add marginal rug
+          
+          ) +
+    stat_cor(method = "pearson", 
+             aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")), # Use R^2
+             label.x = 0.005, label.y = 0.82) +  # Add correlation coefficient
+    
+    # stat_density_2d(aes(fill = ..level..), geom = "polygon") +
+    # gradient_fill("YlOrRd") +
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+
+
+    # 
+    annotation_text <- paste(
+             "..(((.(((((((.(((((((((((.(((.((((((....)))))).)))..))))).)))))).))))).)))))..",
+             ".........................................>>>>>.>>....>>>...>>>>...>>>...>>>...",
+             sep = "\n")
+    annotation_tgrob <- text_grob(
+                       annotation_text, 
+                       
+                       just = "left",
+                       
+                       # face = "italic", 
+                       # color = "steelblue",
+                       
+                       size = 7
+                       
+                       # family = "Lucida Console"
+                       )
+    
+    # 
+    scatterplot.neil1 <- scatterplot.neil1 + annotation_custom(
+      grob = annotation_tgrob,
+      xmin = -0.38, 
+      ymin = 0.77
+    )
+
+# print(ggMarginal(scatterplot.neil1, type = "density"))
+
+# 
+scatterplot.neil1
+
+ggarrange(scatterplot.neil1, ncol = 1) %>%
+  ggexport(
+      # 
+      # res = 300,
+      # width = 2000,
+      # height = 2000,
+      # filename = GetoptLong::qq("scatterplot-ensemble_prob-neil1.png")
+      
+      # # 
+      height = 6,
+      width = 6,
+      filename = GetoptLong::qq("scatterplot-ensemble_prob-neil1.pdf")
+      )
+
+```
+
+## TTYH2
+
+```{r Ensemble Probability - TTYH2, echo=FALSE, warning=FALSE, fig.width=7, fig.height=7}
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/_ensemble_probability/ttyh2_ensemble_prob-1.png.csv")
+data_orig.prob.ttyh2 = read.csv(file=file_path, header=TRUE, sep=",")
+
+# Remove records whose "editing level" is "NA"
+column_to_predict='editing_value'
+data.prob.ttyh2 = data_orig.prob.ttyh2[ is.na(data_orig.prob.ttyh2[ , column_to_predict])==FALSE, ]
+
+## 
+# Params:
+# --wt_structure  "....(((((((((((((((((((((((.((.((((((((((((((((((((((........)))))))))))))))))))))).)).))).))))))))))))))))))))...." \
+# --wt_pair       "....(((((((((((((((((((((((.((.((((((((((((((((((((((........)))))))))))))))))))))).)).))).))))))))))))))))))))...." \
+# --wt_constraint ".............................................................>>>>>>>>>>>>>>>>>>>>>>.>>.>>>.>>>>>>>>>>>>>>>>>>>>...." \
+
+# Plot
+scatterplot.ttyh2 <- ggscatter(data.prob.ttyh2, 
+          x = "probability", y = "editing_value",
+          
+          xlab = "Probability", 
+          ylab = "Editing Level",
+          
+          conf.int = TRUE,                                  # Add confidence interval
+          
+          add = "reg.line",                                 # Add regression line
+          add.params = list(
+              color = "#3b7fbf", 
+              fill = '#3b7fbf' # "lightgray",
+              # linetype = "dashed"
+              ),
+          
+          color = '#545960'
+          
+          #
+          # fullrange = TRUE,                         # Extending the regression line
+          # rug = TRUE,                                # Add marginal rug
+          
+          ) +
+    stat_cor(method = "pearson", 
+             aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")), # Use R^2
+             label.x = 0.005, label.y = 0.67) +  # Add correlation coefficient
+    
+    # stat_density_2d(aes(fill = ..level..), geom = "polygon") +
+    # gradient_fill("YlOrRd") +
+    
+    # 
+    ylim(0, 0.7) +
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+
+
+    # 
+    annotation_text <- paste(
+             "....(((((((((((((((((((((((.((.((((((((((((((((((((((........)))))))))))))))))))))).)).))).))))))))))))))))))))....",
+             ".............................................................>>>>>>>>>>>>>>>>>>>>>>.>>.>>>.>>>>>>>>>>>>>>>>>>>>....",
+             sep = "\n")
+    annotation_tgrob <- text_grob(
+                       annotation_text, 
+                       
+                       just = "left",
+                       
+                       # face = "italic", 
+                       # color = "steelblue",
+                       
+                       size = 7
+                       )
+    
+    # 
+scatterplot.ttyh2 <- scatterplot.ttyh2 + annotation_custom(
+      grob = annotation_tgrob,
+      xmin = -0.87, 
+      ymin = 0.67
+    )
+
+# print(ggMarginal(scatterplot.neil1, type = "density"))
+
+# 
+scatterplot.ttyh2
+
+
+ggarrange(scatterplot.ttyh2, ncol = 1) %>%
+  ggexport(
+      # 
+      # res = 300,
+      # width = 2000,
+      # height = 2000,
+      # filename = GetoptLong::qq("scatterplot-ensemble_prob-ttyh2.png")
+      
+      # # 
+      height = 6,
+      width = 6,
+      filename = GetoptLong::qq("scatterplot-ensemble_prob-ttyh2.pdf")
+      )
+
+```
+
+
+## AJUBA
+
+```{r Ensemble Probability - AJUBA, echo=FALSE, warning=FALSE, fig.width=7, fig.height=7}
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/_ensemble_probability/ajuba_ensemble_prob-1.png.csv")
+data_orig.prob.ajuba = read.csv(file=file_path, header=TRUE, sep=",")
+
+# Remove records whose "editing level" is "NA"
+column_to_predict='editing_value'
+data.prob.ajuba = data_orig.prob.ajuba[ is.na(data_orig.prob.ajuba[ , column_to_predict])==FALSE, ]
+
+## 
+# Params:
+# --wt_structure  "(((((((((((((((.((((((((.((((((.((.(((((((((.((((..........)))).))))))))).)).)))))).)))))))).)))))))))))))))." \
+# --wt_pair       "(((((((((((((((.((((((((.((((((.((.(((((((((.((((..........)))).))))))))).)).)))))).)))))))).)))))))))))))))." \
+# --wt_constraint "...........................................................>>>>.>>>>>>>>>.>>.>>>>>>.>>>>>>>>.>>>>>>>>>>>>>>>." \
+
+# Plot
+scatterplot.ajuba <- ggscatter(data.prob.ajuba, 
+          x = "probability", y = "editing_value",
+          
+          xlab = "Probability", 
+          ylab = "Editing Level",
+          
+          conf.int = TRUE,                                  # Add confidence interval
+          
+          add = "reg.line",                                 # Add regression line
+          add.params = list(
+              color = "#3b7fbf", 
+              fill = '#3b7fbf' # "lightgray",
+              # linetype = "dashed"
+              ),
+          
+          color = '#545960'
+          
+          #
+          # fullrange = TRUE,                         # Extending the regression line
+          # rug = TRUE,                                # Add marginal rug
+          
+          ) +
+    stat_cor(method = "pearson", 
+             aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")), # Use R^2
+             label.x = 0.005, label.y = 0.47) +  # Add correlation coefficient
+    
+    # stat_density_2d(aes(fill = ..level..), geom = "polygon") +
+    # gradient_fill("YlOrRd") +
+    
+    # 
+    ylim(0, 0.5) +
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+
+
+    # 
+    annotation_text <- paste(
+             "(((((((((((((((.((((((((.((((((.((.(((((((((.((((..........)))).))))))))).)).)))))).)))))))).))))))))))))))).",
+             "...........................................................>>>>.>>>>>>>>>.>>.>>>>>>.>>>>>>>>.>>>>>>>>>>>>>>>.",
+             sep = "\n")
+    annotation_tgrob <- text_grob(
+                       annotation_text, 
+                       
+                       just = "left",
+                       
+                       # face = "italic", 
+                       # color = "steelblue",
+                       
+                       size = 7
+                       )
+    
+    # 
+scatterplot.ajuba <- scatterplot.ajuba + annotation_custom(
+      grob = annotation_tgrob,
+      xmin = -0.22, 
+      ymin = 0.46
+    )
+
+# print(ggMarginal(scatterplot.neil1, type = "density"))
+
+# 
+scatterplot.ajuba
+
+
+ggarrange(scatterplot.ajuba, ncol = 1) %>%
+  ggexport(
+      #
+      # res = 300,
+      # width = 2000,
+      # height = 2000,
+      # filename = GetoptLong::qq("scatterplot-ensemble_prob-ajuba.png")
+
+      # #
+      height = 6,
+      width = 6,
+      filename = GetoptLong::qq("scatterplot-ensemble_prob-ajuba.pdf")
+      )
+
+```
+
+
+
+# Similarity Score Pairwise
+
+Do "similarity score" pairsiwse on RNA isoform which has both "computational" and "experimental" results. 
+
+- Neil1
+- TTYH2 ECS
+
+```{r Similarity Score Pairwise - Neil1, echo=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/_sim_score/neil1_sim_score.csv")
+data_orig.sim_score_pairwise = read.csv(file=file_path, header=TRUE, sep=",")
+
+# 
+feature.name = 'Neil1'
+
+# 
+scatterplot.similarity_score <- ggscatter(
+          data_orig.sim_score_pairwise,
+          x = "sim_nor_score_computational", 
+          y = "sim_nor_score_experimental",
+          
+          xlab = "Similarity Score (Computational)", 
+          ylab = "Similarity Score (Experimental)",
+          
+          conf.int = TRUE,                                  # Add confidence interval
+          
+          add = "reg.line",                                 # Add regression line
+          add.params = list(color = "blue", fill = "lightgray"),
+          
+          title = feature.name
+          
+          #
+          # fullrange = TRUE,                         # Extending the regression line
+          # rug = TRUE,                                # Add marginal rug
+          
+          ) +
+    stat_cor(method = "pearson", 
+             aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")), # Use R^2
+             label.x = 0.605, label.y = 1.02) +  # Add correlation coefficient
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("x.text", size = 16, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+
+scatterplot.similarity_score <- ggpar(scatterplot.similarity_score, 
+                                      xlim = c(0.6, 1), ylim = c(0.6, 1.03))
+scatterplot.similarity_score
+
+# Export to file
+ggarrange(scatterplot.similarity_score, ncol = 1) %>%
+  ggexport(
+      # 
+      # res = 300,
+      # width = 2000,
+      # height = 2000,
+      # filename = GetoptLong::qq("scatter_plot-sim_score_pairwise-@{feature.name}.png")
+      
+      width = 6,
+      height = 6,
+      filename = GetoptLong::qq("scatter_plot-sim_score_pairwise-@{feature.name}.pdf")
+      )
+
+
+```
+
+```{r Similarity Score Pairwise - TTYH2 ECS, echo=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/_sim_score/ttyh2_ecs_sim_score.csv")
+data_orig.sim_score_pairwise = read.csv(file=file_path, header=TRUE, sep=",")
+
+# 
+feature.name = 'TTYH2_ECS'
+
+# 
+scatterplot.similarity_score <- ggscatter(
+          data_orig.sim_score_pairwise,
+          x = "sim_nor_score_computational", 
+          y = "sim_nor_score_experimental",
+          
+          xlab = "Similarity Score (Computational)", 
+          ylab = "Similarity Score (Experimental)",
+          
+          conf.int = TRUE,                                  # Add confidence interval
+          
+          add = "reg.line",                                 # Add regression line
+          add.params = list(color = "blue", fill = "lightgray"),
+          
+          title = feature.name
+          
+          #
+          # fullrange = TRUE,                         # Extending the regression line
+          # rug = TRUE,                                # Add marginal rug
+          
+          ) +
+    stat_cor(method = "pearson", 
+             aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")), # Use R^2
+             label.x = 0.0, label.y = 1.02) +  # Add correlation coefficient
+    
+    # 
+    border("black") +
+    
+    # Change the appearance of legend title and texts
+    font("legend.title", size = 10, color = "black", face = "plain") +
+    font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("x.text", size = 16, color = "black", face = "plain") +
+    font("y.text", size = 16, color = "black", face = "plain")
+
+scatterplot.similarity_score <- ggpar(scatterplot.similarity_score, 
+                                      xlim = c(0, 1), ylim = c(0, 1.03))
+scatterplot.similarity_score
+
+# Export to file
+ggarrange(scatterplot.similarity_score, ncol = 1) %>%
+  ggexport(
+      # 
+      # res = 300,
+      # width = 2000,
+      # height = 2000,
+      # filename = GetoptLong::qq("scatter_plot-sim_score_pairwise-@{feature.name}.png")
+      
+      width = 6,
+      height = 6,
+      filename = GetoptLong::qq("scatter_plot-sim_score_pairwise-@{feature.name}.pdf")
+      )
+
+
+```
+
+
+# ML Feature
+
+```{r ML Feature, echo=FALSE, warning=FALSE, fig.width=7, fig.height=8}
+
+# Temp fix
+# - Use `setwd()` tp set the "working folder" since `opts_knit$set(root.dir = params$working_folder)` not working.
+# - Ignore "warning" in this chunk
+if (params$working_folder != '') {
+    setwd(params$working_folder)
+}
+
+file_path = GetoptLong::qq("./_source/_ml/ALL.comp.subset.importance.csv")
+data_orig.ml = read.csv(file=file_path, header=TRUE, sep=",")
+
+data_orig.ml$isoform <- ordered(data_orig.ml$isoform, levels=c("Neil1", "TTYH2", "AJUBA"))
+data_orig.ml$Subset_Cat <- ordered(data_orig.ml$Subset_Cat, levels=c(
+    "\"+1 nt\" & \"-1 nt\"",
+    "Downstream",
+    "Upstream", 
+    "Editing Site Structure",
+    "Biophysical",
+    "Sequence & Structure", 
+    "Mutations"
+    ))
+
+scatterplot.ml <- ggscatter(data_orig.ml, 
+                            x = "isoform", 
+                            y = "Subset_Cat",
+                            
+                            xlab = "Isoform",
+                            ylab = "Subset",
+                            
+                            # 
+                            # label = "Contribution",
+                            
+   color = "isoform", 
+   palette = "jco",
+   
+   size = "Contribution", alpha = 1
+   ) +
+   scale_size(range = c(1, 20)) +  # Adjust the range of points size 
+
+    # rotate_y_text(30) +
+    
+    # font("legend.title", size = 12, color = "black", face = "plain") +
+    # font("legend.text", size = 12, color = "black", face = "plain") +
+    
+    # Axis
+    font("xlab", size = 20, color = "black", face = "plain") +
+    font("ylab", size = 20, color = "black", face = "plain") +
+    font("xy.text", size = 16, color = "black", face = "plain")
+
+scatterplot.ml<- ggpar(scatterplot.ml, 
+                       
+      #
+      legend = 'right',
+      legend.title = list(
+          color = "Isoform", 
+          size = "Contribution"
+          ),
+      
+      #
+      # palette = "npg",
+      palette = c("#d95f02", "#7570b3", "#1b9e77"),
+      
+      # 
+      ticks = FALSE, tickslab = TRUE
+      )
+
+scatterplot.ml
+
+ggarrange(scatterplot.ml, ncol = 1) %>%
+  ggexport(
+      # res = 300,
+      # width = 1500,
+      # height = 1500,
+      filename = GetoptLong::qq("scatterplot-ml_feature_importance.pdf")
+      )
+
+ggsave(GetoptLong::qq("scatterplot-ml_feature_importance.svg"), 
+                      plot = scatterplot.ml)
+
+```
