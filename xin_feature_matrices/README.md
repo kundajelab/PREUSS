@@ -1,5 +1,11 @@
 # ML Feature Changes
 
+## v2.4 - 2019_02_17
+
+- Features changes
+    - editing_value - CHANGED. Update the value of "Neil1" dataset based on the 6 replicates instead of 2.  
+    - Structure-related features - CHANGED. Update the value based on the updated "structure classification methods". 
+
 ## v2.3 - 2019_02_17
 
 - Features changes
