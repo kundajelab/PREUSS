@@ -1,0 +1,1 @@
+python rank_feature_importance.py --importance_matrix xin_neil1/FeatureImportance.tsv xin_ajuba/FeatureImportance.tsv xin_ttyh2_computational/FeatureImportance.tsv --substrates NEIL1 AJUBA TTYH2 --outf feature_ranks.tsv
