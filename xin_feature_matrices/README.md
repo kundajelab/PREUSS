@@ -1,10 +1,14 @@
 # ML Feature Changes
 
-## v2.4 - 2019_02_17
-
+## v2.5 - 2020_04_18
 - Features changes
     - editing_value - CHANGED. Update the value of "Neil1" dataset based on the 6 replicates instead of 2.  
     - Structure-related features - CHANGED. Update the value based on the updated "structure classification methods". 
+
+## v2.4 - 2019_03_14
+- Features changes
+  - add new feature column ("probability_active_conf" - Ensemble Probability Confirmation) 
+  to Neil1, AJUBA and TTYH2_Combined feature sets. 
 
 ## v2.3 - 2019_02_17
 
