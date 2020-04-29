@@ -1,5 +1,17 @@
 # ML Feature Changes
 
+## v2.7 - 2020_04_29
+- File updated
+	- The update is based on the updated "secondary structure file" (updated via RNAFold, WITHOUT flag - "noLP")
+- Features changes
+	- Add new features - minimum_free_energy, ensemble_free_energy, mfe_frequency, ensemble_diversity
+
+## v2.6 - 2020_04_28
+- File updated
+	- The update is based on the updated "secondary structure file" (updated via RNAFold, with flag - "noLP")
+- Features changes
+	- Add new features - minimum_free_energy, ensemble_free_energy, mfe_frequency, ensemble_diversity
+
 ## v2.5 - 2020_04_18
 - Features changes
     - editing_value - CHANGED. Update the value of "Neil1" dataset based on the 6 replicates instead of 2.  
