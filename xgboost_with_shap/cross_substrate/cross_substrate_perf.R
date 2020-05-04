@@ -1,0 +1,12 @@
+rm(list=ls())
+library(ggplot2)
+data=read.table("cross_substrate_perf.csv",header=TRUE,sep='\t')
+data$order=row.names(data)
+p1=ggplot(data=data,aes(x=data$order,y=data$R.2))+geom_bar(stat='identity')+xlab("")+ylab("R^2")+theme_bw()+  theme(axis.title.x=element_blank(),
+                                                                                                                      axis.text.x=element_blank(),
+                                                                                                                      axis.ticks.x=element_blank())
+p2=ggplot(data=data,aes(x=data$order,y=data$Spearman))+geom_bar(stat='identity')+xlab("")+ylab("Spearman Correlation")+theme_bw()+theme(axis.title.x=element_blank(),
+                                                                                                                                            axis.text.x=element_blank(),
+                                                                                                                                            axis.ticks.x=element_blank())
+source("~/helpers.R")
+multiplot(p1,p2,cols=1)
