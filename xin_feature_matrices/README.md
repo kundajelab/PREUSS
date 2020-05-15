@@ -1,11 +1,14 @@
 # ML Feature Changes
 
+## v2.8 - 2020_05_15
+- Features changes
+	- "NEIL1" dataset - update the "editing level" of "RNA ID - 189" from "null" to "0.02"
+
 ## v2.7 - 2020_04_29
 - File updated
 	- The update is based on the updated "secondary structure file" (updated via RNAFold, WITHOUT flag - "noLP")
 - Features changes
-	- Rename feature "free_energy" to "minimum_free_energy"
-	- Add new features - ensemble_free_energy, mfe_frequency, ensemble_diversity
+	- Add new features - minimum_free_energy, ensemble_free_energy, mfe_frequency, ensemble_diversity
 
 ## v2.6 - 2020_04_28
 - File updated
