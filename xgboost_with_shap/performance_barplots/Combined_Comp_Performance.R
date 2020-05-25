@@ -11,5 +11,6 @@ ggplot(data=m,
   geom_bar(stat='identity',position='dodge')+
   scale_fill_manual(name="Substrate",values=c("#1b9e77","#d95f02","#7570b3"))+
   xlab("Performance Metric")+
-  ylab("Peformance on Held-Out Test Set")
+  ylab("Peformance on\nHeld-Out Test Set")+
+  theme(axis.text.x = element_text(angle = 90))
   

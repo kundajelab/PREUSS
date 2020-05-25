@@ -5,7 +5,7 @@ data=data[order(data$Rank),]
 #take the top 50 
 data=data[data$Rank<21,]
 data$Feature=factor(data$Feature,levels=data$Feature)
-svg("FeatureRanksByMeanAbsSHAP.svg",height=6,width=15)
+pdf("FeatureRanksByMeanAbsSHAP.pdf",height=6,width=15)
 print(ggplot(data=data,aes(x=data$Feature,y=data$MeanImpact))+
   geom_bar(stat='identity',color='black',position=position_dodge())+
   geom_errorbar(aes(ymin=data$MeanImpact-data$StdImpact,
