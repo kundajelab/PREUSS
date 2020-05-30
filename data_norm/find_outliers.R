@@ -1,0 +1,6 @@
+rm(list=ls())
+data=read.table("outlier_detection_data.txt.csv",header=TRUE,sep='\t')
+splits_g=as.data.frame(quantile(data$g_coverage,seq(0,1,0.01)))
+splits_c=as.data.frame(quantile(data$c_coverage,seq(0,1,0.01)))
+plot(splits_g)
+plot(splits_c)
